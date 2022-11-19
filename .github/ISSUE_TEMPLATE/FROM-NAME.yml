@@ -15,7 +15,7 @@ body:
   - type: textarea
     id: add picture
     attributes:
-      label: Profile Picuture
+      label: Profile Picture
       description: Add a profile Picture
       placeholder: Make sure that it is square for ex. 500px x 500px !!
     validations:

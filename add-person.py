@@ -1,13 +1,20 @@
 import json
 import sys
 
- 
-assert len(sys.argv)>3 , "not all arguments are specified"
+#assert len(sys.argv)>1 , "not all arguments are specified"
 
-person={"name": sys.argv[1],
-        "img": sys.argv[2],
-        "job": sys.argv[3]
-        }
+with open("temp.json") as fs:
+    person_form = json.load(fs)
+
+#inputStr='{"Name-Details":"TestName","Degree":"Studying M.Sc. Robotics, Cognition, Intelligence","Consent-Approval":{"I agree":true}}'  
+#person_form= json.loads(inputStr)
+
+person= {
+    "name": person_form["Name-Details"],
+    "img": "lol",
+    "job": person_form["Degree"]
+}
+print(person)
 
 with open("people.json") as fs:
 
