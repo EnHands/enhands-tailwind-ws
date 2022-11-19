@@ -1,0 +1,15 @@
+on: issues
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue Template Parser
+        # You may pin to the exact commit or the version.
+        # uses: GrantBirki/issue-template-parser@3d81f4b4ae6553671590816e65e76b804a29d0ce
+        uses: GrantBirki/issue-template-parser@v5.0.1
+        with:
+          # The RAW body of the issue to parse if you want to override the default
+          body: ${{ github.event.issue.body }}
+  
+      - run: echo ${{ steps.issue-parser.outputs.json }}
+
