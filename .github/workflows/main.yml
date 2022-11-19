@@ -10,8 +10,8 @@ jobs:
         with:
           issue_id: ${{ github.event.issue.number }}
           separator: '###'
-          label_marker_start: '_-'
-          label_marker_end: '-_'
+          label_marker_start: '▶️'
+          label_marker_end: '◀️'
 
       - name: Show parsed data JSON
         run: |

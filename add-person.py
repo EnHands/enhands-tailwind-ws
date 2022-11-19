@@ -1,5 +1,6 @@
 import json
 import sys
+import re
 
 #assert len(sys.argv)>1 , "not all arguments are specified"
 
@@ -9,9 +10,17 @@ with open("temp.json") as fs:
 #inputStr='{"Name-Details":"TestName","Degree":"Studying M.Sc. Robotics, Cognition, Intelligence","Consent-Approval":{"I agree":true}}'  
 #person_form= json.loads(inputStr)
 
+extr = person_form["Profile-Picture"]
+
+pattern  = r"\((https:.*?)\)"
+match = re.search(pattern, extr)
+
+assert match is not None , "Profile Picture not specified"
+
+
 person= {
     "name": person_form["Name-Details"],
-    "img": "lol",
+    "img": match.group(1),
     "job": person_form["Degree"]
 }
 print(person)
