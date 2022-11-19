@@ -20,3 +20,5 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
+      - run: |
+          python add-person.py ${{ steps.parse.outputs.payload.Name-Details }} testpath ${{ steps.parse.outputs.payload.Degree }}
