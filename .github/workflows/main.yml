@@ -16,7 +16,7 @@ jobs:
 
       - name: Show parsed data JSON
         run: |
-          echo "${{ steps.parse.outputs.payload }}" >> temp.json
+          echo '${{ steps.parse.outputs.payload }}' >> temp.json
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
