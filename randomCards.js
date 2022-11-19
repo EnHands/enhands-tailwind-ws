@@ -4,16 +4,6 @@ card = document.getElementsByClassName("card")
 cardList= document.getElementById("CardList")
 
 
-
-var length=card.length
-
-var randomArray= Array.from({length: length-1}, () => Math.floor(Math.random() * (length-1)));
-
-randomArray.forEach(element => {
-    cardList.append(card.item(element))
-    console.log(element)
-});
-
 var people=[
     {name: "Johannes Frey",
     img: "JohannesFrey-MA-RCI.jpg",
@@ -40,14 +30,14 @@ var people=[
     job: "Studying M.Sc. Informatics"},
 
     {name: "Amartya Ganguly, Ph.D.",
-    img: "VincentBürgin-MasterInformatics.jpg",
+    img: "AmartyaGanguly.png",
     job: "Biomechanics, Munich Institute of Robotics and Machine Intelligence (MIRMI)"},
 
 
 ]
-
-
 console.log(people)
+
+const shuffledArray = people.sort((a, b) => 0.5 - Math.random());
 
 people.forEach(element => {
     var T=`<div class="card w-60 rounded overflow-hidden shadow-lg"><img class="w-full" src="images/people/${element.img}" alt="Mountain"><div class="px-6 py-4"><div class="font-bold text-xl mb-2">${element.name}</div><p class="text-gray-700 text-base">${element.job}</p></div></div>`
@@ -57,3 +47,6 @@ people.forEach(element => {
     console.log(htmlObject)
     cardList.append(htmlObject)
 });
+
+
+
