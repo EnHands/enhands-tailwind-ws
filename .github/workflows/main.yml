@@ -16,8 +16,6 @@ jobs:
       - name: Show parsed data JSON
         run: |
           echo "${{ steps.parse.outputs.payload }}"
-      - name: Output parsed issue
-        run: echo ${{ steps.issue-parser.outputs.json }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
