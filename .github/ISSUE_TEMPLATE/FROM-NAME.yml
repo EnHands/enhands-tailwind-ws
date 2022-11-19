@@ -13,7 +13,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: add picture
+    id: add-picture
     attributes:
       label: Profile Picuture
       description: Add a profile Picture!
