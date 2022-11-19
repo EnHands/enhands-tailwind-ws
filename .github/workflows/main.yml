@@ -27,4 +27,12 @@ jobs:
           ls -la
           tree
           python add-person.py
+          
+      - name: run git push
+        run: |
+          git config --global user.name "LeonKie"
+          git config --global user.email "leon.kiesgen@web.de"
+          git add people.json
+          git commit -m "⚙ Added New Member to the Team [BOT]"
+          git push --force
 

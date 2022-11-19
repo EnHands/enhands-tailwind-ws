@@ -7,14 +7,14 @@ body:
   - type: input
     id: name
     attributes:
-      label: ▶️Name-Details◀️
+      label: '>>Name-Details<<'
       description: What it you full Name?
     validations:
       required: true
   - type: textarea
     id: add-picture
     attributes:
-      label: ▶️Profile-Picture◀️
+      label: '>>Profile-Picture<<'
       description: Add a profile Picture!
       placeholder: "Make sure that it is square for ex. 500px x 500px !!"
     validations:
@@ -22,7 +22,7 @@ body:
   - type: input 
     id: degree
     attributes:
-      label: ▶️Degree◀️
+      label: '>>Degree<<'
       description: What are you Studing at the moment?
       placeholder: "e.g. M.Sc. Robotics, Cognition, Intelligence"
     validations:
@@ -30,7 +30,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: ▶️Consent-Approval◀️
+      label: '>>Consent-Approval<<'
       description: By submitting this issue, you agree that your details can be shown on the public website (enhands.de)
       options:
         - label: I agree
