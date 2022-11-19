@@ -30,7 +30,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: Consent Approval
       description: By submitting this issue, you agree that your details can be shown on the public website (enhands.de)
       options:
         - label: I agree
