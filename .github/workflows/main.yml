@@ -1,4 +1,5 @@
-on: issues
+on:
+  workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,7 +11,6 @@ jobs:
         with:
           # The RAW body of the issue to parse if you want to override the default
           body: ${{ github.event.issue.body }}
-  
       - run: echo ${{ steps.issue-parser.outputs.json }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
