@@ -7,7 +7,7 @@ jobs:
       - name: Issue Template Parser
         # You may pin to the exact commit or the version.
         # uses: GrantBirki/issue-template-parser@3d81f4b4ae6553671590816e65e76b804a29d0ce
-        uses: GrantBirki/issue-template-parser@v5.0.1
+        uses: GrantBirki/issue-template-parser@v4.0.3
         id: issue-parser
         with:
           # The RAW body of the issue to parse if you want to override the default
