@@ -4,15 +4,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Issue Template Parser
-        # You may pin to the exact commit or the version.
-        # uses: GrantBirki/issue-template-parser@3d81f4b4ae6553671590816e65e76b804a29d0ce
-        uses: GrantBirki/issue-template-parser@v4.0.3
+      - name: Run GitHub issue forms parser
         id: issue-parser
+        uses: edumserrano/github-issue-forms-parser@v1.2.0
         with:
-          # The RAW body of the issue to parse if you want to override the default
-          body: ${{ github.event.issue.body }}
-      - run: echo ${{ steps.issue-parser.outputs.json }}
+          template-filepath: '.github/ISSUE_TEMPLATE/FROM-NAME.yml'
+          issue-form-body: '${{ github.event.issue.body }}'
+      # The next step is using powershell to parse the action's output but you can use whatever you prefer.
+      # Note that in order to read the step outputs the action step must have an id.
+      - name: Output parsed issue
+        run: echo ${{ steps.issue-parser.outputs.json }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
