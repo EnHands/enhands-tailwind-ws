@@ -37,7 +37,7 @@ var people=[
 ]
 console.log(people)
 
-const shuffledArray = people.sort((a, b) => 0.5 - Math.random());
+people.sort((a, b) => 0.5 - Math.random());
 
 people.forEach(element => {
     var T=`<div class="card w-60 rounded overflow-hidden shadow-lg"><img class="w-full" src="images/people/${element.img}" alt="Mountain"><div class="px-6 py-4"><div class="font-bold text-xl mb-2">${element.name}</div><p class="text-gray-700 text-base">${element.job}</p></div></div>`
