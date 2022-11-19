@@ -4,14 +4,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run GitHub issue forms parser
-        id: issue-parser
-        uses: edumserrano/github-issue-forms-parser@v1.2.0
+      - name: Run Issue form parser
+        id: parse
+        uses: peter-murray/issue-forms-body-parser@v2.0.0
         with:
-          template-filepath: '.github/ISSUE_TEMPLATE/FROM-NAME.yml'
-          issue-form-body: '${{ github.event.issue.body }}'
-      # The next step is using powershell to parse the action's output but you can use whatever you prefer.
-      # Note that in order to read the step outputs the action step must have an id.
+          issue_id: ${{ github.event.issue.number }}
+          separator: '###'
+          label_marker_start: '>>'
+          label_marker_end: '<<'
+
+      - name: Show parsed data JSON
+        run: |
+          echo "${{ steps.parse.outputs.payload }}"
       - name: Output parsed issue
         run: echo ${{ steps.issue-parser.outputs.json }}
       - uses: actions/checkout@v3
