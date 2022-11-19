@@ -8,6 +8,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: GrantBirki/issue-template-parser@3d81f4b4ae6553671590816e65e76b804a29d0ce
         uses: GrantBirki/issue-template-parser@v5.0.1
+        id: issue-parser
         with:
           # The RAW body of the issue to parse if you want to override the default
           body: ${{ github.event.issue.body }}
@@ -16,9 +17,3 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-          
-      - name: Debuggging with tmate
-        # You may pin to the exact commit or the version.
-        # uses: GitHub30/action-tmate@7a4c478c598693c8e03332a5d349360704f758e0
-        uses: GitHub30/action-tmate@master2
-      
