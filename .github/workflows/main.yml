@@ -15,12 +15,14 @@ jobs:
 
       - name: Show parsed data JSON
         run: |
-          echo "${{ steps.parse.outputs.payload }}"
-          echo "${{ steps.parse.outputs.payload.Name-Details }}"
-          echo " ${{ steps.parse.outputs.payload.Degree }}"
+          echo "${{ steps.parse.outputs.payload }}" >> temp.json
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10' 
+          python-version: '3.10'
+          name: Install dependencies
           run: |
-            python ./add-person.py ${{ steps.parse.outputs.payload.Name-Details }} testpath ${{ steps.parse.outputs.payload.Degree }}
+            python -m pip install --upgrade pip
+      - run: |
+          python ./add-person.py
+
