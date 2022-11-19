@@ -17,7 +17,7 @@ body:
     attributes:
       label: Profile Picuture
       description: Add a profile Picture!
-      placeholder: Make sure that it is square for ex. 500px x 500px
+      placeholder: "Make sure that it is square for ex. 500px x 500px !!"
     validations:
       required: true
   - type: input 
