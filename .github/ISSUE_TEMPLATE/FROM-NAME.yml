@@ -9,21 +9,21 @@ body:
     id: name
     attributes:
       label: Name Details
-      description: What it you full Name
+      description: What it you full Name?
     validations:
       required: true
   - type: textarea
     id: add picture
     attributes:
       label: Profile Picuture
-      description: Add a profile Picture
+      description: Add a profile Picture!
       placeholder: Make sure that it is square for ex. 500px x 500px !!
     validations:
       required: true
   - type: input 
     id: degree
     attributes:
-      label: degree
+      label: Degree
       description: What are you Studing at the moment?
       paceholder: e.g. M.Sc. Robotics, Cognition, Intelligence
     validations:
