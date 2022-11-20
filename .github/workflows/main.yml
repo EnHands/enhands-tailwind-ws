@@ -41,6 +41,7 @@ jobs:
           git add people.json
           git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
           git clean -fd
+          git push --force
       - name: gh pr
         run: |
           gh pr create --title "Adding ${{ env.MemberName }} to the Team" --body "A new member wants to add his/her name and picture to the website" --head ${{ env.MemberName }}
