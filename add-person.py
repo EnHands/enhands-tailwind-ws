@@ -31,13 +31,13 @@ def main():
 
         nameList = [item["name"] for item in data]
 
-        #assert not person["name"] in nameList, "The name is already in the List"
+        assert not person["name"] in nameList, "The name is already in the List"
             
         data.append(person)
 
 
     with open("people.json","w", encoding="utf-8") as fs:
-        json.dump(data,fs)
+        json.dump(data,fs,indent=4)
 
     filename= "New Member"
     print(filename)
