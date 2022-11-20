@@ -36,13 +36,13 @@ jobs:
         run: |
           git config --global user.name "LeonKie"
           git config --global user.email "leon.kiesgen@web.de"
-          git branch ${{ env.MemberName }}
-          git checkout ${{ env.MemberName }}
+          git branch "${{ env.MemberName }}"
+          git checkout "${{ env.MemberName }}"
           git add people.json
           git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
           git clean -fd
-          git push --set-upstream origin ${{ env.MemberName }}
+          git push --set-upstream origin "${{ env.MemberName }}"
           git push --force
       - name: gh pr
         run: |
-          gh pr create --title "Adding ${{ env.MemberName }} to the Team" --body "A new member wants to add his/her name and picture to the website" --head ${{ env.MemberName }}
+          gh pr create --title "Adding ${{ env.MemberName }} to the Team" --body "A new member wants to add his/her name and picture to the website" --head "${{ env.MemberName }}"
