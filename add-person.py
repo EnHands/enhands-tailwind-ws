@@ -45,5 +45,12 @@ def main():
         fs.write(str(person["name"]))
     
 
+    filename = "BranchName"
+    with open(filename,"w") as fs:
+        branch=str(person["name"])
+        branch=branch.lower()
+        branch=branch.replace(" ","-")
+        fs.write(branch)
+
 if __name__ == "__main__":
     main()
