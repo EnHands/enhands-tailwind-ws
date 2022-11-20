@@ -27,12 +27,15 @@ jobs:
           ls -la
           tree
           python add-person.py
-          
+          echo "MemberName=$(cat 'New Member')" >> $GITHUB_ENV
+      - name: install gh cli
+        run: sudo apt install gh
       - name: run git push
         run: |
           git config --global user.name "LeonKie"
           git config --global user.email "leon.kiesgen@web.de"
           git add people.json
-          git commit -m "⚙ Added New Member to the Team [BOT]"
-          git push --force
-
+          git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
+      - name: gh pr
+        run: |
+          gh pr create --title "Adding ${{ env.MemberName }} to the Team"
