@@ -1,7 +1,7 @@
 name: Add Team Member
 description: Submit a picture and a discription to be shown on the public website 
 title: "[Add Picture]:"
-label: "New-Member"
+labels: "New-Member"
 assignees:
   - LeonKie
 body:
