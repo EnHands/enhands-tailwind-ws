@@ -24,7 +24,7 @@ body:
     attributes:
       label: '>>Degree<<'
       description: What are you studying at the moment?
-      placeholder: "e.g. M.Sc. Robotics, Cognition, Intelligence"
+      placeholder: "e.g. Studying M.Sc. Robotics, Cognition, Intelligence"
     validations:
       required: true
   - type: checkboxes
