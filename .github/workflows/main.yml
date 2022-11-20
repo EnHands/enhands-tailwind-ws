@@ -30,19 +30,20 @@ jobs:
           tree
           python add-person.py
           echo "MemberName=$(cat 'New Member')" >> $GITHUB_ENV
+          echo "branchName=$(cat 'BranchName')" >> $GITHUB_ENV
       - name: install gh cli
         run: sudo apt install gh
       - name: run git push
         run: |
           git config --global user.name "LeonKie"
           git config --global user.email "leon.kiesgen@web.de"
-          git branch "${{ env.MemberName }}"
-          git checkout "${{ env.MemberName }}"
+          git branch "${{ env.branchName }}"
+          git checkout "${{ env.branchName }}"
           git add people.json
           git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
           git clean -fd
-          git push --set-upstream origin "${{ env.MemberName }}"
+          git push --set-upstream origin "${{ env.branchName }}"
           git push --force
       - name: gh pr
         run: |
-          gh pr create --title "Adding ${{ env.MemberName }} to the Team" --body "A new member wants to add his/her name and picture to the website" --head "${{ env.MemberName }}"
+          gh pr create --title "Adding ${{ env.MemberName }} to the Team" --body "A new member wants to add his/her name and picture to the website" --head "${{ env.branchName }}"
