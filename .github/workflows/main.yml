@@ -1,9 +1,12 @@
 on:
-  issues
+  issues:
+    types:
+      - labeled
 env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   build:
+    if: github.event.label.name == 'New-Member'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
