@@ -41,6 +41,7 @@ jobs:
           git add people.json
           git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
           git clean -fd
+          git push --set-upstream origin ${{ env.MemberName }}
           git push --force
       - name: gh pr
         run: |
