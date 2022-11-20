@@ -37,7 +37,7 @@ def main():
 
 
     with open("people.json","w", encoding="utf-8") as fs:
-        json.dump(data,fs,indent=4)
+        json.dump(data,fs,indent=4,ensure_ascii=False)
 
     filename= "New Member"
     print(filename)
