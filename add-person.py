@@ -4,7 +4,7 @@ import re
 
 #assert len(sys.argv)>1 , "not all arguments are specified"
 def main():
-    with open("temp.json") as fs:
+    with open("temp.json", encoding="utf-8") as fs:
         person_form = json.load(fs)
 
     #inputStr='{"Name-Details":"TestName","Degree":"Studying M.Sc. Robotics, Cognition, Intelligence","Consent-Approval":{"I agree":true}}'  
@@ -25,7 +25,7 @@ def main():
     }
     print(person)
 
-    with open("people.json") as fs:
+    with open("people.json", encoding="utf-8") as fs:
 
         data=json.load(fs)
 
@@ -36,13 +36,13 @@ def main():
         data.append(person)
 
 
-    with open("people.json","w") as fs:
+    with open("people.json","w", encoding="utf-8") as fs:
         json.dump(data,fs)
 
     filename= "New Member"
     print(filename)
     with open(filename,"w") as fs:
-        fs.write(filename +" - " + str(person["name"]))
+        fs.write(str(person["name"]))
     
 
 if __name__ == "__main__":
