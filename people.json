@@ -1,37 +1,37 @@
 [
     {
         "name": "Johannes Frey",
-        "img": "JohannesFrey-MA-RCI.jpg",
+        "img": "images/people/JohannesFrey-MA-RCI.jpg",
         "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
     },
     {
         "name": "Leon Kiesgen",
-        "img": "LeonKiesgen_MA-RCI.jpg",
+        "img": "images/people/LeonKiesgen_MA-RCI.jpg",
         "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
     },
     {
         "name": "Negar Shahmoradi",
-        "img": "NegarShahmoradi_MS-Medizintechnik.jpg",
+        "img": "images/people/NegarShahmoradi_MS-Medizintechnik.jpg",
         "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
     },
     {
         "name": "Silija Breimann",
-        "img": "SilijaBreimann_MasterMechatronicsAndRobotics.jpg",
+        "img": "images/people/SilijaBreimann_MasterMechatronicsAndRobotics.jpg",
         "job": "Studying M.Sc. Mechatronics & Robotics"
     },
     {
-        "name": "Sonja Gro\u00c3\u0178, M.Sc.",
-        "img": "SonjaGro\u00c3\u0178_MSc_Biomedical_Engineering.jpg",
+        "name": "Sonja Groß, M.Sc.",
+        "img": "images/people/SonjaGroß_MSc_Biomedical_Engineering.jpg",
         "job": "Research Assistant, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
     },
     {
-        "name": "Vincent B\u00c3\u00bcrgin",
-        "img": "VincentB\u00c3\u00bcrgin-MasterInformatics.jpg",
+        "name": "Vincent Bürgin",
+        "img": "images/people/VincentBürgin-MasterInformatics.jpg",
         "job": "Studying M.Sc. Informatics"
     },
     {
         "name": "Amartya Ganguly, Ph.D.",
-        "img": "AmartyaGanguly.png",
+        "img": "images/people/AmartyaGanguly.png",
         "job": "Biomechanics, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
     }
 ]
