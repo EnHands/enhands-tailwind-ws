@@ -8,6 +8,8 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link rel="icon" type="image/x-icon" href="./images/logos/favicon.ico">
+	<link rel="stylesheet" href="styles.css">
+	
 	
     <!-- Font Awesome if you need it
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -17,6 +19,7 @@
 	<!--Replace with your tailwind.css once created-->
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
 	<!-- Animation CSS-->
 	<style>		
@@ -34,7 +37,16 @@
 		@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 		@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
 		@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
-				
+		
+		#C-Grid {
+			display: grid;
+		}
+
+		#AR-Block:hover + #C-Grid{
+			display: none;
+			background-color: black;
+		}
+
 	</style>
 
 </head>
@@ -59,7 +71,7 @@
 		<!--Left Col-->
 		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
 			<h1 class="slide-in-bottom mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Enabling <span class="underline underline-offset-3 decoration-8 decoration-blue-400 hover:text-indigo-600 dark:decoration-blue-600">accessible</span> prosthetic hands</h1>
-			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Trying to helping others, regardless of location or circumstance, one hand at a time.</p>
+			<p class="leading-normal text-base md:text-2xl mb-8 md:text-left slide-in-bottom-subtitle">Trying to helping others, regardless of location or circumstance, one hand at a time.</p>
 	
 			<button onclick="javascript:location.href='mailto:info@enhands.de?subject=%F0%9F%8C%8D%F0%9F%A6%BE%F0%9F%A4%96%20Join%20us!%20%F0%9F%A4%96%F0%9F%A6%BE%F0%9F%8C%8D&body=(Hi%2C%20glad%20you%20found%20us.%20We\'re%20always%20happy%20to%20welcome%20new%20members!%0D%0AWe%20usually%20meet%20on%20Monday%20evenings%20from%206pm%20to%209pm%20and%20we\'ll%20get%20back%20to%20you%20regarding%20the%20location.%0D%0A%0D%0AThis%20is%20a%20sample%20email%20that%20you%20can%20fill%20out%20so%20we%20can%20get%20some%20information%20about%20you.)%0D%0A%0D%0AHi%20EnHands%20Team%2C%0D%0A%0D%0AI%20am%20interested%20in%20joining%20the%20student%20group.%0D%0A%0D%0AHere%20are%20some%20details%20about%20me%3A%0D%0A%0D%0AName%3A%0D%0ADegree%3A%0D%0ATUM-ID%3A%0D%0AE-mail%3A%0D%0ASemester%3A%0D%0AInterests%3A%0D%0APreferred%20team(s)%3A%20(Technical%2FMarketing%2FOrganization%2FI%20don\'t%20know%20yet)'" type="button" class="fade-in text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
 				Join us!
@@ -75,10 +87,10 @@
 	</div>
 		
 		<!--About Us-->
-		<div class="bg-white rounded-3xl max-w-2xl mx-auto sha py-42 px-4 grid items-center  gap-y-16 gap-x-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
+		<div class="bg-white rounded-3xl max-w-2xl mx-auto sha py-42 px-8 grid items-center  gap-y-16 gap-x-8 sm:px-8 sm:py-12 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
 			
 			<div class="">
-			<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">What is our goal 🚀</h2>
+			<h2 class="text-center py-5 text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">What is our goal 🚀</h2>
 			<p class="mt-4 text-gray-500">The EnHands student group aims to
 				develop affordable upper limb
 				prostheses (hand prostheses) for the
@@ -114,8 +126,8 @@
 
 
 		<!-- This example requires Tailwind CSS v2.0+ -->
-		<div class="bg-white">
-			<div class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
+		<div class="bg-white" >
+			<div class="max-w-2xl mx-auto py-24 px-8 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-8 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
 			<div>
 				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">V1 Prototyp - Technical Specifications </h2>
 				<p class="mt-4 text-gray-500">As a staring point, we decided to build a prosthetic hand in the size of the average woman's
@@ -146,12 +158,39 @@
 				</div>
 				</dl>
 			</div>
-			<div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-				<img src="images/prototyp/devHand1.png" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="bg-gray-100 rounded-lg">
-				<img src="images/prototyp/devHand2.png" alt="Top down view of walnut card tray with embedded magnets and card groove." class="bg-gray-100 rounded-lg">
-				<img src="images/prototyp/devHand5.png" alt="Side of walnut card tray with card groove and recessed card area." class="bg-gray-100 rounded-lg">
-				<img src="images/prototyp/Stump.png" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="bg-gray-100 rounded-lg">
-			</div>
+				
+
+
+			<model-viewer class="bg-gray-200 rounded-lg" src="Prototype_V1_final.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" >
+				<button class="Hotspot" slot="hotspot-1" data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m" data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">Leather Stump Interface</div>
+				</button><button class="Hotspot" slot="hotspot-5" data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m" data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">Passive Finges </div>
+				</button><button class="Hotspot" slot="hotspot-7" data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m" data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">Adjustable Thumb </div>
+				</button>
+				<button class="Hotspot" slot="hotspot-8" data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m" data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m" data-visibility-attribute="visible">
+					<div class="HotspotAnnotation">Rubber Ring</div>
+				<div class="progress-bar hide" slot="progress-bar">
+					<div class="update-bar"></div>
+				</div>
+				<button slot="ar-button" id="ar-button">
+					View in your space
+				</button>
+				<div id="ar-prompt">
+					<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+				</div>
+			</model-viewer>
+				
+
+
+
+				<!--<div class="grid  grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+					<img src="images/prototyp/devHand1.png" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="bg-gray-100 rounded-lg">
+					<img src="images/prototyp/devHand2.png" alt="Top down view of walnut card tray with embedded magnets and card groove." class="bg-gray-100 rounded-lg">
+					<img src="images/prototyp/devHand5.png" alt="Side of walnut card tray with card groove and recessed card area." class="bg-gray-100 rounded-lg">
+					<img src="images/prototyp/Stump.png" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="bg-gray-100 rounded-lg">
+				</div>-->
 			</div>
 		</div>
 		
@@ -163,9 +202,10 @@
 			<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">Meet our Team 👨‍👩‍👧‍👧</h2>
 			<div id= "CardList" class="flex gap-6 flex-wrap justify-center "  >
 				
-		</div>
-		</div>
 		
+		</div>
+
+
 		<!--Footer-->
 		
 		<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
@@ -192,7 +232,9 @@
 	
 
 </div>
+<script src="script.js"></script>
 <script src="randomCards.js"> </script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 
 </html>
