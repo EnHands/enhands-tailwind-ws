@@ -22,6 +22,7 @@ model-viewer {
     margin-top: 0;
     background-color: #ffffff;
   }
+
 }
 
 
@@ -62,12 +63,13 @@ model-viewer {
 
 .HotspotAnnotation{
   background: #fff;
+  opacity: 0.75;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   left: calc(100% + 1em);
   max-width: 128px;
