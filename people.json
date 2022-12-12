@@ -33,5 +33,10 @@
         "name": "Amartya Ganguly, Ph.D.",
         "img": "images/people/AmartyaGanguly.png",
         "job": "Biomechanics, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
+    },
+    {
+        "name": "Marvin Elling",
+        "img": "https://user-images.githubusercontent.com/120414293/207130610-87188d6b-1225-4e3d-b28b-d19755710652.png",
+        "job": "Studying Bs.Sc. Electrical Engineering and Information Technology"
     }
 ]
