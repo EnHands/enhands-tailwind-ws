@@ -43,5 +43,10 @@
         "name": "Julia Veloso de Oliveira",
         "img": "https://user-images.githubusercontent.com/110250484/208494592-24da7d7c-adb2-4dc0-b82c-c8e38a2c6f59.jpg",
         "job": "Electrical Engineering M. Sc."
+    },
+    {
+        "name": "Philipp Basse",
+        "img": "https://user-images.githubusercontent.com/127844546/224971117-091f0292-06c1-44ac-b139-bcf4c5ec976e.jpeg",
+        "job": "M.Sc. Medical Engineering and Assistance Systems"
     }
 ]
