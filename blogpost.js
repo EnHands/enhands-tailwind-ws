@@ -1,10 +1,10 @@
 let blogposts = null
 
-fetch('./blogposts.json')
+fetch('./blog/blogposts.json')
 	.then((response) => response.json())
 	.then((_blogposts) => {
 		blogposts = _blogposts
-		fetch('./blogposts.json')
+		fetch('./blog/blogposts.json')
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 
