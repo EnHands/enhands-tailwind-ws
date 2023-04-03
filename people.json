@@ -1,21 +1,21 @@
 [
     {
-        "name": "Johannes Frey",
+        "name": "Johannes Frey, B.Sc.",
         "img": "images/people/JohannesFrey-MA-RCI.jpg",
         "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
     },
     {
-        "name": "Leon Kiesgen",
+        "name": "Leon Kiesgen, B.Sc.",
         "img": "images/people/LeonKiesgen_MA-RCI.jpg",
         "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
     },
     {
-        "name": "Negar Shahmoradi",
+        "name": "Negar Shahmoradi, M.Sc.",
         "img": "images/people/NegarShahmoradi_MS-Medizintechnik.jpg",
-        "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
+        "job": "Project Manager, TUM Venture Labs"
     },
     {
-        "name": "Silija Breimann",
+        "name": "Silija Breimann, B.Sc.",
         "img": "images/people/SilijaBreimann_MasterMechatronicsAndRobotics.jpg",
         "job": "Studying M.Sc. Mechatronics & Robotics"
     },
@@ -25,7 +25,7 @@
         "job": "Research Assistant, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
     },
     {
-        "name": "Vincent Bürgin",
+        "name": "Vincent Bürgin, B.Sc.",
         "img": "images/people/VincentBürgin-MasterInformatics.jpg",
         "job": "Studying M.Sc. Informatics"
     },
@@ -40,17 +40,17 @@
         "job": "Studying Bs.Sc. Electrical Engineering and Information Technology"
     },
     {
-        "name": "Julia Veloso de Oliveira",
+        "name": "Julia Veloso de Oliveira, M.Sc.",
         "img": "https://user-images.githubusercontent.com/110250484/208494592-24da7d7c-adb2-4dc0-b82c-c8e38a2c6f59.jpg",
-        "job": "Electrical Engineering M. Sc."
+        "job": "Medical Informatics, Klinikum rechts der Isar"
     },
     {
-        "name": "Philipp Basse",
+        "name": "Philipp Basse, B.Sc.",
         "img": "https://user-images.githubusercontent.com/127844546/226427824-9d15f680-7a19-4186-b416-a1bfd4bc16a1.jpeg",
-        "job": "M.Sc. Medical Engineering and Assistance Systems"
+        "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
     },
     {
-        "name": "Arbenita Thaqi",
+        "name": "Arbenita Thaqi, B.Sc.",
         "img": "https://user-images.githubusercontent.com/26114194/229291280-980045a7-bcfc-4189-8f54-84be3a81982f.jpg",
         "job": "Studying M.Sc. Mechanical Engineering"
     }
