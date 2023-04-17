@@ -18,7 +18,9 @@ fetch('./blog/blogposts.json')
 						`<div class="mb-16 flex justify-center">
 							<div class="flex flex-col lg:flex-row">
 								<div class="mr-5 w-full lg:w-29% aspect-ratio-3/2 mb-3 lg:mb-0">
+									<a href="/blogpost.html?post=${element['name']}">
 									<img src="${element['picture']}" class="object-cover max-h-full w-full rounded">
+									</a>
 								</div>
 								<div class="flex flex-col justify-between w-full lg:w-71%">
 									<div>
