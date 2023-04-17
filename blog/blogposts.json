@@ -22,5 +22,11 @@
         "picture": "blog/2023-01-31-printer.jpg",
         "date": "January 31, 2023",
         "title": "Our 3D printer is up and running again!"
+    },
+    {
+        "name": "2023-04-01-second-workshop",
+        "picture": "blog/2023-04-01-second-workshop.jpg",
+        "date": "April 1, 2023",
+        "title": "Second workshop"
     }
 ]
