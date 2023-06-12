@@ -28,5 +28,11 @@
         "picture": "blog/2023-04-01-second-workshop.jpg",
         "date": "April 1, 2023",
         "title": "Second workshop"
+    },
+    {
+        "name": "2023-06-12-funding-for-innovators",
+        "picture": "blog/2023-06-12-funding-for-innovators.png",
+        "date": "June 12, 2023",
+        "title": "EnHands funded with 2000€ by UnternehmerTUM"
     }
 ]

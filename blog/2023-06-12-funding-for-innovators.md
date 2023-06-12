@@ -1,0 +1,3 @@
+We have great news: EnHands secured a 2000€ prototyping grant from the *Funding for Innovators Prototyping Grants* program of UnternehmerTUM. We're really happy about this funding which will help us with continuing our prototyping, and thank UnternehmerTUM for awarding us this grant. In particular, our goal is to produce 20 to 25 cosmetic hands of varying characteristics to send for a user study of our Naya Quadam partners in Nepal in September.
+
+Further down the line, we want to improve our functional prototype and make it more aesthetically pleasing and experiment with the different materials we could use - for example, compare hard plastic prostheses with softer silicone prostheses which have a nicer look, but are less robust.
