@@ -2,7 +2,7 @@ Sonja and Amartya wen on an EnHands field trip recently to visit Viquar and Ambr
 
 A few weeks prior to the visit, we sent Viquar a package with several prototypes we 3D-printed or manufactured from silicone: 
 
-![](blog/2023-06-21-hands-package-2.png)
+![](blog/2023-06-21-hands-package-2.jpg)
 
 ![](blog/2023-06-21-hands-package.jpg)
 
