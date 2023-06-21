@@ -2,9 +2,9 @@ Sonja and Amartya wen on an EnHands field trip recently to visit Viquar and Ambr
 
 A few weeks prior to the visit, we sent Viquar a package with several prototypes we 3D-printed or manufactured from silicone: 
 
-![](2023-06-21-hands-package-2.png)
+![](blog/2023-06-21-hands-package-2.png)
 
-![](2023-06-21-hands-package.jpg)
+![](blog/2023-06-21-hands-package.jpg)
 
 During the visit, they discussed about what already works with our prototypes and what doesn't, as well as future plans. It turned out that the silicone-based design looks more realistic, but might be unsuitable since it is not durable and can easily be damaged e.g. by cutting into the silicone. It might especially not be suited for people who need to perform manual work.
 
