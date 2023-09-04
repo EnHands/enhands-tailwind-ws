@@ -538,7 +538,7 @@
 		
 		
 						<model-viewer class="bg-gray-200 rounded-lg" src="Prototype_V1_final.glb" ar
-							ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+							ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster_P1.webp" shadow-intensity="1">
 							<button class="Hotspot" slot="hotspot-1"
 								data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
 								data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
@@ -580,7 +580,7 @@
 						class="max-w-md mx-auto py-5 px-8 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-2 xl:max-w-7xl">
 						<div>
 							<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-								V1 Prototype - Technical Specifications </h2>
+								Cosmetic Hand - Technical Specifications </h2>
 							<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand that is the
 								size
 								of the average woman's
@@ -623,39 +623,24 @@
 		
 		
 		
-						<model-viewer class="bg-gray-200 rounded-lg" src="Prototype_V1_final.glb" ar
-							ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-							<button class="Hotspot" slot="hotspot-1"
-								data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
-								data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Leather Stump Interface</div>
-							</button><button class="Hotspot" slot="hotspot-5"
-								data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m"
-								data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Passive Fingers </div>
-							</button><button class="Hotspot" slot="hotspot-7"
-								data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m"
-								data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Adjustable Thumb </div>
+						<model-viewer class="bg-gray-200 rounded-lg" src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp" shadow-intensity="1" field-of-view="30deg">
+							<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m" data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m" data-visibility-attribute="visible">
+								<div class="HotspotAnnotation">Guitar capo used as a spring</div>
+							</button><button class="Hotspot" slot="hotspot-3" data-position="0.009388101366336332m 0.11980100314952985m 0.049949023917919035m" data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m" data-visibility-attribute="visible">
+								<div class="HotspotAnnotation">Silicon mold</div>
+							</button><button class="Hotspot" slot="hotspot-4" data-position="0.0100m -0.0156m 0.01m" data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m" data-visibility-attribute="visible">
+								<div class="HotspotAnnotation">Ridgid PLA core</div>
 							</button>
-							<button class="Hotspot" slot="hotspot-8"
-								data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m"
-								data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Rubber Ring</div>
-								<div class="progress-bar hide" slot="progress-bar">
-									<div class="update-bar"></div>
-								</div>
-								<button slot="ar-button" id="ar-button">
-									View in your space
-								</button>
-								<div id="ar-prompt">
-									<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-								</div>
-						</model-viewer>
+							<div class="progress-bar hide" slot="progress-bar">
+								<div class="update-bar"></div>
+							</div>
+							<button slot="ar-button" id="ar-button">
+								View in your space
+							</button>
+							<div id="ar-prompt">
+								<img src="ar_hand_prompt.png">
+							</div>
+						  </model-viewer> 
 		
 					</div>	
 				</div>
