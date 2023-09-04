@@ -32,6 +32,10 @@
 		 * w: http://animista.net, t: @cssanimista
 		 * ---------------------------------------------- */
 
+	
+		
+
+
 		 .carousel {
 			display: inline-flex;
 			overflow-x: scroll;
@@ -53,7 +57,26 @@
 		.carousel-end .carousel-item {
 			scroll-snap-align: end}
 		.carousel::-webkit-scrollbar {
-    		display: none}
+    		display: auto;
+			height: 0.5rem;}
+
+
+
+		/* Track */
+		.carousel::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		}
+
+		/* Handle */
+		.carousel::-webkit-scrollbar-thumb {
+		background: #afafaf;
+		border-radius: 0.5rem;
+		}
+
+		/* Handle on hover */
+		.carousel::-webkit-scrollbar-thumb:hover {
+		background: #6b6b6b;
+		}
 
 		.slide-in-bottom {
 			-webkit-animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
@@ -487,7 +510,7 @@
 				<a href="#P1" class="py-2 px-4 shadow-md no-underline rounded-full bg-blue text-black font-sans font-semibold text-sm border-blue btn-primary hover:text-gray-300 hover:bg-blue-light focus:outline-none active:shadow-none mr-2">V1 Prototype</a>
 				<a href="#P2" class="py-2 px-4 shadow-md no-underline rounded-full bg-orange text-black font-sans font-semibold text-sm border-orange btn-primary hover:text-gray-300 hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Cosmetic Hand</a>
 			</div>
-		<div class="carousel rounded width_overflow">
+		<div class="carousel scrollable-div rounded width_overflow">
 			<div id="P1" class="carousel-item">
 				<div class="bg-white">
 					<div
@@ -641,11 +664,12 @@
 								<img src="ar_hand_prompt.png">
 							</div>
 						  </model-viewer> 
-		
 					</div>	
 				</div>
 			</div> 
+			
 		  </div>
+		  	
 		  </div>
 
 		<!--Blog-->
