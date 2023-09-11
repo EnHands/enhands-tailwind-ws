@@ -1,42 +1,49 @@
 [
     {
         "name": "2022-10-01-kickoff",
+        "author": "Vincent Bürgin",
         "picture": "blog/2022-10-01-kickoff.jpg",
         "date": "October 12, 2022",
         "title": "Kickoff meeting - EnHands gets started!"
     },
     {
         "name": "2022-11-07-viquar-zoom-1",
+        "author": "Vincent Bürgin",
         "picture": "blog/2022-11-07-viquar.png",
         "date": "November 07, 2022",
         "title": "Discussion with Dr. Viquar Qurashi"
     },
     {
         "name": "2022-11-29-student-club-fair",
+        "author": "Vincent Bürgin",
         "picture": "blog/2022-11-29-student-club-fair.jpg",
         "date": "November 29, 2022",
         "title": "EnHands at the student club fair"
     },
     {
         "name": "2023-01-31-3d-printer",
+        "author": "Vincent Bürgin",
         "picture": "blog/2023-01-31-printer.jpg",
         "date": "January 31, 2023",
         "title": "Our 3D printer is up and running again!"
     },
     {
         "name": "2023-04-01-second-workshop",
+        "author": "Vincent Bürgin",
         "picture": "blog/2023-04-01-second-workshop.jpg",
         "date": "April 1, 2023",
         "title": "Second workshop"
     },
     {
         "name": "2023-06-12-funding-for-innovators",
+        "author": "Vincent Bürgin",
         "picture": "blog/2023-06-12-funding-for-innovators.png",
         "date": "June 12, 2023",
         "title": "EnHands funded with 2000€ by UnternehmerTUM"
     },
     {
         "name": "2023-06-21-viquar-london",
+        "author": "Vincent Bürgin",
         "picture": "blog/2023-06-21-viquar-london.png",
         "date": "June 21, 2023",
         "title": "Sonja and Amartya visiting Viquar Quarashi"

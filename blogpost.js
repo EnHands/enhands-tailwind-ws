@@ -12,6 +12,7 @@ fetch('./blog/blogposts.json')
 		imageContainer = document.getElementById("blogpostImageContainer");
 		textContainer = document.getElementById("blogpostTextContainer");
 		dateContainer = document.getElementById("blogpostDateContainer");
+		authorContainer = document.getElementById("blogpostAuthorContainer");
 
 		matchingBlogposts = blogposts.filter(p => p.name == urlParams.get("post"));
 		if (matchingBlogposts.length == 0) {
@@ -30,5 +31,6 @@ fetch('./blog/blogposts.json')
 				imageContainer.src = blogpost["picture"];
 				textContainer.innerHTML = textHtml;
 				dateContainer.innerHTML = blogpost["date"];
+				authorContainer.innerHTML = blogpost["author"];
 			});
 	});
