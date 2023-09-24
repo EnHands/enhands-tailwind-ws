@@ -54,6 +54,12 @@
 			animation: bounce-top .9s 1s both
 		}
 
+
+		.text-1-5xl {
+			font-size: 1.35rem;
+			line-height: 1.875rem;
+		}
+
 		@-webkit-keyframes slide-in-bottom {
 			0% {
 				-webkit-transform: translateY(1000px);
@@ -272,10 +278,12 @@
 		</div>
 
 		<!--Main-->
-		<div class=" pt-10 sm:pt-24 md:pt-48 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-center">
+		<!-- With event announcement: items-start and less padding (without: items-center) -->
+		<!-- <div class=" pt-10 sm:pt-24 md:pt-48 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-center"> -->
+		<div class=" pt-10 sm:pt-12 md:pt-24 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-start">
 
 			<!--Left Col-->
-			<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+			<div class="flex flex-col w-full xl:w-1/2 justify-center mb-4 lg:items-start overflow-y-hidden">
 				<h1
 					class="slide-in-bottom mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
 					Enabling <span
@@ -317,8 +325,48 @@
 			</div>
 
 			<!--Right Col-->
-			<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-				<img class="w-5/6 hidden sm:block mx-auto lg:mr-0 slide-in-bottom" src="devices.svg">
+			<div class="w-full xl:w-1/2 pb-4 overflow-y-hidden">
+				<!-- <img class="w-5/6 hidden sm:block mx-auto lg:mr-0 slide-in-bottom" src="devices.svg"> -->
+				
+				<div>
+					<div class="bg-white rounded-3xl p-6 bg-opacity-60">
+						<h1
+							class="text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+							EnHands presents: 
+						<a href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">
+						<img src="Hands Forum Logo.svg"
+						alt="HANDSFORUM" class="inline h-6 md:h-7 lg:h-9" style="padding-bottom: 0.25rem"/>
+						</a>
+						</h1>
+						<p class="leading-normal text-xl mt-2 mb-2 md:text-left">
+							Save the date for our upcoming event!
+						</p>
+						<div class="leading-normal text-base md:text-2xl mb-2 font-bold text-center w-full">
+							HANDSFORUM – Prosthetics in Developed Nations vs. Low-Income
+							Countries <br>
+							Wednesday, October 25th, 6pm
+						</div>
+						<p class="leading-normal text-base md:text-xl mb-2 md:text-left">
+							You can look forward to talks by several experts comparing high-end and low-cost prostheses. Get all infos
+							and you free ticket 
+						<a class="text-blue-700"
+							href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">on
+							<span>
+							Eventbrite 
+							<!-- <svg aria-hidden="true" class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg> -->
+						</span>
+						</a>
+						.
+						</p>
+					</div>
+				</div>
+				
+				<img class="w-5/6 hidden sm:block mx-auto lg:mr-0 slide-in-bottom" src="devices2.svg">
 			</div>
 		</div>
 
