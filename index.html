@@ -33,16 +33,16 @@
 		 * ---------------------------------------------- */
 
 	
-		
-
+		 
 
 		 .carousel {
 			display: inline-flex;
 			overflow-x: scroll;
+			-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS Safari */
 			scroll-snap-type: x mandatory;
 			scroll-behavior: smooth;
 			-ms-overflow-style: none;
-			scrollbar-width: none}
+			scrollbar-width: none;}
 		.carousel-vertical {
 			flex-direction: column;
 			overflow-y: scroll;
@@ -51,14 +51,36 @@
 			box-sizing: content-box;
 			display: flex;
 			flex: none;
-			scroll-snap-align: start}
+			width: calc(100vw - 32px);
+			max-width: max-content;
+			scroll-snap-align: start;
+		}
+		.cardMV {
+			background-color: #f1f2ea;
+			
+		}	
+
+		.modelviewer{
+			background-color: white ;
+
+		}
+		
+		@media (min-width:  576px) {
+			.carousel-item   {
+				width:80vw;
+			}
+		}
+
+
 		.carousel-center .carousel-item {
 			scroll-snap-align: center}
 		.carousel-end .carousel-item {
 			scroll-snap-align: end}
 		.carousel::-webkit-scrollbar {
     		display: auto;
-			height: 0.5rem;}
+			height: 0.5rem;
+			transform: translateY(-10rem);
+		}
 
 
 
@@ -338,9 +360,7 @@
 		</div>
 
 		<!--Main-->
-		<!-- With event announcement: items-start and less padding (without: items-center) -->
-		<!-- <div class=" pt-10 sm:pt-24 md:pt-48 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-center"> -->
-		<div class="pb-8 pt-10 sm:pt-12 md:pt-24 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-start">
+		<div class=" pt-10 pb-10 sm:pt-24 md:pt-48 sm:px-6 mx-10 flex flex-wrap flex-col md:flex-row items-center">
 
 			<!--Left Col-->
 			<div class="flex flex-col w-full xl:w-1/2 justify-center mb-4 lg:items-start px-2 overflow-y-hidden">
@@ -465,7 +485,7 @@
 
 		<!--About Us-->
 		<div
-			class="bg-white w-full p-12 sm:rounded-3xl sm:max-w-2xl mx-auto py-42 grid items-center gap-y-16 gap-x-8 sm:px-8 sm:py-12 lg:max-w-7xl lg:px-12 lg:grid-cols-2">
+			class="bg-white w-full px-8 py-12 sm:rounded-3xl sm:max-w-2xl mx-auto pt-24 grid items-center gap-y-16 gap-x-8 sm:px-8 sm:py-12 lg:max-w-7xl lg:px-12 lg:grid-cols-2">
 			 
 			<div class="">
 				<h2
@@ -505,17 +525,33 @@
 
 		
 
-		<div class=" bg-white grid w-full sm:px-8 py-12 lg:py-24 lg:max-w-full">
-			<div class="py-1 px-8 select-none flex">
+		<div id="scroll-container" class="grid w-full sm:px-8 py-12 lg:py-24 lg:max-w-full">
+			<div class="hidden py-1 px-8 select-none">
 				<a href="#P1" class="py-2 px-4 shadow-md no-underline rounded-full bg-blue text-black font-sans font-semibold text-sm border-blue btn-primary hover:text-gray-300 hover:bg-blue-light focus:outline-none active:shadow-none mr-2">V1 Prototype</a>
 				<a href="#P2" class="py-2 px-4 shadow-md no-underline rounded-full bg-orange text-black font-sans font-semibold text-sm border-orange btn-primary hover:text-gray-300 hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Cosmetic Hand</a>
 			</div>
-		<div class="carousel scrollable-div rounded width_overflow">
-			<div id="P1" class="carousel-item">
-				<div class="bg-white">
+			<div class="pt-2 pb-1 px-8 w-fit h-12 flex">
+				<svg viewBox="0 0 594 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="semibold" letter-spacing="0em"><tspan x="17" y="27.3182">Scroll for more</tspan></text>
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+					<path class="arrow" d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z" fill="#0065BD" transform="translate(0 2)" pointer-events="all" onclick="location.href='#P2'"/>
+					<path class="arrow" d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"  fill="#BFBFBF" pointer-events="all" onclick="location.href='#P1'"/>
+					<mask class="mask1" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5" width="200" height="32">
+					<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB"/>
+					</mask>
+					<g mask="url(#mask0_3_16)">
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+					</g>
+				</svg>
+					
+			</div>
+			
+		<div class="carousel scrollable-div rounded width_overflow ">
+			<div id="P1" class="carousel-item px-4 py-6">
+				<div class="cardMV rounded-xl">
 					<div
-						class="max-w-sm mx-auto px-8 py-5 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-2 xl:max-w-7xl ">
-						<div>
+						class="max-w-sm mx-auto px-4 py-5 grid sm:px-8 items-center grid-cols-1 gap-y-8 gap-x-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl ">
+						<div class="lg:col-span-2" >
 							<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
 								V1 Prototype - Technical Specifications </h2>
 							<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand that is the
@@ -525,7 +561,7 @@
 								these are the ”pinch grasp” and the ”power grasp”, since they enable a person to do most of
 								their everyday tasks such as grabbing tools, cooking or housekeeping tasks.</p>
 		
-							<dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+							<dl class="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 lg:gap-x-8">
 								<div class="border-t border-gray-200 pt-4">
 									<dt class="font-medium text-gray-900">Origin</dt>
 									<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by the <a
@@ -560,8 +596,8 @@
 		
 		
 		
-						<model-viewer class="bg-gray-200 rounded-lg" src="Prototype_V1_final.glb" ar
-							ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster_P1.webp" shadow-intensity="1">
+						<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
+							ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls poster="poster_P1.webp" shadow-intensity="1">
 							<button class="Hotspot" slot="hotspot-1"
 								data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
 								data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
@@ -597,21 +633,19 @@
 					</div>
 				</div>
 			</div> 
-			<div id="P2" class="carousel-item">
-				<div class="bg-white">
+			<!--<div id="P1" class="py-80 carousel-item">
+				<img class="block max-w-xs max-h-10" src="arrow-right.jpg"></img>
+			</div> -->
+			<div id="P2" class="carousel-item px-4 py-6">
+				<div class="cardMV rounded-xl">
 					<div
-						class="max-w-sm mx-auto py-5 px-8 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-2 xl:max-w-7xl">
-						<div>
+						class="max-w-sm mx-auto px-4 py-5 grid items-center grid-cols-1 gap-y-8 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl">
+						<div class="lg:col-span-2">
 							<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
 								Cosmetic Hand - Technical Specifications </h2>
-							<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand that is the
-								size
-								of the average woman's
-								hand which can perform the most important grasping types. According to research,
-								these are the ”pinch grasp” and the ”power grasp”, since they enable a person to do most of
-								their everyday tasks such as grabbing tools, cooking or housekeeping tasks.</p>
+							<p class="mt-4 text-gray-500">The Cosmetic Hand is designed to offer both a natural appearance and functional capabilities, focusing on aesthetics and comfort. Here are the key features:</p>
 		
-							<dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+							<dl class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
 								<div class="border-t border-gray-200 pt-4">
 									<dt class="font-medium text-gray-900">Origin</dt>
 									<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by the <a
@@ -622,31 +656,25 @@
 		
 								<div class="border-t border-gray-200 pt-4">
 									<dt class="font-medium text-gray-900">Material</dt>
-									<dd class="mt-2 text-sm text-gray-500">We use polylactic acid (PLA) due to its lightweight
-										and stiff material
-										properties. 3D printing is our main manifacturing method during the prototyping phase,
-										however in future designs we
-										want to switch to more reliable methods which are better suited for developing nations.
+									<dd class="mt-2 text-sm text-gray-500">The Cosmetic Hand combines a rigid PLA core for stability with a soft, grippy silicon outer layer molded to resemble a natural hand. The silicon's shore hardness is set at 30 for a balance between realism and comfort.
 									</dd>
 								</div>
 		
 								<div class="border-t border-gray-200 pt-4">
 									<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
-									<dd class="mt-2 text-sm text-gray-500">A 3-DoF thumb, two 1-DoF fingers and a 1-DoF 360°
-										rotational wrist, all of which are actuated passively.</dd>
+									<dd class="mt-2 text-sm text-gray-500">The hand features a Capo spring mechanism for controlled movement, providing one degree of freedom. Additionally, a second-degree of freedom wrist mechanism, similar to the V1 prototype, offers rotation and adaptability for various tasks.</dd>
 								</div>
 		
 								<div class="border-t border-gray-200 pt-4">
 									<dt class="font-medium text-gray-900">Design Philosophy</dt>
-									<dd class="mt-2 text-sm text-gray-500"> Discrete passively actuated grasping positions.
-										Anthropomorphic appeareance. Ridged impact resisted parts. Low maintenance. </dd>
+									<dd class="mt-2 text-sm text-gray-500"> The Cosmetic Hand seamlessly blends aesthetics and functionality. The silicon outer layer's lifelike appearance enhances user confidence, while its comfortable grip makes daily activities easy. The adjustable wrist mechanism adds versatility to suit different situations. </dd>
 								</div>
 							</dl>
 						</div>
 		
 		
 		
-						<model-viewer class="bg-gray-200 rounded-lg" src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp" shadow-intensity="1" field-of-view="30deg">
+						<model-viewer class="modelviewer justify-end rounded-lg model" disable-zoom src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp" shadow-intensity="1" field-of-view="30deg">
 							<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m" data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m" data-visibility-attribute="visible">
 								<div class="HotspotAnnotation">Guitar capo used as a spring</div>
 							</button><button class="Hotspot" slot="hotspot-3" data-position="0.009388101366336332m 0.11980100314952985m 0.049949023917919035m" data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m" data-visibility-attribute="visible">
@@ -669,7 +697,23 @@
 			</div> 
 			
 		  </div>
-		  	
+		  
+		  <div class="pt-2 pb-1 px-8 w-fit h-12 flex justify-end ">
+			<svg viewBox="0 0 594 44" fill="none" >
+				<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="semibold" letter-spacing="0em"><tspan x="17" y="27.3182">Scroll for more</tspan></text>
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+					<path d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z" fill="#0065BD" transform="translate(0 2)" onclick="location.href='#P2'"/>
+					<path d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"  fill="#BFBFBF"  onclick="location.href='#P1'"/>
+					<mask class="mask2" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5" width="200" height="32">
+					<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB"/>
+					</mask>
+					<g mask="url(#mask0_3_16)">
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+					</g>
+			</svg>
+		
+			
+		</div>
 		  </div>
 
 		<!--Blog-->
@@ -771,6 +815,7 @@
 
 	<script src="a_mod.js"></script>
 	<script src="script.js"></script>
+	<script src="horizonalScroll.js"></script>
 	<script src="randomCards.js"> </script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
