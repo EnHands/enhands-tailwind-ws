@@ -21,11 +21,11 @@
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0024.JPG"
+                <a href="blog/handsforum/images/DSC01282.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0024.JPG" />
+                    src="blog/handsforum/images/DSC01282.JPG" />
                 </a>
               </div>
             </div>
