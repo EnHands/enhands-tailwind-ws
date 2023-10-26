@@ -11,31 +11,31 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0016.jpg"
+                <a href="blog/handsforum/images/DSC_0016.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0016.jpg" />
+                    src="blog/handsforum/images/DSC_0016.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0024.jpg"
+                <a href="blog/handsforum/images/DSC_0024.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0024.jpg" />
+                    src="blog/handsforum/images/DSC_0024.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0035.jpg"
+                <a href="blog/handsforum/images/DSC_0035.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0035.jpg" />
+                    src="blog/handsforum/images/DSC_0035.JPG" />
                 </a>
               </div>
             </div>
@@ -43,51 +43,51 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0051.jpg"
+                <a href="blog/handsforum/images/DSC_0051.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0051.jpg" />
+                    src="blog/handsforum/images/DSC_0051.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0061.jpg"
+                <a href="blog/handsforum/images/DSC_0061.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0061.jpg" />
+                    src="blog/handsforum/images/DSC_0061.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0107.jpg"
+                <a href="blog/handsforum/images/DSC_0107.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0107.jpg" />
+                    src="blog/handsforum/images/DSC_0107.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0134.jpg"
+                <a href="blog/handsforum/images/DSC_0134.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0134.jpg" />
+                    src="blog/handsforum/images/DSC_0134.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0147.jpg"
+                <a href="blog/handsforum/images/DSC_0147.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0147.jpg" />
+                    src="blog/handsforum/images/DSC_0147.JPG" />
                 </a>
               </div>
             </div>
@@ -96,31 +96,31 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01284.jpg"
+                <a href="blog/handsforum/images/DSC01284.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01284.jpg" />
+                    src="blog/handsforum/images/DSC01284.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01287.jpg"
+                <a href="blog/handsforum/images/DSC01287.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01287.jpg" />
+                    src="blog/handsforum/images/DSC01287.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0020.jpg"
+                <a href="blog/handsforum/images/DSC_0020.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0020.jpg" />
+                    src="blog/handsforum/images/DSC_0020.JPG" />
                 </a>
               </div>
             </div>
@@ -128,51 +128,51 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01308.jpg"
+                <a href="blog/handsforum/images/DSC01308.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01308.jpg" />
+                    src="blog/handsforum/images/DSC01308.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0175.jpg"
+                <a href="blog/handsforum/images/DSC_0175.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0175.jpg" />
+                    src="blog/handsforum/images/DSC_0175.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01321.jpg"
+                <a href="blog/handsforum/images/DSC01321.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01321.jpg" />
+                    src="blog/handsforum/images/DSC01321.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01326.jpg"
+                <a href="blog/handsforum/images/DSC01326.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01326.jpg" />
+                    src="blog/handsforum/images/DSC01326.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0145.jpg"
+                <a href="blog/handsforum/images/DSC_0145.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0145.jpg" />
+                    src="blog/handsforum/images/DSC_0145.JPG" />
                 </a>
               </div>
             </div>
@@ -183,51 +183,51 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01315.jpg"
+                <a href="blog/handsforum/images/DSC01315.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01315.jpg" />
+                    src="blog/handsforum/images/DSC01315.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0183.jpg"
+                <a href="blog/handsforum/images/DSC_0183.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0183.jpg" />
+                    src="blog/handsforum/images/DSC_0183.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0188.jpg"
+                <a href="blog/handsforum/images/DSC_0188.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0188.jpg" />
+                    src="blog/handsforum/images/DSC_0188.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0192.jpg"
+                <a href="blog/handsforum/images/DSC_0192.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0192.jpg" />
+                    src="blog/handsforum/images/DSC_0192.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC_0195.jpg"
+                <a href="blog/handsforum/images/DSC_0195.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC_0195.jpg" />
+                    src="blog/handsforum/images/DSC_0195.JPG" />
                 </a>
               </div>
             </div>
@@ -235,32 +235,32 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01266.jpg"
+                <a href="blog/handsforum/images/DSC01266.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01266.jpg" />
+                    src="blog/handsforum/images/DSC01266.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01312.jpg"
+                <a href="blog/handsforum/images/DSC01312.JPG"
                   data-fancybox="gallery">
                   <img 
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01312.jpg" />
+                    src="blog/handsforum/images/DSC01312.JPG" />
                 </a>
               </div>
             </div>
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="blog/handsforum/images/DSC01271.jpg"
+                <a href="blog/handsforum/images/DSC01271.JPG"
                   data-fancybox="gallery">
                   <img
                     
                     class="block h-full w-full object-cover object-center  animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="blog/handsforum/images/DSC01271.jpg" />
+                    src="blog/handsforum/images/DSC01271.JPG" />
                 </a>
               </div>
             </div>
