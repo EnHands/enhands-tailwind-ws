@@ -54,5 +54,14 @@
         "picture": "blog/2023-09-11-ceti-funding.png",
         "date": "September 11, 2023",
         "title": "CeTI boosts EnHands with 2,500€ grant"
+    },
+    {
+        "name": "2023-10-25-handsforum",
+        "author": "Leon Kiesgen",
+        "date": "Oktober 26, 2023",
+        "title": "Handsforum",
+        "picture": "blog/2023-10-25-handsforum.png"
+
+
     }
 ]
