@@ -302,4 +302,25 @@ We're also happy to make available the slides of [Viquar Qurashi's talk](blog/ha
     </div>
   </section>
 </div>
-    
+
+<!-- Script for the LightBox -->
+<script>
+Fancybox.bind("[data-fancybox]", {});
+</script>
+<script src="blog/handsforum/fade_in.js"></script>
+<script src="blog/handsforum/menu.js"></script>
+<link rel="stylesheet" href="blog/handsforum/output.css" />
+<link rel="stylesheet" href="styles.css" />
+<!-- Alpine.js -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Start - Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+<!-- End - Fonts -->
+<!-- Start - Fancybox Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!-- End - Fancybox Scripts -->
