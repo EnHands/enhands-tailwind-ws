@@ -27,6 +27,14 @@ Dr. Anand Suresh from the Laboratory of Product Development and Lightweight Desi
 The evening continued with a round table discussion, featuring Adnan Jukic as a special guest, who shared his experience growing up with hand prostheses from a very young age. Experts discussed topics from the engineering point of view: how to design a prosthesis for low-income countries and what it means to live with a prosthesis. One common agreement was that the prosthesis needs to be comfortable for the patient, cannot cause swelling, and should seamlessly blend with the body without causing any discomfort. If the technologically most advanced prosthesis is not comfortable to wear, the patient will not wear it. Therefore, when developing a prosthesis, manufacturers should always keep patient needs in mind and strive to address them in the best way possible.
 
 
+In case you missed the event, you can watch our recording on YouTube:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xiBbH-Px13Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br/>
+
+We're also happy to make available the slides of [Viquar Qurashi's talk](blog/handsforum/slides/Handsforum%20Slides%20Viquar%20Qurashi.pdf), [Natalie Vanicek's talk](blog/handsforum/slides/Handsforum%20Slides%20Natalie%20Vanicek.pdf), [Utku Culha's talk](blog/handsforum/slides/Handsforum%20Slides%20Utku%20Culha.pdf), and [Anand Suresh's talk](blog/handsforum/slides/Handsforum%20Slides%20Anand%20Suresh.pdf).
+
+
   <!-- Slideshow starts here -->
 <div class="container mx-auto">
   <h1 class="text-4xl pt-10 pb-8 font-bold">Impressions from the HANDSFORUM</h1>
