@@ -58,5 +58,10 @@
         "name": "Jana Koss, M.Sc.",
         "img": "images/people/jana-koss.png",
         "job": "Product Marketing Manager, d.velop AG"
+    },
+    {
+        "name": "Eliyas Conford",
+        "img": "https://github.com/EnHands/enhands-tailwind-ws/assets/151552920/02dae250-8352-484d-bfde-8d37e4c56436",
+        "job": "Studying B.Sc. Engineering Science"
     }
 ]
