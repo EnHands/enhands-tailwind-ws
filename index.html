@@ -20,10 +20,8 @@
 	<!--Replace with your tailwind.css once created-->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-	<script
-	src="https://code.jquery.com/jquery-2.2.4.min.js"
-	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 	<!-- Animation CSS-->
 	<style>
@@ -32,21 +30,26 @@
 		 * w: http://animista.net, t: @cssanimista
 		 * ---------------------------------------------- */
 
-	
-		 
 
-		 .carousel {
+
+
+		.carousel {
 			display: inline-flex;
 			overflow-x: scroll;
-			-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS Safari */
+			-webkit-overflow-scrolling: touch;
+			/* Enable smooth scrolling on iOS Safari */
 			scroll-snap-type: x mandatory;
 			scroll-behavior: smooth;
 			-ms-overflow-style: none;
-			scrollbar-width: none;}
+			scrollbar-width: none;
+		}
+
 		.carousel-vertical {
 			flex-direction: column;
 			overflow-y: scroll;
-			scroll-snap-type: y mandatory}
+			scroll-snap-type: y mandatory
+		}
+
 		.carousel-item {
 			box-sizing: content-box;
 			display: flex;
@@ -55,47 +58,53 @@
 			max-width: max-content;
 			scroll-snap-align: start;
 		}
+
 		.cardMV {
 			background-color: #f1f2ea;
-			
-		}	
-
-		.modelviewer{
-			background-color: white ;
 
 		}
-		
-		@media (min-width:  576px) {
-			.carousel-item   {
-				width:80vw;
+
+		.modelviewer {
+			background-color: white;
+
+		}
+
+		@media (min-width: 576px) {
+			.carousel-item {
+				width: 80vw;
 			}
 		}
 
 
 		.carousel-center .carousel-item {
-			scroll-snap-align: center}
+			scroll-snap-align: center
+		}
+
 		.carousel-end .carousel-item {
-			scroll-snap-align: end}
+			scroll-snap-align: end
+		}
+
 		.carousel::-webkit-scrollbar {
-    		display: auto;
-			height: 0.5rem;}
+			display: auto;
+			height: 0.5rem;
+		}
 
 
 
 		/* Track */
 		.carousel::-webkit-scrollbar-track {
-		background: #f1f1f1;
+			background: #f1f1f1;
 		}
 
 		/* Handle */
 		.carousel::-webkit-scrollbar-thumb {
-		background: #afafaf;
-		border-radius: 0.5rem;
+			background: #afafaf;
+			border-radius: 0.5rem;
 		}
 
 		/* Handle on hover */
 		.carousel::-webkit-scrollbar-thumb:hover {
-		background: #6b6b6b;
+			background: #6b6b6b;
 		}
 
 		.slide-in-bottom {
@@ -128,15 +137,16 @@
 			font-size: 1.35rem;
 			line-height: 1.875rem;
 		}
-		.event{
+
+		.event {
 			transition: all 0.3s;
 
 		}
 
-		.event:hover{
-		box-shadow: 0px 8px 4px rgba(0,0,0,0.2);
-		z-index: 10;
-		
+		.event:hover {
+			box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
+			z-index: 10;
+
 		}
 
 
@@ -321,7 +331,8 @@
 </head>
 
 
-<body class="overflow-x-hidden leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="overflow-x-hidden leading-normal tracking-normal text-gray-900"
+	style="font-family: 'Source Sans Pro', sans-serif;">
 	<div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('images/hand.jpg');">
 		<!--Nav-->
 		<div class="w-auto mx-10 p-6">
@@ -403,93 +414,110 @@
 			</div>
 
 			<!--Right Col-->
-			
+
 		</div>
 
 		<!--About Us-->
-		<div
-			class="w-full mx-auto pt-24 items-center sm:py-12 px-8 lg:px-36 sm:px-20">
-			
-		<div class="hidden p-2 fade-in pb-3 flex-col grid-cols-1 w-full lg:max-w-7xl overflow-y-hidden mx-auto "> <!-- add this lg:flex instead of hidden to show upcomming events-->
-			<div class="flex space-x-2 pb-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-				</svg>
-				<label for="price" class="block text-lg font-medium leading-6 text-gray-900">Upcoming Event:</label>
-			</div>
-		<div class="lg:flex rounded-xl w-full overflow-y-hidden lg:max-w-full shadow-md event"> 
-			<!-- <img class="w-5/6 hidden sm:block mx-auto lg:mr-0 slide-in-bottom" src="devices.svg"> -->
-			
-			<div class="lg:hidden h-32 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden" style="background-image: url('images/Handsforum/HandsforumHorizintal.png')" title="">
-			</div>
-			<div class="hidden lg:flex lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden" style="background-image: url('images/Handsforum/HandsforumVertical.png')" title="">
-			</div>
-			<div>
-				<div class="bg-white pt-6 px-6 pb-3 ">
-					
+		<div class="w-full mx-auto pt-24 items-center sm:py-12 px-8 lg:px-36 sm:px-20">
 
-					<a href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">
-					<img class="pb-2" src="Hands Forum Logo.svg"
-					alt="HANDSFORUM" class="inline h-6 md:h-7 lg:h-9" style="padding-bottom: 0.25rem"/>
-					</a>
-					<div class="flex items-center gap-x-4 text-base">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-						  </svg>							  
-						<time datetime="2020-03-16" class="text-gray-500">Okt 25, 2023</time>
-						<div class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200">18:00</div>
-					</div>
+			<!--
+			<div class="hidden p-2 fade-in pb-3 flex-col grid-cols-1 w-full lg:max-w-7xl overflow-y-hidden mx-auto ">
+				<!- - add this lg:flex instead of hidden to show upcomming events - ->
+				<div class="flex space-x-2 pb-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+					</svg>
+					<label for="price" class="block text-lg font-medium leading-6 text-gray-900">Upcoming Event:</label>
+				</div>
+				<div class="lg:flex rounded-xl w-full overflow-y-hidden lg:max-w-full shadow-md event">
+					<!- - <img class="w-5/6 hidden sm:block mx-auto lg:mr-0 slide-in-bottom" src="devices.svg"> - ->
 
-					<div class="leading-normal text-base md:text-2xl mb-2 font-bold w-full">
-						Prosthetics in Developed Nations vs. Low-Income
-						Countries
+					<div class="lg:hidden h-32 lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden"
+						style="background-image: url('images/Handsforum/HandsforumHorizintal.png')" title="">
 					</div>
-					<p class="leading-normal text-base md:text-xl mb-2">
-						You can look forward to talks by several experts comparing high-end and low-cost prostheses. Get all infos
-						and your free ticket 
-					<a class="text-blue-700"
-						href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">on
-						<span>
-						Eventbrite
-					</span>
-					</a>
-					.
-					</p>
-					<div class="grid gap-y-2 sm:flex justify-between flex-shrink-0 grid-cols-1">
-						<div class="flex-auto sm:-space-x-3  flex-shrink-0 lg:-space-x-2">
-							<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="images/Handsforum/Speaker1.jpg" alt="">
-							<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="images/Handsforum/Speaker2.png" alt="">
-							<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="images/Handsforum/Speaker3.jpg" alt="">
-							<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="images/Handsforum/Speaker4.jpg" alt="">
-							<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="images/Handsforum/Speaker5.jpg" alt="">
+					<div class="hidden lg:flex lg:h-auto lg:w-48 flex-none bg-cover text-center overflow-hidden"
+						style="background-image: url('images/Handsforum/HandsforumVertical.png')" title="">
+					</div>
+					<div>
+						<div class="bg-white pt-6 px-6 pb-3 ">
+
+
+							<a
+								href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">
+								<img class="pb-2" src="Hands Forum Logo.svg" alt="HANDSFORUM"
+									class="inline h-6 md:h-7 lg:h-9" style="padding-bottom: 0.25rem" />
+							</a>
+							<div class="flex items-center gap-x-4 text-base">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+									stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+								<time datetime="2020-03-16" class="text-gray-500">Okt 25, 2023</time>
+								<div
+									class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-200">
+									18:00</div>
+							</div>
+
+							<div class="leading-normal text-base md:text-2xl mb-2 font-bold w-full">
+								Prosthetics in Developed Nations vs. Low-Income
+								Countries
+							</div>
+							<p class="leading-normal text-base md:text-xl mb-2">
+								You can look forward to talks by several experts comparing high-end and low-cost
+								prostheses. Get all
+								infos
+								and your free ticket
+								<a class="text-blue-700"
+									href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697">on
+									<span>
+										Eventbrite
+									</span>
+								</a>
+								.
+							</p>
+							<div class="grid gap-y-2 sm:flex justify-between flex-shrink-0 grid-cols-1">
+								<div class="flex-auto sm:-space-x-3  flex-shrink-0 lg:-space-x-2">
+									<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+										src="images/Handsforum/Speaker1.jpg" alt="">
+									<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+										src="images/Handsforum/Speaker2.png" alt="">
+									<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+										src="images/Handsforum/Speaker3.jpg" alt="">
+									<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+										src="images/Handsforum/Speaker4.jpg" alt="">
+									<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+										src="images/Handsforum/Speaker5.jpg" alt="">
+								</div>
+								<div class="flex w-full"></div>
+								<a href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697"
+									type="button" class="flex text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 sm:px-5 sm:py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800
+						 lg:mt-0 lg:ml-4 lg:w-1/2">
+									<span class="flex justify-between w-full whitespace-nowrap">
+										Register now!
+										<svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor"
+											viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+												clip-rule="evenodd"></path>
+										</svg>
+									</span>
+								</a>
+							</div>
 						</div>
-					<div class="flex w-full"></div>
-					<a href="https://www.eventbrite.de/e/handsforum-prosthetics-in-developed-nations-vs-low-income-countries-tickets-725561071697"
-						type="button" class="flex text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 sm:px-5 sm:py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800
-				 lg:mt-0 lg:ml-4 lg:w-1/2">
-					<span class="flex justify-between w-full whitespace-nowrap">
-						Register now!
-						<svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd"
-								d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-								clip-rule="evenodd"></path>
-						</svg>
-					</span>
-					</a>
-				</div>
-				</div>
-			</div>
-			
-			
+					</div>
 
-		</div>
-		</div>
+
+
+				</div>
+			</div> -->
 		</div>
 
 		<div
 			class="bg-white w-full px-8 py-12 sm:rounded-3xl sm:max-w-2xl mx-auto pt-24 grid items-center gap-y-16 gap-x-8 sm:px-8 sm:py-12 lg:max-w-7xl lg:px-12 lg:grid-cols-2">
-			
+
 
 
 
@@ -529,102 +557,217 @@
 			</div>
 		</div>
 
-		
+
 
 		<div id="scroll-container" class="grid w-full sm:px-8 py-12 lg:py-24 lg:max-w-full">
 			<div class="hidden py-1 px-8 select-none">
-				<a href="#P1" class="py-2 px-4 shadow-md no-underline rounded-full bg-blue text-black font-sans font-semibold text-sm border-blue btn-primary hover:text-gray-300 hover:bg-blue-light focus:outline-none active:shadow-none mr-2">V1 Prototype</a>
-				<a href="#P2" class="py-2 px-4 shadow-md no-underline rounded-full bg-orange text-black font-sans font-semibold text-sm border-orange btn-primary hover:text-gray-300 hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Cosmetic Hand</a>
+				<a href="#P1"
+					class="py-2 px-4 shadow-md no-underline rounded-full bg-blue text-black font-sans font-semibold text-sm border-blue btn-primary hover:text-gray-300 hover:bg-blue-light focus:outline-none active:shadow-none mr-2">V1
+					Prototype</a>
+				<a href="#P2"
+					class="py-2 px-4 shadow-md no-underline rounded-full bg-orange text-black font-sans font-semibold text-sm border-orange btn-primary hover:text-gray-300 hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Cosmetic
+					Hand</a>
 			</div>
 			<div class="pt-2 pb-1 px-8 w-fit h-12 flex">
 				<svg viewBox="0 0 594 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="semibold" letter-spacing="0em"><tspan x="17" y="27.3182">Scroll for more</tspan></text>
-					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
-					<path class="arrow" d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z" fill="#0065BD" transform="translate(0 2)" pointer-events="all" onclick="location.href='#P2'"/>
-					<path class="arrow" d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"  fill="#BFBFBF" pointer-events="all" onclick="location.href='#P1'"/>
-					<mask class="mask1" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5" width="200" height="32">
-					<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB"/>
+					<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre"
+						font-size="20" font-weight="semibold" letter-spacing="0em">
+						<tspan x="17" y="27.3182">Scroll for more</tspan>
+					</text>
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round"
+						stroke-dasharray="3 10" />
+					<path class="arrow"
+						d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z"
+						fill="#0065BD" transform="translate(0 2)" pointer-events="all" onclick="location.href='#P2'" />
+					<path class="arrow"
+						d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"
+						fill="#BFBFBF" pointer-events="all" onclick="location.href='#P1'" />
+					<mask class="mask1" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5"
+						width="200" height="32">
+						<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB" />
 					</mask>
 					<g mask="url(#mask0_3_16)">
-					<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+						<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round"
+							stroke-dasharray="3 10" />
 					</g>
 				</svg>
-					
+
 			</div>
-			
-		<div class="carousel scrollable-div rounded width_overflow ">
-			<div id="P1" class="carousel-item px-4 py-6">
-				<div class="cardMV rounded-xl">
-					<div
-						class="max-w-sm mx-auto px-4 py-5 grid sm:px-8 items-center grid-cols-1 gap-y-8 gap-x-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl ">
-						<div class="lg:col-span-2" >
-							<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-								V1 Prototype - Technical Specifications </h2>
-							<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand that is the
-								size
-								of the average woman's
-								hand which can perform the most important grasping types. According to research,
-								these are the ”pinch grasp” and the ”power grasp”, since they enable a person to do most of
-								their everyday tasks such as grabbing tools, cooking or housekeeping tasks.</p>
-		
-							<dl class="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 lg:gap-x-8">
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Origin</dt>
-									<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by the <a
-											href="https://ln4handproject.org/" class="underline hover:text-indigo-800 "> LN4
-										</a>
-										hand, but with a deeper focus on anthropomorphic design and patient acceptance.</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Material</dt>
-									<dd class="mt-2 text-sm text-gray-500">We use polylactic acid (PLA) due to its lightweight
-										and stiff material
-										properties. 3D printing is our main manifacturing method during the prototyping phase,
-										however in future designs we
-										want to switch to more reliable methods which are better suited for developing nations.
-									</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
-									<dd class="mt-2 text-sm text-gray-500">A 3-DoF thumb, two 1-DoF fingers and a 1-DoF 360°
-										rotational wrist, all of which are actuated passively.</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Design Philosophy</dt>
-									<dd class="mt-2 text-sm text-gray-500"> Discrete passively actuated grasping positions.
-										Anthropomorphic appeareance. Ridged impact resisted parts. Low maintenance. </dd>
-								</div>
-							</dl>
+
+			<div class="carousel scrollable-div rounded width_overflow ">
+				<div id="P1" class="carousel-item px-4 py-6">
+					<div class="cardMV rounded-xl">
+						<div
+							class="max-w-sm mx-auto px-4 py-5 grid sm:px-8 items-center grid-cols-1 gap-y-8 gap-x-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl ">
+							<div class="lg:col-span-2">
+								<h2
+									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
+									V1 Prototype - Technical Specifications </h2>
+								<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand
+									that is the
+									size
+									of the average woman's
+									hand which can perform the most important grasping types. According to research,
+									these are the ”pinch grasp” and the ”power grasp”, since they enable a person to do
+									most of
+									their everyday tasks such as grabbing tools, cooking or housekeeping tasks.</p>
+
+								<dl class="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 lg:gap-x-8">
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Origin</dt>
+										<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by
+											the <a href="https://ln4handproject.org/"
+												class="underline hover:text-indigo-800 "> LN4
+											</a>
+											hand, but with a deeper focus on anthropomorphic design and patient
+											acceptance.</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Material</dt>
+										<dd class="mt-2 text-sm text-gray-500">We use polylactic acid (PLA) due to its
+											lightweight
+											and stiff material
+											properties. 3D printing is our main manifacturing method during the
+											prototyping phase,
+											however in future designs we
+											want to switch to more reliable methods which are better suited for
+											developing nations.
+										</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
+										<dd class="mt-2 text-sm text-gray-500">A 3-DoF thumb, two 1-DoF fingers and a
+											1-DoF 360°
+											rotational wrist, all of which are actuated passively.</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Design Philosophy</dt>
+										<dd class="mt-2 text-sm text-gray-500"> Discrete passively actuated grasping
+											positions.
+											Anthropomorphic appeareance. Ridged impact resisted parts. Low maintenance.
+										</dd>
+									</div>
+								</dl>
+							</div>
+
+
+
+							<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
+								ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls
+								poster="poster_P1.webp" shadow-intensity="1">
+								<button class="Hotspot" slot="hotspot-1"
+									data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
+									data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Leather Stump Interface</div>
+								</button><button class="Hotspot" slot="hotspot-5"
+									data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m"
+									data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Passive Fingers </div>
+								</button><button class="Hotspot" slot="hotspot-7"
+									data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m"
+									data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Adjustable Thumb </div>
+								</button>
+								<button class="Hotspot" slot="hotspot-8"
+									data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m"
+									data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Rubber Ring</div>
+									<div class="progress-bar hide" slot="progress-bar">
+										<div class="update-bar"></div>
+									</div>
+									<button slot="ar-button" id="ar-button">
+										View in your space
+									</button>
+									<div id="ar-prompt">
+										<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+									</div>
+							</model-viewer>
+
 						</div>
-		
-		
-		
-						<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
-							ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls poster="poster_P1.webp" shadow-intensity="1">
-							<button class="Hotspot" slot="hotspot-1"
-								data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
-								data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Leather Stump Interface</div>
-							</button><button class="Hotspot" slot="hotspot-5"
-								data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m"
-								data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Passive Fingers </div>
-							</button><button class="Hotspot" slot="hotspot-7"
-								data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m"
-								data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Adjustable Thumb </div>
-							</button>
-							<button class="Hotspot" slot="hotspot-8"
-								data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m"
-								data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m"
-								data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Rubber Ring</div>
+					</div>
+				</div>
+				<!--<div id="P1" class="py-80 carousel-item">
+				<img class="block max-w-xs max-h-10" src="arrow-right.jpg"></img>
+			</div> -->
+				<div id="P2" class="carousel-item px-4 py-6">
+					<div class="cardMV rounded-xl">
+						<div
+							class="max-w-sm mx-auto px-4 py-5 grid items-center grid-cols-1 gap-y-8 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl">
+							<div class="lg:col-span-2">
+								<h2
+									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
+									Cosmetic Hand - Technical Specifications </h2>
+								<p class="mt-4 text-gray-500">The Cosmetic Hand is designed to offer both a natural
+									appearance and functional capabilities, focusing on aesthetics and comfort. Here are
+									the key features:</p>
+
+								<dl
+									class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Origin</dt>
+										<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by
+											the <a href="https://ln4handproject.org/"
+												class="underline hover:text-indigo-800 "> LN4
+											</a>
+											hand, but with a deeper focus on anthropomorphic design and patient
+											acceptance.</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Material</dt>
+										<dd class="mt-2 text-sm text-gray-500">The Cosmetic Hand combines a rigid PLA
+											core for stability with a soft, grippy silicon outer layer molded to
+											resemble a natural hand. The silicon's shore hardness is set at 30 for a
+											balance between realism and comfort.
+										</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
+										<dd class="mt-2 text-sm text-gray-500">The hand features a Capo spring mechanism
+											for controlled movement, providing one degree of freedom. Additionally, a
+											second-degree of freedom wrist mechanism, similar to the V1 prototype,
+											offers rotation and adaptability for various tasks.</dd>
+									</div>
+
+									<div class="border-t border-gray-200 pt-4">
+										<dt class="font-medium text-gray-900">Design Philosophy</dt>
+										<dd class="mt-2 text-sm text-gray-500"> The Cosmetic Hand seamlessly blends
+											aesthetics and functionality. The silicon outer layer's lifelike appearance
+											enhances user confidence, while its comfortable grip makes daily activities
+											easy. The adjustable wrist mechanism adds versatility to suit different
+											situations. </dd>
+									</div>
+								</dl>
+							</div>
+
+
+
+							<model-viewer class="modelviewer justify-end rounded-lg model" disable-zoom
+								src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look"
+								camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp"
+								shadow-intensity="1" field-of-view="30deg">
+								<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m"
+									data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Guitar capo used as a spring</div>
+								</button><button class="Hotspot" slot="hotspot-3"
+									data-position="0.009388101366336332m 0.11980100314952985m 0.049949023917919035m"
+									data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Silicon mold</div>
+								</button><button class="Hotspot" slot="hotspot-4" data-position="0.0100m -0.0156m 0.01m"
+									data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Ridgid PLA core</div>
+								</button>
 								<div class="progress-bar hide" slot="progress-bar">
 									<div class="update-bar"></div>
 								</div>
@@ -632,95 +775,42 @@
 									View in your space
 								</button>
 								<div id="ar-prompt">
-									<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+									<img src="ar_hand_prompt.png">
 								</div>
-						</model-viewer>
-		
+							</model-viewer>
+						</div>
 					</div>
 				</div>
-			</div> 
-			<!--<div id="P1" class="py-80 carousel-item">
-				<img class="block max-w-xs max-h-10" src="arrow-right.jpg"></img>
-			</div> -->
-			<div id="P2" class="carousel-item px-4 py-6">
-				<div class="cardMV rounded-xl">
-					<div
-						class="max-w-sm mx-auto px-4 py-5 grid items-center grid-cols-1 gap-y-8 gap-x-8 sm:px-8 sm:py-5 sm:max-w-lg lg:max-w-4xl lg:px-8 lg:grid-cols-3 xl:max-w-7xl">
-						<div class="lg:col-span-2">
-							<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-								Cosmetic Hand - Technical Specifications </h2>
-							<p class="mt-4 text-gray-500">The Cosmetic Hand is designed to offer both a natural appearance and functional capabilities, focusing on aesthetics and comfort. Here are the key features:</p>
-		
-							<dl class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Origin</dt>
-									<dd class="mt-2 text-sm text-gray-500">Parts of the mechanics are inspired by the <a
-											href="https://ln4handproject.org/" class="underline hover:text-indigo-800 "> LN4
-										</a>
-										hand, but with a deeper focus on anthropomorphic design and patient acceptance.</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Material</dt>
-									<dd class="mt-2 text-sm text-gray-500">The Cosmetic Hand combines a rigid PLA core for stability with a soft, grippy silicon outer layer molded to resemble a natural hand. The silicon's shore hardness is set at 30 for a balance between realism and comfort.
-									</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
-									<dd class="mt-2 text-sm text-gray-500">The hand features a Capo spring mechanism for controlled movement, providing one degree of freedom. Additionally, a second-degree of freedom wrist mechanism, similar to the V1 prototype, offers rotation and adaptability for various tasks.</dd>
-								</div>
-		
-								<div class="border-t border-gray-200 pt-4">
-									<dt class="font-medium text-gray-900">Design Philosophy</dt>
-									<dd class="mt-2 text-sm text-gray-500"> The Cosmetic Hand seamlessly blends aesthetics and functionality. The silicon outer layer's lifelike appearance enhances user confidence, while its comfortable grip makes daily activities easy. The adjustable wrist mechanism adds versatility to suit different situations. </dd>
-								</div>
-							</dl>
-						</div>
-		
-		
-		
-						<model-viewer class="modelviewer justify-end rounded-lg model" disable-zoom src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp" shadow-intensity="1" field-of-view="30deg">
-							<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m" data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m" data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Guitar capo used as a spring</div>
-							</button><button class="Hotspot" slot="hotspot-3" data-position="0.009388101366336332m 0.11980100314952985m 0.049949023917919035m" data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m" data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Silicon mold</div>
-							</button><button class="Hotspot" slot="hotspot-4" data-position="0.0100m -0.0156m 0.01m" data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m" data-visibility-attribute="visible">
-								<div class="HotspotAnnotation">Ridgid PLA core</div>
-							</button>
-							<div class="progress-bar hide" slot="progress-bar">
-								<div class="update-bar"></div>
-							</div>
-							<button slot="ar-button" id="ar-button">
-								View in your space
-							</button>
-							<div id="ar-prompt">
-								<img src="ar_hand_prompt.png">
-							</div>
-						  </model-viewer> 
-					</div>	
-				</div>
-			</div> 
-			
-		  </div>
-		  
-		  <div class="pt-2 pb-1 px-8 w-fit h-12 flex justify-end ">
-			<svg viewBox="0 0 594 44" fill="none" >
-				<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre" font-size="20" font-weight="semibold" letter-spacing="0em"><tspan x="17" y="27.3182">Scroll for more</tspan></text>
-					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
-					<path d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z" fill="#0065BD" transform="translate(0 2)" onclick="location.href='#P2'"/>
-					<path d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"  fill="#BFBFBF"  onclick="location.href='#P1'"/>
-					<mask class="mask2" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5" width="200" height="32">
-					<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB"/>
+
+			</div>
+
+			<div class="pt-2 pb-1 px-8 w-fit h-12 flex justify-end ">
+				<svg viewBox="0 0 594 44" fill="none">
+					<text font-size-adjust="inherit" fill="#000000" xml:space="preserve" style="white-space: pre"
+						font-size="20" font-weight="semibold" letter-spacing="0em">
+						<tspan x="17" y="27.3182">Scroll for more</tspan>
+					</text>
+					<line x1="207" y1="21" x2="545" y2="23" stroke="#BFBFBF" stroke-width="6" stroke-linecap="round"
+						stroke-dasharray="3 10" />
+					<path
+						d="M557 18.5C555.619 18.5 554.5 19.6193 554.5 21C554.5 22.3807 555.619 23.5 557 23.5L557 18.5ZM593.768 22.7678C594.744 21.7915 594.744 20.2085 593.768 19.2322L577.858 3.32233C576.882 2.34602 575.299 2.34602 574.322 3.32233C573.346 4.29864 573.346 5.88156 574.322 6.85787L588.464 21L574.322 35.1421C573.346 36.1184 573.346 37.7014 574.322 38.6777C575.299 39.654 576.882 39.654 577.858 38.6777L593.768 22.7678ZM557 23.5L592 23.5L592 18.5L557 18.5L557 23.5Z"
+						fill="#0065BD" transform="translate(0 2)" onclick="location.href='#P2'" />
+					<path
+						d="M196 23.5C197.381 23.5 198.5 22.3807 198.5 21C198.5 19.6193 197.381 18.5 196 18.5L196 23.5ZM159.232 19.2322C158.256 20.2085 158.256 21.7914 159.232 22.7677L175.142 38.6776C176.118 39.6539 177.701 39.6539 178.678 38.6776C179.654 37.7013 179.654 36.1184 178.678 35.1421L164.536 21L178.678 6.85783C179.654 5.88152 179.654 4.29861 178.678 3.3223C177.701 2.34599 176.118 2.34599 175.142 3.3223L159.232 19.2322ZM196 18.5L161 18.5L161 23.5L196 23.5L196 18.5Z"
+						fill="#BFBFBF" onclick="location.href='#P1'" />
+					<mask class="mask2" id="mask0_3_16" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="204" y="5"
+						width="200" height="32">
+						<rect width="344" height="32" transform="matrix(-1 0 0 1 548 5)" fill="#2320BB" />
 					</mask>
 					<g mask="url(#mask0_3_16)">
-					<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round" stroke-dasharray="3 10"/>
+						<line x1="207" y1="21" x2="545" y2="23" stroke="#0065BD" stroke-width="6" stroke-linecap="round"
+							stroke-dasharray="3 10" />
 					</g>
-			</svg>
-		
-			
+				</svg>
+
+
+			</div>
 		</div>
-		  </div>
 
 		<!--Blog-->
 		<!-- <div class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 ">
