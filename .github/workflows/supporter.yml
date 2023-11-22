@@ -42,7 +42,7 @@ jobs:
           git config --global user.email "leon.kiesgen@web.de"
           git branch "${{ env.branchName }}"
           git checkout "${{ env.branchName }}"
-          git add people.json
+          git add supporter.json
           git commit -m "⚙ Added ${{ env.SupporterName }} to the Team [BOT]"
           git clean -fd
           git push --set-upstream origin "${{ env.branchName }}"
