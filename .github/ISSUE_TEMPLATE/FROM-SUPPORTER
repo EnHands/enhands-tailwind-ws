@@ -1,0 +1,38 @@
+name: Add new Supporter
+description: Submit a picture and a discription to be shown on the public website 
+title: "Add Picture 🖼️👋"
+labels: "New-Member"
+assignees:
+  - LeonKie
+body:
+  - type: input
+    id: name
+    attributes:
+      label: '>>Name-Details<<'
+      description: What it you full name?
+    validations:
+      required: true
+  - type: textarea
+    id: add-picture
+    attributes:
+      label: '>>Profile-Picture<<'
+      description: Add a profile picture!
+      placeholder: "Make sure that it is square for ex. 500px x 500px !!"
+    validations:
+      required: true
+  - type: input 
+    id: degree
+    attributes:
+      label: '>>Degree<<'
+      description: What are you studying at the moment?
+      placeholder: "e.g. Studying M.Sc. Robotics, Cognition, Intelligence"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: '>>Consent-Approval<<'
+      description: By submitting this issue, you agree that your details can be shown on the public website (enhands.de)
+      options:
+        - label: I agree
+          required: true
