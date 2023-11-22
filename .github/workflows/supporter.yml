@@ -43,7 +43,7 @@ jobs:
           git branch "${{ env.branchName }}"
           git checkout "${{ env.branchName }}"
           git add supporter.json
-          git commit -m "⚙ Added ${{ env.SupporterName }} to the Team [BOT]"
+          git commit -m "⚙ Added ${{ env.SupporterName }} to the Support-Team [BOT]"
           git clean -fd
           git push --set-upstream origin "${{ env.branchName }}"
           git push --force
