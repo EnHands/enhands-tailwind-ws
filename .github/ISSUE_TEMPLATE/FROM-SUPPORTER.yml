@@ -1,6 +1,6 @@
 name: Add new Supporter
 description: Submit a picture and a discription to be shown on the public website of the new Supporter 
-title: "Add Picture 🖼️👋"
+title: "Add Supporter 🖼️👋"
 labels: "New-Supporter"
 assignees:
   - LeonKie
@@ -23,7 +23,7 @@ body:
   - type: dropdown
     id: tier
     attributes:
-      label: Version
+      label: '>>Tier<<'
       description: What tier is the supporter?
       options:
         - Gold
