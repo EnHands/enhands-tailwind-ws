@@ -1,7 +1,7 @@
 name: Add new Supporter
-description: Submit a picture and a discription to be shown on the public website 
+description: Submit a picture and a discription to be shown on the public website of the new Supporter 
 title: "Add Picture 🖼️👋"
-labels: "New-Member"
+labels: "New-Supporter"
 assignees:
   - LeonKie
 body:
@@ -9,7 +9,7 @@ body:
     id: name
     attributes:
       label: '>>Name-Details<<'
-      description: What it you full name?
+      description: What it the full name of the Supporter?
     validations:
       required: true
   - type: textarea
@@ -20,19 +20,15 @@ body:
       placeholder: "Make sure that it is square for ex. 500px x 500px !!"
     validations:
       required: true
-  - type: input 
-    id: degree
+  - type: dropdown
+    id: tier
     attributes:
-      label: '>>Degree<<'
-      description: What are you studying at the moment?
-      placeholder: "e.g. Studying M.Sc. Robotics, Cognition, Intelligence"
+      label: Version
+      description: What tier is the supporter?
+      options:
+        - Gold
+        - Silber
+        - Bronze
+      default: 0
     validations:
       required: true
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: '>>Consent-Approval<<'
-      description: By submitting this issue, you agree that your details can be shown on the public website (enhands.de)
-      options:
-        - label: I agree
-          required: true
