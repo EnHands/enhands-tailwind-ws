@@ -17,7 +17,7 @@ body:
     attributes:
       label: '>>Profile-Picture<<'
       description: Add a profile picture!
-      placeholder: "Make sure that it is square for ex. 500px x 500px !!"
+      placeholder: "Make sure that the logo is a compact as possible. No big boundary !!"
     validations:
       required: true
   - type: dropdown
