@@ -1,3 +1,38 @@
 [
-    
+
+    {
+        "name": "CeTI",
+        "img": "images/logos/CeTI-logo.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "Funding for Innovators",
+        "img": "images/logos/funding-for-innovators-2.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "TU-Dresden",
+        "img": "images/logos/tu-dresden-logo.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "Vodafone",
+        "img": "images/logos/vodafone.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "Tum Venture Labs",
+        "img": "images/logos/tum-venture-labs-logo.PNG",
+        "tier": "Gold"
+    },
+    {
+        "name": "Naya Qadam",
+        "img": "images/logos/nayaqadam-small-2.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "MIRMI",
+        "img": "images/logos/IRI_Zeichen_MIRMI_RGB_schwarz.png",
+        "tier": "Gold"
+    }
 ]
