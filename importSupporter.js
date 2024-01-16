@@ -13,7 +13,7 @@ fetch('./supporter.json')
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        shuffleArray(people);
+        //shuffleArray(people);
         
         people.forEach(element => {
             var T=`<div class="card w-36 sm:w-60 rounded overflow-hidden shadow-lg"><img class="w-full max-h-60 object-cover" src="${element.img}"alt="Team member">
