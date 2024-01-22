@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Johannes Frey, M.Sc.",
+        "img": "images/people/profile/Johannes.jpg",
+        "img_hover": "images/people/fun/Johannes.jpg",
+        "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
+    },
+    {
+        "name": "Leon Kiesgen, M.Sc.",
+        "img": "images/people/profile/Leon.jpg",
+        "img_hover": "images/people/fun/Leon.jpg",
+        "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
+    },
+    {
+        "name": "Negar Shahmoradi, M.Sc.",
+        "img": "images/people/old/NegarShahmoradi_MS-Medizintechnik.jpg",
+        "job": "Project Manager, TUM Venture Labs"
+    },
+    {
+        "name": "Silija Breimann, B.Sc.",
+        "img": "images/people/profile/Silija.jpg",
+        "img_hover": "images/people/fun/Silija.jpg",
+        "job": "Studying M.Sc. Mechatronics & Robotics"
+    },
+    {
+        "name": "Sonja Groß, M.Sc.",
+        "img": "images/people/profile/Sonja.jpg",
+        "img_hover": "images/people/fun/Sonja.jpg",
+        "job": "Research Assistant, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
+    },
+    {
+        "name": "Vincent Bürgin, B.Sc.",
+        "img": "images/people/profile/Vincent.jpg",
+        "img_hover": "images/people/fun/Vincent.jpg",
+        "job": "Studying M.Sc. Informatics"
+    },
+    {
+        "name": "Amartya Ganguly, Ph.D.",
+        "img": "images/people/old/AmartyaGanguly.png",
+        "job": "Biomechanics, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
+    },
+    {
+        "name": "Julia Veloso de Oliveira, M.Sc.",
+        "img": "images/people/profile/Julia.jpg",
+        "img_hover": "images/people/fun/Julia.jpg",
+        "job": "Medical Informatics, Klinikum rechts der Isar"
+    },
+    {
+        "name": "Philipp Basse, B.Sc.",
+        "img": "images/people/profile/Philipp.jpg",
+        "img_hover": "images/people/fun/Philipp.jpg",
+        "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
+    },
+    {
+        "name": "Arbenita Thaqi, B.Sc.",
+        "img": "https://user-images.githubusercontent.com/26114194/229291280-980045a7-bcfc-4189-8f54-84be3a81982f.jpg",
+        "job": "Studying M.Sc. Mechanical Engineering"
+    },
+    {
+        "name": "Akhila Vudata, B.Sc., MBA",
+        "img": "images/people/old/AkhilaVudata.jpg",
+        "job": "Market Research Expert"
+    },
+    {
+        "name": "Jana Koss, M.Sc.",
+        "img": "images/people/profile/Jana.jpg",
+        "img_hover": "images/people/fun/Jana.jpg",
+        "job": "Product Marketing Manager, d.velop AG"
+    },
+    {
+        "name": "Eliyas Conford",
+        "img": "images/people/profile/Eliyas.jpg",
+        "img_hover": "images/people/fun/Eliyas.jpg",
+        "job": "Studying B.Sc. Engineering Science"
+    },
+    {
+        "name": "Paula Villa Fulton, M.Sc.",
+        "img": "images/people/profile/Paula.jpg",
+        "img_hover": "images/people/fun/Paula.jpg",
+        "job": "Research Assistant, Chair of Human Movement Science"
+    },
+    {
+        "name": "Nikolas Carreira Kaarsberg",
+        "img": "images/people/profile/Nikolas.jpg",
+        "img_hover": "images/people/fun/Nikolas.jpg",
+        "job": "Studying General Engineering (DTU)"
+    }
+]
