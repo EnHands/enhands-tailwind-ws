@@ -1,6 +1,4 @@
 [
-    
-    
     {
         "name": "Naya Qadam",
         "img": "images/logos/nayaqadam-small-2.png",
@@ -29,6 +27,11 @@
     {
         "name": "Funding for Innovators",
         "img": "images/logos/funding-for-innovators-2.png",
+        "tier": "Gold"
+    },
+    {
+        "name": "MakerSpace",
+        "img": "images/logos/makerspace.png",
         "tier": "Gold"
     },
     {
