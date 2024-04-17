@@ -16,13 +16,11 @@ fetch('./supporter.json')
         //shuffleArray(people);
         
         people.forEach(element => {
-            var T=`<div class="card w-36 sm:w-60 rounded overflow-hidden shadow-lg"><img class="w-full max-h-60 object-cover" src="${element.img}"alt="Team member">
-                <div class="px-3 sm:px-6 py-4"><div class="font-bold text-sm sm:text-xl mb-2">${element.name}</div>
-                <p class="text-gray-700 text-xs sm:text-base">${element.job}</p></div></div>`
-
-            var Text = `<img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1" src="${element.img}" alt="Transistor" width="158" height="52"></img>`    
+            var supporterImage = `<a title="${element.name}" href="${element.url}">
+                <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1" src="${element.img}" alt="Transistor" width="158" height="52"></img>
+                </a>`    
             var temp = document.createElement('div');
-            temp.innerHTML = Text;
+            temp.innerHTML = supporterImage;
             var htmlObject = temp.firstChild;
             cardList_Partner.append(htmlObject)
     });
