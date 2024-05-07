@@ -50,6 +50,7 @@ def main():
         branch=str(person["name"])
         branch=branch.lower()
         branch=branch.replace(" ","-")
+        branch=branch.replace(".","")
         fs.write(branch)
 
 if __name__ == "__main__":
