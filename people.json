@@ -29,10 +29,10 @@
         "job": "Research Assistant, Munich Institute of Robotics and Machine Intelligence (MIRMI)"
     },
     {
-        "name": "Vincent Bürgin, B.Sc.",
+        "name": "Vincent Bürgin, M.Sc.",
         "img": "images/people/profile/Vincent.jpg",
         "img_hover": "images/people/fun/Vincent.jpg",
-        "job": "Studying M.Sc. Informatics"
+        "job": "Graduated M.Sc. Informatics"
     },
     {
         "name": "Amartya Ganguly, Ph.D.",
@@ -51,16 +51,6 @@
         "img": "images/people/profile/Philipp.jpg",
         "img_hover": "images/people/fun/Philipp.jpg",
         "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
-    },
-    {
-        "name": "Arbenita Thaqi, B.Sc.",
-        "img": "https://user-images.githubusercontent.com/26114194/229291280-980045a7-bcfc-4189-8f54-84be3a81982f.jpg",
-        "job": "Studying M.Sc. Mechanical Engineering"
-    },
-    {
-        "name": "Akhila Vudata, B.Sc., MBA",
-        "img": "images/people/old/AkhilaVudata.jpg",
-        "job": "Market Research Expert"
     },
     {
         "name": "Jana Koss, M.Sc.",
@@ -90,5 +80,11 @@
         "name":"Gabriel Castellano, M.Sc.",
         "img": "images/people/profile/Gabriel.jpg",
         "job": "Graduated M.Sc. Neuroengineering"
+    },
+    {
+        "name":"Mohamed Khaled Eyssa, B.Sc.",
+        "img": "images/people/profile/Mohamed.jpg",
+        "img_hover": "images/people/fun/Mohamed.jpg",
+        "job": "Studying M.Sc. Mechatronics, Robotics, and Biomechanical Engineering"
     }
 ]
