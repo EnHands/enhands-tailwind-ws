@@ -32,8 +32,6 @@
 		 * ---------------------------------------------- */
 
 
-
-
 		.carousel {
 			display: inline-flex;
 			overflow-x: scroll;
@@ -675,40 +673,30 @@
 
 
 
-							<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
-								ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls
-								poster="poster_P1.webp" shadow-intensity="1">
-								<button class="Hotspot" slot="hotspot-1"
-									data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
-									data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Leather Stump Interface</div>
-								</button><button class="Hotspot" slot="hotspot-5"
-									data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m"
-									data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Passive Fingers </div>
-								</button><button class="Hotspot" slot="hotspot-7"
-									data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m"
-									data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Adjustable Thumb </div>
+							<model-viewer src="model-resources/FunctionalHand_V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="model-resources/FunctionalHand_V2.webp" shadow-intensity="1.19" exposure="0.76" shadow-softness="1">
+								<button class="Hotspot" slot="hotspot-10" data-position="-49.84631579655456m 16.20571502073246m -1.2034556662798614m" data-normal="-0.04574187075813724m 1.342182040734543e-7m -0.9989532928318161m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Linkage Finger</div>
+								</button><button class="Hotspot" slot="hotspot-11" data-position="11.184215338300248m 0.5536238948393359m 12.511895981542509m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Bionic Tendon</div>
+								</button><button class="Hotspot" slot="hotspot-12" data-position="43.39437182076409m 48.928094961693425m 29.863861975845488m" data-normal="-0.3944188308636011m 1.6114445757118885e-7m -0.9189307840420651m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Adjustable Thumb</div>
+								</button><button class="Hotspot" slot="hotspot-13" data-position="137.26516448165137m -23.493695412994168m -16.92747675006964m" data-normal="0.35549421000375353m 0.20242746310612106m -0.9124949253745072m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Silicone Glove</div>
+								</button><button class="Hotspot" slot="hotspot-15" data-position="117.76409572026516m 0.4877809930514836m 12.511895972695932m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Power Transfer Mechanism</div>
 								</button>
-								<button class="Hotspot" slot="hotspot-8"
-									data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m"
-									data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Rubber Ring</div>
-									<div class="progress-bar hide" slot="progress-bar">
-										<div class="update-bar"></div>
-									</div>
-									<button slot="ar-button" id="ar-button">
-										View in your space
-									</button>
-									<div id="ar-prompt">
-										<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-									</div>
+								<div class="progress-bar hide" slot="progress-bar">
+									<div class="update-bar"></div>
+								</div>
+								<button slot="ar-button" id="ar-button">
+									View in your space
+								</button>
+								<div id="ar-prompt">
+									<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+								</div>
 							</model-viewer>
+							
+							
 
 						</div>
 					</div>
