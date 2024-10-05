@@ -622,37 +622,50 @@
 								<h2
 									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
 									V2 Functional Prototype </h2>
-								<p class="mt-4 text-gray-500">
-									
-								</p>
+									<p class="mt-4 text-gray-500">
+										Our newest functional prototype is our most sophisticated development to date: Three different grasping types are provided by mechanical fingers produced from sheet metal, while the outside gets a realistic appearance via a silicone glove.
+									</p>
 
 								<dl
 									class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
 									<div class="border-t border-gray-200 pt-4">
-										<dt class="font-medium text-gray-900">Origin</dt>
+										<dt class="font-medium text-gray-900">Product Overview</dt>
 										<dd class="mt-2 text-sm text-gray-500">
-
+											<ul style="list-style: initial; list-style-position: inside">
+												<li><strong>What it is</strong>: Affordable, functional, and cosmetically appealing hand prosthesis for forearm amputees.</li>
+												<li><strong>Who it&#39;s for</strong>: Designed for forearm amputees, especially in low-income countries, who seek both functionality and aesthetic appeal at low cost.</li>
+												<li><strong>Cost:</strong>  &lt; $50</li>
+											</ul>												
 										</dd>
 									</div>
 
 									<div class="border-t border-gray-200 pt-4">
-										<dt class="font-medium text-gray-900">Material</dt>
+										<dt class="font-medium text-gray-900">Features</dt>
 										<dd class="mt-2 text-sm text-gray-500">
-											
+											<ul style="list-style: initial; list-style-position: inside">
+												<li>Affordable materials</li>
+												<li>Locally manufactured</li>
+												<li>Lightweight and compact</li>
+												<li>Enhanced actuation</li>
+												<li>Easy-release mechanism</li>
+											</ul>												
 										</dd>
 									</div>
 
 									<div class="border-t border-gray-200 pt-4">
-										<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
+										<dt class="font-medium text-gray-900">Materials</dt>
 										<dd class="mt-2 text-sm text-gray-500">
-
+											<ul style="list-style: initial; list-style-position: inside">
+												<li>For the mechanism structure, we consider durable, lightweight materials like sheet metal.  </li>
+												<li>For the glove, we use silicone due to its flexibility, comfort, and human-like appearance.</li>
+											</ul>												
 										</dd>
 									</div>
 
 									<div class="border-t border-gray-200 pt-4">
-										<dt class="font-medium text-gray-900">Design Philosophy</dt>
+										<dt class="font-medium text-gray-900">Prototyping and Development Process</dt>
 										<dd class="mt-2 text-sm text-gray-500">
-
+											We began by focusing solely on functionality with essential grips. We are now working on combining both functional and cosmetic elements for improved aesthetics and usability.
 										</dd>
 									</div>
 								</dl>
@@ -660,23 +673,19 @@
 
 
 
-							<model-viewer class="modelviewer justify-end rounded-lg model" disable-zoom
-								src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look"
-								camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp"
-								shadow-intensity="1" field-of-view="30deg">
-								<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m"
-									data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Guitar capo used as a spring</div>
-								</button><button class="Hotspot" slot="hotspot-3"
-									data-position="0.009388101366336332m 0.11980100314952985m 0.049949023917919035m"
-									data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Silicone mold</div>
-								</button><button class="Hotspot" slot="hotspot-4" data-position="0.0100m -0.0156m 0.01m"
-									data-normal="4.371137946441115e-8m -1.3435884034343458e-7m 0.99999999999999m"
-									data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Ridgid PLA core</div>
+
+
+							<model-viewer src="model-resources/FunctionalHand_V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="model-resources/FunctionalHand_V2.webp" shadow-intensity="1.19" exposure="0.76" shadow-softness="1">
+								<button class="Hotspot" slot="hotspot-10" data-position="-49.84631579655456m 16.20571502073246m -1.2034556662798614m" data-normal="-0.04574187075813724m 1.342182040734543e-7m -0.9989532928318161m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Linkage Finger</div>
+								</button><button class="Hotspot" slot="hotspot-11" data-position="11.184215338300248m 0.5536238948393359m 12.511895981542509m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Bionic Tendon</div>
+								</button><button class="Hotspot" slot="hotspot-12" data-position="43.39437182076409m 48.928094961693425m 29.863861975845488m" data-normal="-0.3944188308636011m 1.6114445757118885e-7m -0.9189307840420651m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Adjustable Thumb</div>
+								</button><button class="Hotspot" slot="hotspot-13" data-position="137.26516448165137m -23.493695412994168m -16.92747675006964m" data-normal="0.35549421000375353m 0.20242746310612106m -0.9124949253745072m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Silicone Glove</div>
+								</button><button class="Hotspot" slot="hotspot-15" data-position="117.76409572026516m 0.4877809930514836m 12.511895972695932m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Power Transfer Mechanism</div>
 								</button>
 								<div class="progress-bar hide" slot="progress-bar">
 									<div class="update-bar"></div>
@@ -685,7 +694,7 @@
 									View in your space
 								</button>
 								<div id="ar-prompt">
-									<img src="ar_hand_prompt.png">
+									<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
 								</div>
 							</model-viewer>
 						</div>
@@ -700,7 +709,7 @@
 							<div class="lg:col-span-2">
 								<h2
 									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-									Cosmetic Hand - Technical Specifications </h2>
+									Cosmetic Hand </h2>
 								<p class="mt-4 text-gray-500">The Cosmetic Hand is designed to offer both a natural
 									appearance and functional capabilities, focusing on aesthetics and comfort. Here are
 									the key features:</p>
@@ -785,7 +794,7 @@
 							<div class="lg:col-span-2">
 								<h2
 									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-									V1 Prototype - Technical Specifications </h2>
+									V1 Functional Prototype </h2>
 								<p class="mt-4 text-gray-500">As a starting point, we decided to build a prosthetic hand
 									that is the
 									size
@@ -837,28 +846,39 @@
 							</div>
 
 
-
-							<model-viewer src="model-resources/FunctionalHand_V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="model-resources/FunctionalHand_V2.webp" shadow-intensity="1.19" exposure="0.76" shadow-softness="1">
-								<button class="Hotspot" slot="hotspot-10" data-position="-49.84631579655456m 16.20571502073246m -1.2034556662798614m" data-normal="-0.04574187075813724m 1.342182040734543e-7m -0.9989532928318161m" data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Linkage Finger</div>
-								</button><button class="Hotspot" slot="hotspot-11" data-position="11.184215338300248m 0.5536238948393359m 12.511895981542509m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Bionic Tendon</div>
-								</button><button class="Hotspot" slot="hotspot-12" data-position="43.39437182076409m 48.928094961693425m 29.863861975845488m" data-normal="-0.3944188308636011m 1.6114445757118885e-7m -0.9189307840420651m" data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Adjustable Thumb</div>
-								</button><button class="Hotspot" slot="hotspot-13" data-position="137.26516448165137m -23.493695412994168m -16.92747675006964m" data-normal="0.35549421000375353m 0.20242746310612106m -0.9124949253745072m" data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Silicone Glove</div>
-								</button><button class="Hotspot" slot="hotspot-15" data-position="117.76409572026516m 0.4877809930514836m 12.511895972695932m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
-									<div class="HotspotAnnotation">Power Transfer Mechanism</div>
+							<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
+								ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls
+								poster="poster_P1.webp" shadow-intensity="1">
+								<button class="Hotspot" slot="hotspot-1"
+									data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
+									data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Leather Stump Interface</div>
+								</button><button class="Hotspot" slot="hotspot-5"
+									data-position="16.061483011424425m 8.464838753797752m -9.199439335725579m"
+									data-normal="0.9290155792905795m -0.3319460028086662m -0.16352952227270126m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Passive Fingers </div>
+								</button><button class="Hotspot" slot="hotspot-7"
+									data-position="8.084792930715839m 11.83172017326169m -6.147794684262486m"
+									data-normal="-0.731214129647901m 0.5444908530979404m -0.4109204393747526m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Adjustable Thumb </div>
 								</button>
-								<div class="progress-bar hide" slot="progress-bar">
-									<div class="update-bar"></div>
-								</div>
-								<button slot="ar-button" id="ar-button">
-									View in your space
-								</button>
-								<div id="ar-prompt">
-									<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-								</div>
+								<button class="Hotspot" slot="hotspot-8"
+									data-position="5.076690707886618m 7.493295209078049m -3.561985378679914m"
+									data-normal="-5.198395647745263e-8m -0.21198035284745873m -0.9772739278250825m"
+									data-visibility-attribute="visible">
+									<div class="HotspotAnnotation">Rubber Ring</div>
+									<div class="progress-bar hide" slot="progress-bar">
+										<div class="update-bar"></div>
+									</div>
+									<button slot="ar-button" id="ar-button">
+										View in your space
+									</button>
+									<div id="ar-prompt">
+										<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+									</div>
 							</model-viewer>
 							
 							
