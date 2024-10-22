@@ -13,6 +13,6 @@ Our work focuses on:
 
 You can take a look at our statutes here: https://postbox.d-velop.de/publicdoc/d123e3c7-6829-46c9-b6d9-edd56904a71e 
 
-How You Can Help: If you’d like to support our mission, any donations would be greatly appreciated. You can contribute to our cause by sending any amount our bank account. Please contact us for more information. 
+How You Can Help: If you’d like to support our mission, any donations would be greatly appreciated. You can contribute to our cause by sending any amount to our bank account. Please contact us for more information.
 
 We’re so excited about this new chapter and can’t wait to continue helping those in need!
