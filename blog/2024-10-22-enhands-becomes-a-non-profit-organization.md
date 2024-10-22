@@ -11,7 +11,7 @@ Our work focuses on:
 * Collaborating with both local and international partners to distribute the prosthetics.
 * Raising awareness through events, blog posts, and social media about the challenges faced by those with limb amputations.
 
-You can take a look at our statutes here: https://postbox.d-velop.de/publicdoc/d123e3c7-6829-46c9-b6d9-edd56904a71e 
+You can take a look at our statutes [here.](https://postbox.d-velop.de/publicdoc/d123e3c7-6829-46c9-b6d9-edd56904a71e)
 
 How You Can Help: If you’d like to support our mission, any donations would be greatly appreciated. You can contribute to our cause by sending any amount to our bank account. Please contact us for more information.
 
