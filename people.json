@@ -86,5 +86,41 @@
         "img": "images/people/profile/Mohamed.jpg",
         "img_hover": "images/people/fun/Mohamed.jpg",
         "job": "Studying M.Sc. Mechatronics, Robotics, and Biomechanical Engineering"
+    },
+    {
+        "name":"Konrad Sautter",
+        "img": "images/people/profile/Konrad.jpg",
+        "img_hover": "images/people/fun/Konrad.jpg",
+        "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
+    },
+    {
+        "name":"Katharina Welte",
+        "img": "images/people/profile/Katharina.jpg",
+        "img_hover": "images/people/fun/Katharina.jpg",
+        "job": "Studying B.Sc. Engineering Science"
+    },
+    {
+        "name":"Marcia Castillo",
+        "img": "images/people/profile/Marcia.jpg",
+        "img_hover": "images/people/fun/Marcia.jpg",
+        "job": "Studying B.Sc. Mechanical Engineering"
+    },
+    {
+        "name": "Leen Nael Zamamiri",
+        "img": "images/people/profile/Leen.jpg",
+        "img_hover": "images/people/fun/Leen.jpg",
+        "job": "Studying B.Sc. Chemical Engineering"
+    },
+    {
+        "name":"Anna Salacova",
+        "img": "images/people/profile/Anna.jpg",
+        "img_hover": "images/people/fun/Anna.jpg",
+        "job": "Studying B.Sc. Chemical Engineering"
+    },
+    {
+        "name": "Angela Agurto Zegarra",
+        "img": "images/people/profile/Angela.jpg",
+        "img_hover": "images/people/fun/Angela.jpg",
+        "job": "Studying M.A. Science and Technology Studies"
     }
 ]
