@@ -1,18 +1,18 @@
 [
     {
-        "name": "Johannes Frey, M.Sc.",
+        "name": "Johannes Frey",
         "img": "images/people/profile/Johannes.jpg",
         "img_hover": "images/people/fun/Johannes.jpg",
         "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
     },
     {
-        "name": "Leon Kiesgen, M.Sc.",
+        "name": "Leon Kiesgen",
         "img": "images/people/profile/Leon.jpg",
         "img_hover": "images/people/fun/Leon.jpg",
         "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
     },
     {
-        "name": "Negar Shahmoradi, M.Sc.",
+        "name": "Negar Shahmoradi",
         "img": "images/people/old/NegarShahmoradi_MS-Medizintechnik.jpg",
         "job": "Project Manager (TUM Venture Labs) / Co-Founder at ExoSphere"
     },
@@ -23,37 +23,37 @@
         "job": "Studying M.Sc. Mechatronics & Robotics"
     },
     {
-        "name": "Sonja Groß, M.Sc.",
+        "name": "Sonja Groß",
         "img": "images/people/profile/Sonja.jpg",
         "img_hover": "images/people/fun/Sonja.jpg",
         "job": "Ph.D. Candidate, MIRMI"
     },
     {
-        "name": "Vincent Bürgin, M.Sc.",
+        "name": "Vincent Bürgin",
         "img": "images/people/profile/Vincent.jpg",
         "img_hover": "images/people/fun/Vincent.jpg",
         "job": "Graduated M.Sc. Informatics"
     },
     {
-        "name": "Amartya Ganguly, Ph.D.",
+        "name": "Amartya Ganguly",
         "img": "images/people/profile/Amartya.jpg",
         "img_hover": "images/people/fun/Amartya.jpg",
         "job": "Postdoctoral Researcher, MIRMI"
     },
     {
-        "name": "Julia Veloso de Oliveira, M.Sc.",
+        "name": "Julia Veloso de Oliveira",
         "img": "images/people/profile/Julia.jpg",
         "img_hover": "images/people/fun/Julia.jpg",
         "job": "Ph.D. Candidate, Experimental Audiology (Klinikum rechts der Isar)"
     },
     {
-        "name": "Philipp Basse, B.Sc.",
+        "name": "Philipp Basse",
         "img": "images/people/profile/Philipp.jpg",
         "img_hover": "images/people/fun/Philipp.jpg",
         "job": "Studying M.Sc. Medical Engineering and Assistance Systems"
     },
     {
-        "name": "Jana Koss, M.Sc.",
+        "name": "Jana Koss",
         "img": "images/people/profile/Jana.jpg",
         "img_hover": "images/people/fun/Jana.jpg",
         "job": "Product Marketing Manager, d.velop AG"
@@ -65,7 +65,7 @@
         "job": "Studying B.Sc. Engineering Science"
     },
     {
-        "name": "Paula Villa Fulton, M.Sc.",
+        "name": "Paula Villa Fulton",
         "img": "images/people/profile/Paula.jpg",
         "img_hover": "images/people/fun/Paula.jpg",
         "job": "Ph.D. Candidate, Chair of Human Movement Science"
@@ -77,12 +77,12 @@
         "job": "Studying B.Sc. General Engineering (Technical University of Denmark)"
     },
     {
-        "name":"Gabriel Castellano, M.Sc.",
+        "name":"Gabriel Castellano",
         "img": "images/people/profile/Gabriel.jpg",
         "job": "Graduated M.Sc. Neuroengineering"
     },
     {
-        "name":"Mohamed Khaled Eyssa, B.Sc.",
+        "name":"Mohamed Khaled Eyssa",
         "img": "images/people/profile/Mohamed.jpg",
         "img_hover": "images/people/fun/Mohamed.jpg",
         "job": "Studying M.Sc. Mechatronics, Robotics, and Biomechanical Engineering"
