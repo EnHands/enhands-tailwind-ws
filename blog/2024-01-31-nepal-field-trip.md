@@ -1,6 +1,5 @@
-Nepal Field Trip Report 
+# Nepal Field Trip Report 
 
-Reasons & Goals   
 In the summer of 2023, we achieved a significant milestone – we completed our first cosmetic hand prototype, a project we had been working on for the past year. The primary focus was on anthropomorphic design, natural skin appearance, and overall comfort. Based on our prior knowledge, this combination, if executed well, should result in positive patient acceptance. 
 
 After developing the prototype, we intended to obtain feedback and validate the design. Therefore, a field trip to a low-income country, where we could gain real patient insights, was the next logical step. We chose Nepal over other countries because our collaborating partner, Naya Qadam, held a prosthesis camp there.  
@@ -11,7 +10,7 @@ In addition to receiving patient feedback, our objectives included establishing 
 We took 30 cosmetic 3D printed prostheses in different sizes (S, M, L) and closure configurations to Nepal with us to gather feedback. 
 
 
-The Trip and Patient Feedback  
+## The Trip and Patient Feedback  
 
 Immediately upon our arrival, we were greeted by very friendly locals and exposed to eye-opening situations that these patients face on a daily basis. Most amputees experience social exclusion and financial crises due to a lack of working opportunities, as the majority of jobs are in agriculture or industry. Additionally, amputees often deal with emotional crises due to the inability to provide for their relatives. As expected, the lack of infrastructure and mobility, especially for the physically impaired, does not make the situation easier for amputees. The emotional impact of these circumstances left a lasting impression, but it also reassured us of the significant positive effect that a simple prosthesis can have on the life of an amputee. 
 
@@ -29,7 +28,7 @@ In Nepal, there is a very low number of pediatric patients with upper limb amput
 We we able to make lasting connection with local technicians and are still in contact.
 
 
-Key Takeaways and Learnings 
+## Key Takeaways and Learnings 
 
 The Nepal Field Trip was beneficial in many ways. It is crucial to undertake these trips for several reasons. We need to further work on establishing trust with local NGOs – locals are very helpful in assisting us with effective organization and communication strategies for smoother trip coordination and prosthesis distribution. 
 
