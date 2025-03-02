@@ -1,6 +1,6 @@
 We’re happy to share the latest news. As of Q3 2024, EnHands has officially become a registered non-profit organization, known in Germany as a gemeinnützlicher eingetragener Verein (e.V.). This is a huge milestone for us and opens up new opportunities to continue our mission of developing affordable and accessible hand prostheses for those in need.
 
-Why Did We Become an e.V.? 
+## Why Did We Become an e.V.?
 By becoming an e.V., we now have the legal status to operate as an independent legal entity. This means we can enter into contracts, secure funding more easily, and work within a more structured framework. It will help us expand our reach, build stronger partnerships, and hopefully have a greater impact on the communities we serve.
 The official process kicked off in August 2024 at a founding meeting held at Sonja’s place. We reviewed our statutes, made final adjustments, and voted on our board members. With the board now in place, and all legal documents signed, we’re fully registered! 
 
