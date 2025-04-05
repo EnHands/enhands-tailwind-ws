@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple FAQ Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-container {
+            margin-top: 20px;
+        }
+        .faq-item {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: #f5f7fa; /* Lighter block background */
+            position: relative;
+        }
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            margin: 0;
+            font-weight: bold;
+            color: #005ea6; /* Darker text for contrast */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question:hover {
+            background-color: #eef1f5; /* Slightly darker on hover */
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: #003d73; /* Darker plus sign */
+            font-weight: bold;
+        }
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #fff;
+        }
+        .faq-answer.active {
+            max-height: 200px; /* Adjust based on content length */
+            padding: 15px;
+        }
+        a {
+            color: #005ea6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h2 class="faq-question">What is our goal?</h2>
+            <div class="faq-answer">
+                The EnHands student club aims to develop affordable upper limb prostheses (hand prostheses) for the developing world. We plan to develop a prototype and work together with organisations such as the Naya Qadam Trust, who have experience in providing amputees with low-cost leg prostheses, to help with getting the prostheses to people who need them.
+            </div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Where to reach us?</h2>
+            <div class="faq-answer">
+                Please reach out to us at info@enhands.de.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for accordion toggle
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

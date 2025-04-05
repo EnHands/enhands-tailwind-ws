@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple FAQ Section</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+        }
+        h1 {
+            text-align: center;
+            color: #2980b9; /* Updated color */
+            font-size: 2.5em; /* Same size */
+            font-weight: 700; /* Bolder */
+            margin-bottom: 40px; /* Same spacing */
+            animation: fadeIn 1.5s ease-in-out; /* Added animation */
+        }
+        /* Define the fadeIn animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .faq-container {
+            margin-top: 20px;
+        }
+        .faq-item {
+            border: none;
+            margin-bottom: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            margin: 0;
+            font-weight: 600;
+            color: #1a73e8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(to right, #f8fafc, #e9ecef);
+        }
+        .faq-question:hover {
+            background: linear-gradient(to right, #eef2f7, #dfe4ea);
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: #1a73e8;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.2s ease-out;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+            color: #34495e;
+        }
+        .faq-answer.active {
+            max-height: 250px; /* Increased for more content flexibility */
+            padding: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- The h1 will now use the new styling with animation -->
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h2 class="faq-question">What is our goal?</h2>
+            <div class="faq-answer">
+                The EnHands student club aims to develop affordable upper limb prostheses (hand prostheses) for the developing world. We plan to develop a prototype and work together with organizations such as the <a href="#">Naya Qadam Trust</a>, who have experience in providing amputees with low-cost leg prostheses, to help with getting the prostheses to people who need them.
+            </div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Where to reach us?</h2>
+            <div class="faq-answer">
+                Please reach out to us at <a href="mailto:info@enhands.de">info@enhands.de</a>.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    if (ans !== answer) {
+                        ans.classList.remove('active');
+                        ans.previousElementSibling.classList.remove('active');
+                    }
+                });
+
+                // Toggle current answer
+                answer.classList.toggle('active');
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
