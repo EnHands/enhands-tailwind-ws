@@ -13,7 +13,7 @@ fetch('./data/supporter.json')
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        //shuffleArray(people);
+        //shuffleArray(people); This can be used to shuffle Supporters but this might be not wanted
         
         people.forEach(element => {
             var supporterImage = `<a title="${element.name}" href="${element.url}">

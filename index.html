@@ -10,7 +10,7 @@
 	<meta name="keywords" content="">
 	<meta name="thumbnail" content="images/logos/Enhands_Logo.png">
 	<link rel="icon" type="image/x-icon" href="./images/logos/favicon.ico">
- 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 
 	<!-- Font Awesome if you need it
@@ -154,13 +154,17 @@
 			width: 0;
 			height: 0;
 		}
-		.card-image-area:hover .img-hover, .card-image-area:active .img-hover {
+
+		.card-image-area:hover .img-hover,
+		.card-image-area:active .img-hover {
 			visibility: visible;
 			position: relative;
 			width: unset;
 			height: unset;
 		}
-		.card-image-area:hover .img-nohover, .card-image-area:active .img-nohover {
+
+		.card-image-area:hover .img-nohover,
+		.card-image-area:active .img-nohover {
 			visibility: hidden;
 			position: absolute;
 			width: 0;
@@ -344,7 +348,7 @@
 			display: none;
 			background-color: black;
 		}
-		
+
 		a {
 			color: #888
 		}
@@ -419,7 +423,7 @@
 							</svg>
 						</span>
 					</button>
-                <button onclick="javascript:location.href='/pages/blog.html'" type="button" class="fade-in text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800
+					<button onclick="javascript:location.href='/pages/blog.html'" type="button" class="fade-in text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800
 					mt-4 lg:mt-0 lg:ml-4 lg:w-1/2">
 						<span class="flex justify-between w-full">
 							Blog
@@ -626,9 +630,11 @@
 								<h2
 									class="text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
 									V2 Functional Prototype </h2>
-									<p class="mt-4 text-gray-500">
-										Our newest functional prototype is our most sophisticated development to date: Three different grasping types are provided by mechanical fingers produced from sheet metal, while the outside gets a realistic appearance via a silicone glove.
-									</p>
+								<p class="mt-4 text-gray-500">
+									Our newest functional prototype is our most sophisticated development to date: Three
+									different grasping types are provided by mechanical fingers produced from sheet
+									metal, while the outside gets a realistic appearance via a silicone glove.
+								</p>
 
 								<dl
 									class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8">
@@ -636,10 +642,13 @@
 										<dt class="font-medium text-gray-900">Product Overview</dt>
 										<dd class="mt-2 text-sm text-gray-500">
 											<ul style="list-style: initial; list-style-position: inside">
-												<li><strong>What it is</strong>: Affordable, functional, and cosmetically appealing hand prosthesis for forearm amputees.</li>
-												<li><strong>Who it&#39;s for</strong>: Designed for forearm amputees, especially in low-income countries, who seek both functionality and aesthetic appeal at low cost.</li>
-												<li><strong>Cost:</strong>  &lt; $50</li>
-											</ul>												
+												<li><strong>What it is</strong>: Affordable, functional, and
+													cosmetically appealing hand prosthesis for forearm amputees.</li>
+												<li><strong>Who it&#39;s for</strong>: Designed for forearm amputees,
+													especially in low-income countries, who seek both functionality and
+													aesthetic appeal at low cost.</li>
+												<li><strong>Cost:</strong> &lt; $50</li>
+											</ul>
 										</dd>
 									</div>
 
@@ -652,7 +661,7 @@
 												<li>Lightweight and compact</li>
 												<li>Enhanced actuation</li>
 												<li>Easy-release mechanism</li>
-											</ul>												
+											</ul>
 										</dd>
 									</div>
 
@@ -660,16 +669,20 @@
 										<dt class="font-medium text-gray-900">Materials</dt>
 										<dd class="mt-2 text-sm text-gray-500">
 											<ul style="list-style: initial; list-style-position: inside">
-												<li>For the mechanism structure, we consider durable, lightweight materials like sheet metal.  </li>
-												<li>For the glove, we use silicone due to its flexibility, comfort, and human-like appearance.</li>
-											</ul>												
+												<li>For the mechanism structure, we consider durable, lightweight
+													materials like sheet metal. </li>
+												<li>For the glove, we use silicone due to its flexibility, comfort, and
+													human-like appearance.</li>
+											</ul>
 										</dd>
 									</div>
 
 									<div class="border-t border-gray-200 pt-4">
 										<dt class="font-medium text-gray-900">Prototyping and Development Process</dt>
 										<dd class="mt-2 text-sm text-gray-500">
-											We began by focusing solely on functionality with essential grips. We are now working on combining both functional and cosmetic elements for improved aesthetics and usability.
+											We began by focusing solely on functionality with essential grips. We are
+											now working on combining both functional and cosmetic elements for improved
+											aesthetics and usability.
 										</dd>
 									</div>
 								</dl>
@@ -679,16 +692,34 @@
 
 
 
-							<model-viewer src="model-resources/FunctionalHand_V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="model-resources/FunctionalHand_V2.webp" shadow-intensity="1.19" exposure="0.76" shadow-softness="1">
-								<button class="Hotspot" slot="hotspot-10" data-position="-49.84631579655456m 16.20571502073246m -1.2034556662798614m" data-normal="-0.04574187075813724m 1.342182040734543e-7m -0.9989532928318161m" data-visibility-attribute="visible">
+							<model-viewer src="model-resources/FunctionalHand_V2.glb" ar
+								ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+								poster="model-resources/FunctionalHand_V2.webp" shadow-intensity="1.19" exposure="0.76"
+								shadow-softness="1">
+								<button class="Hotspot" slot="hotspot-10"
+									data-position="-49.84631579655456m 16.20571502073246m -1.2034556662798614m"
+									data-normal="-0.04574187075813724m 1.342182040734543e-7m -0.9989532928318161m"
+									data-visibility-attribute="visible">
 									<div class="HotspotAnnotation">Linkage Finger</div>
-								</button><button class="Hotspot" slot="hotspot-11" data-position="11.184215338300248m 0.5536238948393359m 12.511895981542509m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+								</button><button class="Hotspot" slot="hotspot-11"
+									data-position="11.184215338300248m 0.5536238948393359m 12.511895981542509m"
+									data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m"
+									data-visibility-attribute="visible">
 									<div class="HotspotAnnotation">Bionic Tendon</div>
-								</button><button class="Hotspot" slot="hotspot-12" data-position="43.39437182076409m 48.928094961693425m 29.863861975845488m" data-normal="-0.3944188308636011m 1.6114445757118885e-7m -0.9189307840420651m" data-visibility-attribute="visible">
+								</button><button class="Hotspot" slot="hotspot-12"
+									data-position="43.39437182076409m 48.928094961693425m 29.863861975845488m"
+									data-normal="-0.3944188308636011m 1.6114445757118885e-7m -0.9189307840420651m"
+									data-visibility-attribute="visible">
 									<div class="HotspotAnnotation">Adjustable Thumb</div>
-								</button><button class="Hotspot" slot="hotspot-13" data-position="137.26516448165137m -23.493695412994168m -16.92747675006964m" data-normal="0.35549421000375353m 0.20242746310612106m -0.9124949253745072m" data-visibility-attribute="visible">
+								</button><button class="Hotspot" slot="hotspot-13"
+									data-position="137.26516448165137m -23.493695412994168m -16.92747675006964m"
+									data-normal="0.35549421000375353m 0.20242746310612106m -0.9124949253745072m"
+									data-visibility-attribute="visible">
 									<div class="HotspotAnnotation">Silicone Glove</div>
-								</button><button class="Hotspot" slot="hotspot-15" data-position="117.76409572026516m 0.4877809930514836m 12.511895972695932m" data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+								</button><button class="Hotspot" slot="hotspot-15"
+									data-position="117.76409572026516m 0.4877809930514836m 12.511895972695932m"
+									data-normal="0m 1.3435883843274954e-7m -0.9999999999999911m"
+									data-visibility-attribute="visible">
 									<div class="HotspotAnnotation">Power Transfer Mechanism</div>
 								</button>
 								<div class="progress-bar hide" slot="progress-bar">
@@ -739,7 +770,8 @@
 
 									<div class="border-t border-gray-200 pt-4">
 										<dt class="font-medium text-gray-900">Degrees of Freedom</dt>
-										<dd class="mt-2 text-sm text-gray-500">The hand features a guitar capo spring mechanism
+										<dd class="mt-2 text-sm text-gray-500">The hand features a guitar capo spring
+											mechanism
 											for controlled movement, providing one degree of freedom. Additionally, a
 											second-degree of freedom wrist mechanism, similar to the V1 prototype,
 											offers rotation and adaptability for various tasks.</dd>
@@ -759,9 +791,10 @@
 
 
 							<model-viewer class="modelviewer justify-end rounded-lg model" disable-zoom
-								src="CosmeticHand_WebModel.glb" ar ar-modes="webxr scene-viewer quick-look"
-								camera-orbit="135.8deg 78.28deg 0.6221m" camera-controls poster="poster_P2.webp"
-								shadow-intensity="1" field-of-view="30deg">
+								src="model-resources/CosmeticHand_WebModel.glb" ar
+								ar-modes="webxr scene-viewer quick-look" camera-orbit="135.8deg 78.28deg 0.6221m"
+								camera-controls poster="model-resources/poster_P2.webp" shadow-intensity="1"
+								field-of-view="30deg">
 								<button class="Hotspot" slot="hotspot-2" data-position="-0.035m 0.03m -0.065m"
 									data-normal="-0.9999999999999981m 4.3711385337422556e-8m 4.3711385337422556e-8m"
 									data-visibility-attribute="visible">
@@ -783,7 +816,7 @@
 									View in your space
 								</button>
 								<div id="ar-prompt">
-									<img src="ar_hand_prompt.png">
+									<img src="model-resources/ar_hand_prompt.png">
 								</div>
 							</model-viewer>
 						</div>
@@ -850,9 +883,9 @@
 							</div>
 
 
-							<model-viewer class="modelviewer rounded-lg " src="Prototype_V1_final.glb" ar
-								ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls
-								poster="poster_P1.webp" shadow-intensity="1">
+							<model-viewer class="modelviewer rounded-lg " src="model-resources/Prototype_V1_final.glb"
+								ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls
+								poster="model-resources/poster_P1.webp" shadow-intensity="1">
 								<button class="Hotspot" slot="hotspot-1"
 									data-position="-3.3432793957523295m 9.641767825540473m -4.915143003948515m"
 									data-normal="0.06311197374084425m 0.7666862988569887m -0.6389123554256149m"
@@ -884,8 +917,8 @@
 										<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
 									</div>
 							</model-viewer>
-							
-							
+
+
 
 						</div>
 					</div>
@@ -941,22 +974,29 @@
 		<!--Partners-->
 		<div class="bg-white4">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">Our Partners ✨</h2>
-			  <div id="CardList-Partner" class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-				
+				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
+					Our Partners ✨</h2>
+				<div id="CardList-Partner"
+					class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+
 				</div>
 			</div>
-		  </div>
+		</div>
 
-		  <div class="flex sm:w-full sm:mx-auto border-2 border-blue-700 my-20 sm:my-20 px-8 py-6 mx-2 rounded-3xl sm:max-w-2xl sm:pt-10 sm:pb-10 items-center sm:px-8 sm:py-6 lg:max-w-7xl lg:px-12">
+		<div
+			class="flex sm:w-full sm:mx-auto border-2 border-blue-700 my-20 sm:my-20 px-8 py-6 mx-2 rounded-3xl sm:max-w-2xl sm:pt-10 sm:pb-10 items-center sm:px-8 sm:py-6 lg:max-w-7xl lg:px-12">
 			<div class="mx-auto max-w-7xl px-2 lg:px-8">
 				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-					<span class="underline underline-offset-3 decoration-8 decoration-blue-400 hover:text-indigo-600 dark:decoration-blue-600">Donate to EnHands</span>
+					<span
+						class="underline underline-offset-3 decoration-8 decoration-blue-400 hover:text-indigo-600 dark:decoration-blue-600">Donate
+						to EnHands</span>
 				</h2>
 				<p class="mt-4 text-gray-800 text-xl">
 					We are always looking for money to finance our development efforts!
-					You can help <span class="underline">fund our prototyping</span> by <span class="underline">donating to our bank account</span> — any amount is appreciated.
-					We are also happy to issue a donation receipt for your taxes and answer any questions you might have: just <a href="mailto:info@enhands.de">send us an email</a>.
+					You can help <span class="underline">fund our prototyping</span> by <span class="underline">donating
+						to our bank account</span> — any amount is appreciated.
+					We are also happy to issue a donation receipt for your taxes and answer any questions you might
+					have: just <a href="mailto:info@enhands.de">send us an email</a>.
 				</p>
 				<div class="mt-4 text-gray-800 text-xl font-bold text-center">
 					EnHands e.V.<br>
@@ -964,8 +1004,10 @@
 					GENODEF1SLR (Deutsche Skatbank)
 				</div>
 				<p class="mt-4 text-gray-800 text-xl">
-					Are you a company and want to become a sponsoring partner to support a student initiative with a meaningful mission?
-					We're happy to partner up! Please reach out to us at <a href="mailto:info@enhands.de">info@enhands.de</a>.
+					Are you a company and want to become a sponsoring partner to support a student initiative with a
+					meaningful mission?
+					We're happy to partner up! Please reach out to us at <a
+						href="mailto:info@enhands.de">info@enhands.de</a>.
 				</p>
 			</div>
 		</div>
@@ -1015,11 +1057,12 @@
 			</span>
 			<ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
 				<li>
-					<a href="#" class="mr-4 hover:underline md:mr-6 ">Impressum: EnHands e.V., Freisinger Landstraße 52, 85748 Garching bei München, Germany. Email: info@enhands.de. Phone: +49 (89) 289 -
+					<a href="#" class="mr-4 hover:underline md:mr-6 ">Impressum: EnHands e.V., Freisinger Landstraße 52,
+						85748 Garching bei München, Germany. Email: info@enhands.de. Phone: +49 (89) 289 -
 						29459</a>
 				</li>
 				<li>
-                        <a href="/pages/privacy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+					<a href="/pages/privacy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
 				</li>
 			</ul>
 		</footer>
@@ -1048,11 +1091,11 @@
 
 
 
- 	<script src="js/a_mod.js"></script>
- 	<script src="js/script.js"></script>
- 	<script src="js/horizonalScroll.js"></script>
- 	<script src="js/randomCards.js"></script>
- 	<script src="js/importSupporter.js"></script>
+	<script src="js/a_mod.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/horizonalScroll.js"></script>
+	<script src="js/randomCards.js"></script>
+	<script src="js/importSupporter.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 
