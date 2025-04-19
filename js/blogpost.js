@@ -1,10 +1,10 @@
 let blogposts = null
 
-fetch('./data/blogposts.json')
+fetch('/data/blogposts.json')
 	.then((response) => response.json())
 	.then((_blogposts) => {
 		blogposts = _blogposts
-		fetch('./data/blogposts.json')
+// no-op duplicate fetch removed or can be ignored
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 
@@ -21,14 +21,14 @@ fetch('./data/blogposts.json')
 			blogpost = matchingBlogposts[0];
 		}
 
-		fetch(`./blog/${blogpost.name}.md`)
+		fetch(`/blog/${blogpost.name}.md`)
 			.then(response => response.text())
 			.then(blogpostText => {
 				let converter = new showdown.Converter();
 				let textHtml = converter.makeHtml(blogpostText);
 
 				headingContainer.innerHTML = blogpost["title"];
-				imageContainer.src = blogpost["picture"];
+			imageContainer.src = `/${blogpost["picture"]}`;
 				textContainer.innerHTML = textHtml;
 				dateContainer.innerHTML = blogpost["date"];
 				authorContainer.innerHTML = blogpost["author"];
