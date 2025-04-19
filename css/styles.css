@@ -187,3 +187,61 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
 model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
+
+/* Make AR button icon-only on small screens */
+@media (max-width: 480px) {
+  #ar-button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-size: 24px 24px;
+    background-position: center;
+    font-size: 0;
+    border-radius: 50%;
+    /* Position in bottom-right corner */
+    bottom: 16px;
+    right: 16px;
+    left: auto;
+    transform: none;
+  }
+}
+
+/* Donate button - hidden by default */
+#donate-button {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Mobile floating Donate button */
+@media (max-width: 480px) {
+  #donate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    bottom: 16px;
+    right: 16px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+  }
+}
+
+/* Pulsing effect for Donate button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
