@@ -1,4 +1,4 @@
-fetch('./blog/blogposts.json')
+fetch('./data/blogposts.json')
 	.then(response => response.json())
 	.then(blogposts => {
 		let converter = new showdown.Converter();

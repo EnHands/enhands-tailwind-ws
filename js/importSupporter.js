@@ -3,7 +3,7 @@
 // This file is used to generate random cards for the team section of the website
 cardList_Partner= document.getElementById("CardList-Partner")
 
-fetch('./supporter.json')
+fetch('./data/supporter.json')
     .then((response) => response.json())
     .then((people) => 
     {
