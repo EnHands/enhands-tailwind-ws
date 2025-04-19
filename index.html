@@ -352,6 +352,42 @@
 		a {
 			color: #888
 		}
+
+		details summary svg {
+			transition: transform .3s ease-in-out;
+		}
+
+		details[open] summary svg {
+			transform: rotate(180deg);
+		}
+
+		/* slide‑in / out */
+		.answer {
+			max-height: 0;
+			/* fully collapsed */
+			overflow: hidden;
+			opacity: 0;
+			transition: max-height .35s ease, opacity .35s ease;
+		}
+
+		details[open] .answer {
+			max-height: 600px;
+			/* big enough for any answer */
+			opacity: 1;
+		}
+
+		/* remove default disclosure triangle everywhere */
+		details summary {
+			/* fallback for some browsers  */
+			list-style: none;
+		}
+
+		details summary::marker,
+		/* Chromium / Firefox          */
+		details summary::-webkit-details-marker {
+			/* Safari / iOS */
+			display: none;
+		}
 	</style>
 
 </head>
@@ -971,6 +1007,98 @@
 			</div>
 		</div>
 
+
+		<!-- ===================  FAQ  =================== -->
+		<section id="faq" class="max-w-3xl mx-auto px-6 py-24">
+			<h2 class="text-3xl sm:text-4xl font-bold text-center mb-10">FAQs</h2>
+
+			<!-- 1 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How are EnHands prostheses developed?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Through a collaborative process with students from Mechanical Engineering, Robotics
+					and Informatics. We design and prototype affordable upper‑limb prostheses for the
+					developing world.
+				</div>
+			</details>
+
+			<!-- 2 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I get involved?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Join our student group and help develop affordable prosthetic hands—students from
+					any study program are welcome.
+				</div>
+			</details>
+
+			<!-- 3 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">What is EnHands’ mission?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					To develop low‑cost, functional upper‑limb prostheses for amputees who would
+					otherwise have no access to such technology.
+				</div>
+			</details>
+
+			<!-- 4 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I donate?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Right now we don’t accept direct donations, but you can help by spreading the word
+					on social media and sharing our website.
+				</div>
+			</details>
+
+			<!-- 5 -->
+			<details class="py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I contact EnHands?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Drop us a note via the contact form or email&nbsp;<a href="mailto:info@enhands.de"
+						class="text-blue-600 underline">info@enhands.de</a>.
+				</div>
+			</details>
+
+			<!-- call‑to‑action -->
+			<div class="text-center mt-12">
+				<p class="font-semibold mb-4">Still have questions?</p>
+				<button onclick="location.href='mailto:info@enhands.de'"
+					class="px-6 py-2 border border-gray-800 rounded-lg hover:bg-gray-800 hover:text-white transition">
+					Contact
+				</button>
+			</div>
+		</section>
+
+
 		<!--Partners-->
 		<div class="bg-white4">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -983,6 +1111,8 @@
 			</div>
 		</div>
 
+
+		<!--Donation section-->
 		<div
 			class="flex sm:w-full sm:mx-auto border-2 border-blue-700 my-20 sm:my-20 px-8 py-6 mx-2 rounded-3xl sm:max-w-2xl sm:pt-10 sm:pb-10 items-center sm:px-8 sm:py-6 lg:max-w-7xl lg:px-12">
 			<div class="mx-auto max-w-7xl px-2 lg:px-8">
@@ -1084,6 +1214,8 @@
 
 	</div> -->
 	<!--Footer-->
+
+
 
 
 
