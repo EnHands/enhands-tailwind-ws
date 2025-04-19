@@ -6,7 +6,7 @@ After developing the prototype, we intended to obtain feedback and validate the 
 
 In addition to receiving patient feedback, our objectives included establishing a network of potential future collaborators. We aimed to connect with existing NGOs focused on prosthetics to gather insights into supply chain management, on-site manufacturing, and fund structures. We also aimed to build relationships with locals, such as hospital managers, amputees, and technicians who have been working on this issue for the past few years. Furthermore, we sought to gain knowledge about the environment, facilities, culture, social backgrounds, behaviors, and lifestyles of the amputees. 
 
-![](blog/2024-01-31-nepal-prototypes.png)
+![](../blog/2024-01-31-nepal-prototypes.png)
 We took 30 cosmetic 3D printed prostheses in different sizes (S, M, L) and closure configurations to Nepal with us to gather feedback. 
 
 
@@ -24,7 +24,7 @@ The local NGO was giving out a motor-driven prototype for adults. Adult male pat
 
 In Nepal, there is a very low number of pediatric patients with upper limb amputations, leading to very few options for a children's hand prosthesis. Luckily, we brought children sizes of our prototype and were able to help this young patient. We received thankful and positive feedback. However, it is difficult to evaluate if the patient actually liked the product, as he was very shy. Full stories and profiles of the patients we met will be documented in our future blogs. 
 
-![](blog/2024-01-31-nepal-patients.png)
+![](../blog/2024-01-31-nepal-patients.png)
 We we able to make lasting connection with local technicians and are still in contact.
 
 
@@ -36,5 +36,5 @@ Furthermore, we need to better understand the actual requirements of amputees in
 
 Regarding the future, we recognized the gaps in our knowledge and identified areas for improvement. Our current design concepts take into consideration the feedback we gained in Nepal, indicating that the hand needs to be cosmetic but should also come with some functionality for the adult population. Currently, we are building prostheses that meet the specific needs and can endure harsh conditions in low-income countries.
 
-![](blog/2024-01-31-nepal-partners.png)
+![](../blog/2024-01-31-nepal-partners.png)
 We were greeted with amazing hospitality by the Nepalese people, and the openness of local NGOs to collaborate with us.

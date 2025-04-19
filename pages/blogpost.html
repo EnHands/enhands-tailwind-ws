@@ -8,8 +8,8 @@
 	<title>EnHands - TUM Student Club</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-   <link rel="icon" type="image/x-icon" href="../images/logos/favicon.ico">
- 	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="icon" type="image/x-icon" href="../images/logos/favicon.ico">
+	<link rel="stylesheet" href="../css/styles.css">
 
 
 	<!-- Font Awesome if you need it
@@ -23,21 +23,21 @@
 	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 	<!-- Animation CSS-->
 
-	
+
 	<!--Slide Show Imports-->
-		<!-- Alpine.js -->
-		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<!-- Start - Fonts -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
-		<!-- End - Fonts -->
-		<!-- Start - Fancybox Scripts -->
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-		<script src="https://code.jquery.com/jquery-3.6.3.min.js"
-			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-		<!-- End - Fancybox Scripts -->
+	<!-- Alpine.js -->
+	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<!-- Start - Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+	<!-- End - Fonts -->
+	<!-- Start - Fancybox Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<!-- End - Fancybox Scripts -->
 	<!-- End of Slide Show Imports-->
 
 
@@ -48,11 +48,13 @@
 		 * w: http://animista.net, t: @cssanimista
 		 * ---------------------------------------------- */
 		a {
-			color: rgba(59,130,246,1);
+			color: rgba(59, 130, 246, 1);
 		}
+
 		a:hover {
-			color: rgba(37,99,235,1);
+			color: rgba(37, 99, 235, 1);
 		}
+
 		.line-clamp {
 			display: -webkit-box;
 			-webkit-line-clamp: 3;
@@ -299,13 +301,13 @@
 
 
 <body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
-	<div class="bg-right bg-cover" style="background-image:url('images/hand.jpg');background-attachment: fixed;">
+	<div class="bg-right bg-cover" style="background-image:url('../images/hand.jpg');background-attachment: fixed;">
 		<!--Nav-->
 		<div class="w-auto mx-10 p-6 hidden lg:block">
 			<div class="w-full flex items-center justify-between">
 				<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
 					href="/">
-					<img class="h-24" src="images/logos/Enhands_Full_Logo.svg"></img>
+					<img class="h-24" src="../images/logos/Enhands_Full_Logo.svg"></img>
 				</a>
 			</div>
 		</div>
@@ -314,8 +316,8 @@
 		</span>
 		<div class="w-auto mx-10 p-6 flex flex-col  mb-8 items-center">
 			<span class="whitespace-nowrap container flex items-end justify-center w-full mt-6">
-				<a class="flex" href="/blog.html">
-					<img class="h-24 inline-block" src="images/logos/Enhands_Blog.svg"></img>
+				<a class="flex" href="/pages/blog.html">
+					<img class="h-24 inline-block" src="../images/logos/Enhands_Blog.svg"></img>
 				</a>
 			</span>
 			<!-- <h4 class="text-center mt-2" style="font-size: 2vmin;">The latest updates from EnHands</h4> -->
@@ -337,16 +339,16 @@
 			<div class="flex flex-wrap">
 				<div class="mb-6 mt-1 text-sm sm:text-sm md:text-md lg:text-base font-medium text-blue-500 uppercase"
 					id="blogpostDateContainer"></div>
-					<div class="mb-6 mt-1 ml-4 mr-4 text-sm sm:text-sm md:text-md lg:text-base font-medium text-gray-400">|</div>
-					<div class="mb-6 mt-1 text-sm sm:text-sm md:text-md lg:text-base font-medium text-gray-700"
-						id="blogpostAuthorContainer"></div>
+				<div class="mb-6 mt-1 ml-4 mr-4 text-sm sm:text-sm md:text-md lg:text-base font-medium text-gray-400">|
+				</div>
+				<div class="mb-6 mt-1 text-sm sm:text-sm md:text-md lg:text-base font-medium text-gray-700"
+					id="blogpostAuthorContainer"></div>
 			</div>
 
 			<div class="mb-8" style="display:block;overflow:hidden;position:relative;box-sizing:border-box;">
 				<div>
-					<img src="" decoding="async"
-						class="rounded object-cover block w-auto self-center" sizes="100vw" style="aspect-ratio: 3 / 2;"
-						id="blogpostImageContainer">
+					<img src="" decoding="async" class="rounded object-cover block w-auto self-center" sizes="100vw"
+						style="aspect-ratio: 3 / 2;" id="blogpostImageContainer">
 				</div>
 			</div>
 			<div class="flex flex-col  mb-8 items-center" id="blogpostTextContainer">
@@ -362,7 +364,8 @@
 			</span>
 			<ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
 				<li>
-					<a href="#" class="mr-4 hover:underline md:mr-6 ">Impressum: EnHands e.V., Freisinger Landstraße 52, 85748 Garching bei München, Germany. Email: info@enhands.de. Phone: +49 (89) 289 -
+					<a href="#" class="mr-4 hover:underline md:mr-6 ">Impressum: EnHands e.V., Freisinger Landstraße 52,
+						85748 Garching bei München, Germany. Email: info@enhands.de. Phone: +49 (89) 289 -
 						29459</a>
 				</li>
 				<li>
@@ -374,15 +377,16 @@
 	</div>
 
 	<!-- Showdown: Markdown to HTML converter -->
- 	<script src="https://unpkg.com/showdown@2.1.0/dist/showdown.min.js"></script>
- 	<script src="../js/blogpost.js"></script>
+	<script src="https://unpkg.com/showdown@2.1.0/dist/showdown.min.js"></script>
+	<script src="../js/blogpost.js"></script>
 
-	
+
 </body>
-	<!-- Script for the LightBox -->
-		<script>
-		Fancybox.bind("[data-fancybox]", {});
-	  </script>
-	  <script src="../blog/handsforum/fade_in.js"></script>
-	  <script src="../blog/handsforum/menu.js"></script>
+<!-- Script for the LightBox -->
+<script>
+	Fancybox.bind("[data-fancybox]", {});
+</script>
+<script src="../blog/handsforum/fade_in.js"></script>
+<script src="../blog/handsforum/menu.js"></script>
+
 </html>
