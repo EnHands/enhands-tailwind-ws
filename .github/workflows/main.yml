@@ -31,7 +31,7 @@ jobs:
       - run: |
           ls -la
           tree
-          python add-person.py
+          python .github\workflows\add-person.py
           echo "MemberName=$(cat 'New Member')" >> $GITHUB_ENV
           echo "branchName=$(cat 'BranchName')" >> $GITHUB_ENV
       - name: install gh cli
@@ -42,7 +42,7 @@ jobs:
           git config --global user.email "leon.kiesgen@web.de"
           git branch "${{ env.branchName }}"
           git checkout "${{ env.branchName }}"
-          git add people.json
+          git add data/people.json
           git commit -m "⚙ Added ${{ env.MemberName }} to the Team [BOT]"
           git clean -fd
           git push --set-upstream origin "${{ env.branchName }}"

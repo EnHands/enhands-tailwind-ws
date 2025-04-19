@@ -36,7 +36,7 @@ def main():
         data.append(supporter)
 
 
-    with open("supporter.json","w", encoding="utf-8") as fs:
+    with open("data/supporter.json","w", encoding="utf-8") as fs:
         json.dump(data,fs,indent=4,ensure_ascii=False)
 
     filename= "New Supporter"
