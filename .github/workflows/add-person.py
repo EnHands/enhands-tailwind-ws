@@ -25,7 +25,7 @@ def main():
     }
     print(person)
 
-    with open("people.json", encoding="utf-8") as fs:
+    with open("data/people.json", encoding="utf-8") as fs:
 
         data=json.load(fs)
 

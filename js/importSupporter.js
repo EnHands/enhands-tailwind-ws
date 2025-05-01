@@ -3,7 +3,7 @@
 // This file is used to generate random cards for the team section of the website
 cardList_Partner= document.getElementById("CardList-Partner")
 
-fetch('./supporter.json')
+fetch('./data/supporter.json')
     .then((response) => response.json())
     .then((people) => 
     {
@@ -13,7 +13,7 @@ fetch('./supporter.json')
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        //shuffleArray(people);
+        //shuffleArray(people); This can be used to shuffle Supporters but this might be not wanted
         
         people.forEach(element => {
             var supporterImage = `<a title="${element.name}" href="${element.url}">
