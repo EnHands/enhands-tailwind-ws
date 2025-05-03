@@ -10,6 +10,7 @@
 	<meta name="keywords" content="">
 	<meta name="thumbnail" content="images/logos/Enhands_Logo.png">
 	<link rel="icon" type="image/x-icon" href="./images/logos/favicon.ico">
+	<link rel="stylesheet" href="css/team-carousel.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 
@@ -962,14 +963,31 @@
 		
 		</div> -->
 
-		<!--About Us-->
-		<div
-			class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 ">
-			<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">Meet
-				our Team 👨‍👩‍👧‍👧</h2>
-			<div id="CardList-People" class="flex gap-6 flex-wrap justify-center ">
+		
+		<!--Meet our Team-->
+		<section class="py-12 bg-white">
+			<div class="max-w-7xl mx-auto">
+			<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Meet Our Team</h2>
+			
+			<div class="team-carousel-container">
+				<button class="carousel-nav-btn prev" aria-label="Previous team members">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+					<path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+				</button>
+				
+				<div class="team-carousel-wrapper">
+				<!-- Slides will be inserted here by JavaScript -->
+				</div>
+				
+				<button class="carousel-nav-btn next" aria-label="Next team members">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+					<path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+				</button>
 			</div>
-		</div>
+			</div>
+		</section>
 
 		<!--Partners-->
 		<div class="bg-white4">
@@ -1094,7 +1112,7 @@
 	<script src="js/a_mod.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/horizonalScroll.js"></script>
-	<script src="js/randomCards.js"></script>
+	<script src="js/teamCarousel.js"></script>
 	<script src="js/importSupporter.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
