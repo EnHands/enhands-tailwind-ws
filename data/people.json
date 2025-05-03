@@ -1,32 +1,14 @@
 [
     {
-        "name": "Sonja Groß",
-        "img": "images/people/profile/Sonja.jpg",
-        "img_hover": "images/people/fun/Sonja.jpg",
-        "job": "Ph.D. Candidate, MIRMI"
+        "name": "Johannes Frey",
+        "img": "images/people/profile/Johannes.jpg",
+        "img_hover": "images/people/fun/Johannes.jpg",
+        "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
     },
     {
         "name": "Leon Kiesgen",
         "img": "images/people/profile/Leon.jpg",
         "img_hover": "images/people/fun/Leon.jpg",
-        "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
-    },
-    {
-        "name": "Julia Veloso de Oliveira",
-        "img": "images/people/profile/Julia.jpg",
-        "img_hover": "images/people/fun/Julia.jpg",
-        "job": "Ph.D. Candidate, Experimental Audiology (Klinikum rechts der Isar)"
-    },
-    {
-        "name": "Vincent Bürgin",
-        "img": "images/people/profile/Vincent.jpg",
-        "img_hover": "images/people/fun/Vincent.jpg",
-        "job": "Graduated M.Sc. Informatics"
-    },
-    {
-        "name": "Johannes Frey",
-        "img": "images/people/profile/Johannes.jpg",
-        "img_hover": "images/people/fun/Johannes.jpg",
         "job": "Graduated M.Sc. Robotics, Cognition, Intelligence"
     },
     {
@@ -41,10 +23,28 @@
         "job": "Studying M.Sc. Mechatronics & Robotics"
     },
     {
+        "name": "Sonja Groß",
+        "img": "images/people/profile/Sonja.jpg",
+        "img_hover": "images/people/fun/Sonja.jpg",
+        "job": "Ph.D. Candidate, MIRMI"
+    },
+    {
+        "name": "Vincent Bürgin",
+        "img": "images/people/profile/Vincent.jpg",
+        "img_hover": "images/people/fun/Vincent.jpg",
+        "job": "Graduated M.Sc. Informatics"
+    },
+    {
         "name": "Amartya Ganguly",
         "img": "images/people/profile/Amartya.jpg",
         "img_hover": "images/people/fun/Amartya.jpg",
         "job": "Postdoctoral Researcher, MIRMI"
+    },
+    {
+        "name": "Julia Veloso de Oliveira",
+        "img": "images/people/profile/Julia.jpg",
+        "img_hover": "images/people/fun/Julia.jpg",
+        "job": "Ph.D. Candidate, Experimental Audiology (Klinikum rechts der Isar)"
     },
     {
         "name": "Philipp Basse",
@@ -71,7 +71,7 @@
         "job": "Ph.D. Candidate, Chair of Human Movement Science"
     },
     {
-        "name": "Nikolas Kaarsberg",
+        "name": "Nikolas Carreira Kaarsberg",
         "img": "images/people/profile/Nikolas.jpg",
         "img_hover": "images/people/fun/Nikolas.jpg",
         "job": "Studying B.Sc. General Engineering (Technical University of Denmark)"
@@ -82,7 +82,7 @@
         "job": "Graduated M.Sc. Neuroengineering"
     },
     {
-        "name":"Mohamed Eyssa",
+        "name":"Mohamed Khaled Eyssa",
         "img": "images/people/profile/Mohamed.jpg",
         "img_hover": "images/people/fun/Mohamed.jpg",
         "job": "Studying M.Sc. Mechatronics, Robotics, and Biomechanical Engineering"
