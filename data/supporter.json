@@ -2,55 +2,46 @@
     {
         "name": "Naya Qadam",
         "img": "images/logos/nayaqadam-small-2.png",
-        "tier": "Bronze",
         "url": "https://nayaqadam.org/"
     },
     {
         "name": "MIRMI",
         "img": "images/logos/IRI_Zeichen_MIRMI_RGB_schwarz.png",
-        "tier": "Bronze",
         "url": "https://www.mirmi.tum.de"
     },
     {
         "name": "TUM Venture Labs",
         "img": "images/logos/tum-venture-labs-logo.PNG",
-        "tier": "Gold",
         "url": "https://www.tum-venture-labs.de/labs/additive-manufacturing/"
     },
     {
         "name": "TU-Dresden",
         "img": "images/logos/tu-dresden-logo.png",
-        "tier": "Silver",
         "url": "https://tu-dresden.de"
     },
     {
         "name": "CeTI",
         "img": "images/logos/CeTI-logo.png",
-        "tier": "Silver",
         "url": "https://ceti.one/"
     },
     {
         "name": "Funding for Innovators",
         "img": "images/logos/funding-for-innovators-2.png",
-        "tier": "Silver",
         "url": "https://funding.unternehmertum.de/en"
     },
     {
         "name": "MakerSpace",
         "img": "images/logos/makerspace.png",
-        "tier": "Silver",
         "url": "https://maker-space.de/"
     },
     {
         "name": "Checkpoint System EDV GmbH",
         "img": "images/logos/Checkpoint.png",
-        "tier": "Bronze",
         "url": "http://www.checkpoint-system.de/"
     },
     {
         "name": "Vodafone",
         "img": "images/logos/vodafone.png",
-        "tier": "Bronze",
         "url": "https://www.vodafone.de/"
     }
 ]
