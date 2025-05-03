@@ -11,6 +11,7 @@
 	<meta name="thumbnail" content="images/logos/Enhands_Logo.png">
 	<link rel="icon" type="image/x-icon" href="./images/logos/favicon.ico">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/partner-section.css">
 
 
 	<!-- Font Awesome if you need it
@@ -971,17 +972,22 @@
 			</div>
 		</div>
 
-		<!--Partners-->
-		<div class="bg-white4">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-					Our Partners ✨</h2>
-				<div id="CardList-Partner"
-					class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-
+		<!-- Partners Section -->
+		<section class="py-1 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Partners</h2>
+			
+			<div class="partners-slideshow relative overflow-hidden py-0">
+				<div class="partners-track flex items-center gap-8" aria-live="polite">
+				<!-- Partners will be loaded here by JavaScript -->
 				</div>
+				
+				<!-- Gradient fade effects -->
+				<div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+				<div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
 			</div>
-		</div>
+			</div>
+		</section>
 
 		<div
 			class="flex sm:w-full sm:mx-auto border-2 border-blue-700 my-20 sm:my-20 px-8 py-6 mx-2 rounded-3xl sm:max-w-2xl sm:pt-10 sm:pb-10 items-center sm:px-8 sm:py-6 lg:max-w-7xl lg:px-12">
@@ -1097,6 +1103,8 @@
 	<script src="js/randomCards.js"></script>
 	<script src="js/importSupporter.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script src="./js/partners-slideshow.js" defer></script>
+
 </body>
 
 </html>
