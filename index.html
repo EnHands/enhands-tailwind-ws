@@ -20,6 +20,12 @@
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 	<!--Replace with your tailwind.css once created-->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<style>
+		/* Smooth scrolling for in-page anchors */
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
 	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
 		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -352,6 +358,42 @@
 		a {
 			color: #888
 		}
+
+		details summary svg {
+			transition: transform .3s ease-in-out;
+		}
+
+		details[open] summary svg {
+			transform: rotate(180deg);
+		}
+
+		/* slide‑in / out */
+		.answer {
+			max-height: 0;
+			/* fully collapsed */
+			overflow: hidden;
+			opacity: 0;
+			transition: max-height .35s ease, opacity .35s ease;
+		}
+
+		details[open] .answer {
+			max-height: 600px;
+			/* big enough for any answer */
+			opacity: 1;
+		}
+
+		/* remove default disclosure triangle everywhere */
+		details summary {
+			/* fallback for some browsers  */
+			list-style: none;
+		}
+
+		details summary::marker,
+		/* Chromium / Firefox          */
+		details summary::-webkit-details-marker {
+			/* Safari / iOS */
+			display: none;
+		}
 	</style>
 
 </head>
@@ -370,6 +412,9 @@
 				</a>
 
 				<div class="flex w-1/2 justify-end content-center">
+					<a href="#donate"
+						class="hidden md:inline-block px-6 py-2 mr-4 rounded-lg bg-white text-blue-800 font-semibold hover:bg-blue-50 transition ">Donate
+						now</a>
 					<a class="inline-block no-underline text-blue-400 hover:text-blue-500 hover:text-underline text-center h-10 w-10"
 						href="https://instagram.com/enhands">
 						<span class="h-10">
@@ -971,8 +1016,135 @@
 			</div>
 		</div>
 
+
+
+
+		<!-- ===================  FAQ  =================== -->
+		<section id="faq" class="max-w-3xl mx-auto px-6 py-24">
+			<h2 class="text-3xl sm:text-4xl font-bold text-center mb-10">FAQs</h2>
+
+			<!-- 1 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How are EnHands prostheses developed?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Through a collaborative process with students from Mechanical Engineering, Robotics
+					and Informatics. We design and prototype affordable upper‑limb prostheses for the
+					developing world.
+				</div>
+			</details>
+
+			<!-- 2 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I get involved?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Join our student group and help develop affordable prosthetic hands—students from
+					any study program are welcome.
+				</div>
+			</details>
+
+			<!-- 3 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">What is EnHands’ mission?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					To develop low‑cost, functional upper‑limb prostheses for amputees who would
+					otherwise have no access to such technology.
+				</div>
+			</details>
+
+			<!-- 4 -->
+			<details class="border-b border-gray-200 py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I donate?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Right now we don’t accept direct donations, but you can help by spreading the word
+					on social media and sharing our website.
+				</div>
+			</details>
+
+			<!-- 5 -->
+			<details class="py-4" data-accordion>
+				<summary class="flex justify-between items-center cursor-pointer">
+					<span class="font-semibold">How can I contact EnHands?</span>
+					<svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
+						viewBox="0 0 24 24">
+						<path d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="answer mt-3 text-gray-600">
+					Drop us a note via the contact form or email&nbsp;<a href="mailto:info@enhands.de"
+						class="text-blue-600 underline">info@enhands.de</a>.
+				</div>
+			</details>
+		</section>
+
+		<!-- ───── Donation Hero ───── -->
+		<section id="donate" class="relative isolate overflow-hidden text-white"
+			style="background:url('/images/donate-bg.jpg') center/cover no-repeat">
+
+			<!-- soft blue‑to‑transparent overlay -->
+			<div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-blue-700/50"></div>
+			<!-- content -->
+			<div class="relative max-w-7xl mx-auto px-6 sm:px-8 py-28 lg:py-36 grid lg:grid-cols-2 gap-10">
+
+				<!-- left column: emotion image stays visible on large screens -->
+				<div class="hidden lg:block"></div>
+
+				<!-- right column: copy + CTAs -->
+				<div class="bg-gray-800 bg-opacity-80 p-8 rounded-lg backdrop-blur-sm">
+					<h2 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6
+           text-white drop-shadow-md">
+						Give a hand.
+						<span class="block text-blue-500">Change a life.</span>
+					</h2>
+
+					<p class="text-lg sm:text-xl mb-10 max-w-prose text-white/90 drop-shadow">
+						Your donation helps us craft affordable prosthetic hands for
+						amputees who would otherwise go without. Every euro moves fingers.
+					</p>
+
+					<div class="flex flex-wrap gap-4 mb-8">
+						<a href="https://www.paypal.com/donate/?campaign_id=AD2ECE3P9VTVJ"
+							class="px-8 py-3 rounded-lg bg-white text-blue-800 font-semibold hover:bg-blue-50 transition">
+							Donate now
+						</a>
+					</div>
+
+					<!-- bank details -->
+					<div class="bg-gray-900/60 backdrop-blur-sm p-4 rounded-md text-sm leading-relaxed
+					font-mono text-white shadow">
+						<strong>EnHands e.V.</strong><br>
+						IBAN: DE74 8306 5408 0005 4605 90<br>
+						GENODEF1SLR (Deutsche Skatbank)
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!--Partners-->
-		<div class="bg-white4">
+		<div class="bg-white4 pt-10">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
 					Our Partners ✨</h2>
@@ -983,73 +1155,7 @@
 			</div>
 		</div>
 
-		<div
-			class="flex sm:w-full sm:mx-auto border-2 border-blue-700 my-20 sm:my-20 px-8 py-6 mx-2 rounded-3xl sm:max-w-2xl sm:pt-10 sm:pb-10 items-center sm:px-8 sm:py-6 lg:max-w-7xl lg:px-12">
-			<div class="mx-auto max-w-7xl px-2 lg:px-8">
-				<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-					<span
-						class="underline underline-offset-3 decoration-8 decoration-blue-400 hover:text-indigo-600 dark:decoration-blue-600">Donate
-						to EnHands</span>
-				</h2>
-				<p class="mt-4 text-gray-800 text-xl">
-					We are always looking for money to finance our development efforts!
-					You can help <span class="underline">fund our prototyping</span> by <span class="underline">donating
-						to our bank account</span> — any amount is appreciated.
-					We are also happy to issue a donation receipt for your taxes and answer any questions you might
-					have: just <a href="mailto:info@enhands.de">send us an email</a>.
-				</p>
-				<div class="mt-4 text-gray-800 text-xl font-bold text-center">
-					EnHands e.V.<br>
-					IBAN: DE74 8306 5408 0005 4605 90<br>
-					GENODEF1SLR (Deutsche Skatbank)
-				</div>
-				<p class="mt-4 text-gray-800 text-xl">
-					Are you a company and want to become a sponsoring partner to support a student initiative with a
-					meaningful mission?
-					We're happy to partner up! Please reach out to us at <a
-						href="mailto:info@enhands.de">info@enhands.de</a>.
-				</p>
-			</div>
-		</div>
 
-		<!--Partners-->
-		<!--
-		<div
-			class="max-w-2xl mx-auto px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6  lg:max-w-7xl lg:px-8 py-24 sm:py-24 ">
-			<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">
-				Our Partners</h2>
-			<div id="PartnerList" class="flex gap-6 flex-wrap justify-center ">
-
-
-				`<div class="card w-50 sm:w-50 rounded overflow-hidden">
-					<img class="w-full max-h-60 object-cover" src="images/logos/nayaqadam-small.png" alt="">
-					<div class="px-3 sm:px-6 py-4">
-						<div class="font-bold text-sm sm:text-xl mb-2 text-center">
-							Naya Qadam
-						</div>
-					</div>
-				</div>
-
-				`<div class="card w-50 sm:w-50 rounded overflow-hidden">
-					<img class="w-full max-h-60 object-cover" src="images/logos/vodafone-small.png" alt="">
-					<div class="px-3 sm:px-6 py-4">
-						<div class="font-bold text-sm sm:text-xl mb-2 text-center">
-							Vodafone
-						</div>
-					</div>
-				</div>
-
-				`<div class="card w-50 sm:w-50 rounded overflow-hidden">
-					<img class="w-full max-h-60 object-cover" src="images/logos/funding-for-innovators.png" alt="">
-					<div class="px-3 sm:px-6 py-4">
-						<div class="font-bold text-sm sm:text-xl mb-2 text-center">
-							UnternehmerTUM
-						</div>
-					</div>
-				</div>
-			</div>`
-		</div>
-		-->
 		<footer
 			class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
 			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="http://enhands.de"
@@ -1091,6 +1197,10 @@
 
 
 
+
+
+	<!-- Floating Donate button for mobile screens -->
+	<a id="donate-button" href="#donate" aria-label="Donate now">💖</a>
 	<script src="js/a_mod.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/horizonalScroll.js"></script>

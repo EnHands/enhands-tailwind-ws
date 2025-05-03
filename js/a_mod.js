@@ -1,4 +1,5 @@
-$('a').click(function(e) {
-    var aid = $(this).attr("href");
+$('a').not('[href^="#"]').click(function(e) {
+    // Preserve current scroll position for non-anchor links (e.g., external or mailto)
     var pos = document.documentElement.scrollTop;
-    $('html,body').animate({scrollTop: pos});});
+    $('html,body').animate({scrollTop: pos});
+});
