@@ -1,24 +1,26 @@
-const scrollDiv = document.querySelector(".scrollable-div")
-const mask1 = document.querySelector(".mask1")
-const mask2 = document.querySelector(".mask2")
-const model = document.querySelector(".model")
-const arrow = document.querySelector(".arrow")
-const scrollContainer = document.getElementById("scroll-container")
-
-
-// Function to update scroll position and container width
-function updateScrollInfo() {
-    var progress = scrollDiv.scrollLeft/((scrollDiv.scrollWidth - scrollContainer.offsetWidth))
-    mask1.setAttribute("width",progress*344)
-    mask2.setAttribute("width",progress*344)
-    
-}
-
-// Initial update
-updateScrollInfo();
-
-// Add an event listener to track scroll changes
-scrollDiv.addEventListener("scroll", updateScrollInfo);
-
-
-
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('carousel');
+    const pages    = carousel.querySelectorAll('.carousel-item');
+    const nav      = document.getElementById('dotNav');
+  
+    pages.forEach((page, i) => {
+      const dot = document.createElement('button');
+      dot.className =
+        'h-2 w-2 rounded-full bg-gray-300 transition-colors';
+      dot.onclick = () =>
+        page.scrollIntoView({behavior:'smooth', inline:'center'});
+      nav.appendChild(dot);
+    });
+  
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const idx = [...pages].indexOf(e.target);
+        nav.children[idx].classList.add('bg-blue-600');
+        [...nav.children].forEach((d, j) =>
+          j !== idx && d.classList.remove('bg-blue-600'));
+      });
+    }, {root: carousel, threshold: 0.6});
+  
+    pages.forEach(p => io.observe(p));
+  });
