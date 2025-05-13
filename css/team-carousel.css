@@ -1,0 +1,248 @@
+/* Team Carousel - Final Version */
+.team-carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  overflow: hidden;
+}
+
+.team-carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.team-carousel-slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.team-carousel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  position: relative;
+}
+
+/* Board Member Badge */
+.team-carousel-card.board-member::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Role Title Hover Effect */
+.team-carousel-card.board-member .team-carousel-name-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.team-carousel-card.board-member .team-name {
+  transition: opacity 0.3s ease;
+}
+
+.team-carousel-card.board-member .team-role {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 600;
+}
+
+.team-carousel-card.board-member:hover .team-name {
+  opacity: 0;
+}
+
+.team-carousel-card.board-member:hover .team-role {
+  opacity: 1;
+}
+
+/* Board Member Colors */
+.team-carousel-card.chairman::after { background: #e53e3e; }
+.team-carousel-card.chairman .team-role { color: #e53e3e; }
+.team-carousel-card.deputy::after { background: #dd6b20; }
+.team-carousel-card.deputy .team-role { color: #dd6b20; }
+.team-carousel-card.secretary::after { background: #38a169; }
+.team-carousel-card.secretary .team-role { color: #38a169; }
+.team-carousel-card.treasurer::after { background: #805ad5; }
+.team-carousel-card.treasurer .team-role { color: #805ad5; }
+.team-carousel-card.advisor::after { background: #718096; }
+.team-carousel-card.advisor .team-role { color: #718096; }
+
+.team-carousel-image-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5px;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.team-carousel-image.hover {
+  opacity: 0;
+}
+
+.team-carousel-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.team-carousel-job {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #718096;
+  min-height: 2em;
+  padding: 0 3px;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-nav-btn.prev {
+  left: 5px;
+}
+
+.carousel-nav-btn.next {
+  right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .team-carousel-slide {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-carousel-slide {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-carousel-slide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-carousel-container {
+    padding: 0 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Partners Slideshow */
+.partners-slideshow {
+  position: relative;
+  margin: 0 auto;
+}
+
+.partners-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+  will-change: transform;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Different styling for partner tiers */
+.partner-logo[data-tier="Gold"] img {
+  transform: scale(1.75);
+}
+
+.partner-logo[data-tier="Silver"] img {
+  transform: scale(1.1);
+}
+
+.partner-logo[data-tier="Bronze"] img {
+  transform: scale(0.75);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pause animation on hover */
+.partners-slideshow:hover .partners-track {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 10000px) {
+  .partner-logo {
+    width: 150px;
+    height: 75px;
+    padding: 0 1rem;
+  }
+}
