@@ -134,29 +134,31 @@
 
 		}
 
-		.card-image-area .img-hover {
-			visibility: hidden;
-			position: absolute;
-			width: 0;
-			height: 0;
-		}
-
-		.card-image-area:hover .img-hover,
-		.card-image-area:active .img-hover {
-			visibility: visible;
+		.card-image-area {
 			position: relative;
-			width: unset;
-			height: unset;
+			overflow: hidden;
 		}
 
-		.card-image-area:hover .img-nohover,
-		.card-image-area:active .img-nohover {
-			visibility: hidden;
+		.card-image-area .img-hover {
 			position: absolute;
-			width: 0;
-			height: 0;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0s, opacity 0.3s ease;
 		}
 
+		.card-image-area:hover .img-hover {
+			visibility: visible;
+			opacity: 1;
+			position: absolute;
+		}
+
+		.card-image-area:hover .img-nohover {
+			opacity: 0;
+		}
 
 		@-webkit-keyframes slide-in-bottom {
 			0% {
@@ -337,6 +339,36 @@
 
 		a {
 			color: #888
+		}
+
+		/* Add these line-clamp utilities if not already defined */
+		.line-clamp-1 {
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		.line-clamp-2 {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		/* Update hover effect for circular images */
+		.rounded-full .img-hover {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.rounded-full:hover .img-hover {
+			opacity: 1;
+		}
+
+		.rounded-full:hover .img-nohover {
+			opacity: 0;
+			transition: opacity 0.3s ease;
 		}
 	</style>
 
@@ -869,15 +901,21 @@
 
 		<!--About Us-->
 		<div
-			class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 ">
+			class="max-w-7xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-2 gap-x-8 sm:px-6 sm:py-24 lg:px-8">
 			<h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-4xl">Meet
 				our Team 👨‍👩‍👧‍👧</h2>
-			<div id="CardList-People" class="flex gap-6 flex-wrap justify-center ">
+
+			<!-- Team carousel -->
+			<div id="teamCarousel" class="carousel scrollable-div rounded width_overflow">
+				<!-- Team grid sections will be added here by JavaScript -->
 			</div>
+
+			<!-- Team carousel navigation -->
+			<nav id="teamDotNav" class="flex justify-center gap-2 mb-6"></nav>
 		</div>
 
 		<!-- Partners Section -->
-		<section class="py-1 bg-gray-50">
+		<section class="py-4 bg-gray-50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Partners</h2>
 
@@ -921,6 +959,7 @@
 	<script src="js/importSupporter.js"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script src="./js/partners-slideshow.js" defer></script>
+	<script src="js/team-carousel.js"></script>
 
 </body>
 
