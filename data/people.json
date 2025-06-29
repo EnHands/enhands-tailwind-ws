@@ -122,5 +122,23 @@
         "img": "images/people/profile/Angela.jpg",
         "img_hover": "images/people/fun/Angela.jpg",
         "job": "Studying M.A. Science and Technology Studies"
+    },
+    {
+        "name": "Claudia Hertling Mata",
+        "img": "images/people/profile/Claudia.jpg",
+        "img_hover": "images/people/fun/Claudia.jpg",
+        "job": "Studying B.Sc. Engineering Science"
+    },
+    {
+        "name": "Fatima Atabani",
+        "img": "images/people/profile/Fatima.jpg",
+        "img_hover": "images/people/fun/Fatima.jpg",
+        "job": "Studying M.Sc. Development, Production and Management in Mechanical Engineering"
+    },
+    {
+        "name": "Marc Avdeenco",
+        "img": "images/people/profile/Marc.jpg",
+        "img_hover": "images/people/fun/Marc.jpg",
+        "job": "Studying M.Sc. Development, Production and Management in Mechanical Engineering"
     }
 ]
