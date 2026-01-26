@@ -19,7 +19,7 @@ const CONFIG = {
 const handRegistry = {
     "Cosmetic V1.0": {
         image: "images/product/CosmeticV1-0.png",
-        description: "First generation cosmetic hand designed for natural appearance and basic comfort.",
+        description: "First generation cosmetic hand designed for natural appearance and customizable hand poses.",
         link: "#P2"
     },
     "Cosmetic V1.1": {
