@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Cosmetic V1.0",
+    "stats": {
+      "finished": 0,
+      "assigned": 1,
+      "sent": 1
+    }
+  },
+  {
+    "name": "Cosmetic V1.1",
+    "stats": {
+      "finished": 0,
+      "assigned": 0,
+      "sent": 1
+    }
+  }
+]
