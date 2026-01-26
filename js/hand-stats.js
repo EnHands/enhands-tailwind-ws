@@ -20,7 +20,7 @@ const handRegistry = {
     "Cosmetic V1.0": {
         image: "images/product/CosmeticV1-0.png",
         description: "First generation cosmetic hand designed for natural appearance and customizable hand poses.",
-        link: "#P2"
+        link: "mailto:info@enhands.de?subject=%F0%9F%8C%8D%F0%9F%A6%BE%F0%9F%96%90%EF%B8%8F%20Request%20a%20Cosmetic%20Prototype!%20%F0%9F%96%90%EF%B8%8F%F0%9F%A6%BE%F0%9F%8C%8D&body=(Hi%2C%20thank%20you%20for%20your%20interest%20in%20our%20Cosmetic%20Prototypes.%20We%20would%20love%20to%20help%20you%20with%20your%20request.%0A%0APlease%20fill%20out%20the%20details%20below%20so%20we%20can%20better%20understand%20your%20needs.)%0A%0AHi%20EnHands%20Team%2C%0A%0AI%20am%20interested%20in%20requesting%20a%20Cosmetic%20Prototype.%0A%0AHere%20are%20some%20details%20about%20my%20request%3A%0A%0AName%3A%0AProject%20Description%3A%0ADeadline%3A%0AAdditional%20Notes%3A`"
     },
     "Cosmetic V1.1": {
         image: "",
@@ -212,7 +212,7 @@ function createHandCard(handData) {
     // Button Section
     const buttonSection = `
         <a href="${registryData.link}" class="mt-8 block w-full text-center bg-gray-900 text-white py-3 px-6 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-            View Details
+            Request Prototype
         </a>`;
 
     card.innerHTML = `
