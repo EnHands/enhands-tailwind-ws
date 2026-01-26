@@ -17,24 +17,13 @@ const CONFIG = {
 };
 
 const handRegistry = {
-    "V2 Functional Prototype": {
-        image: "model-resources/FunctionalHand_V2.webp",
-        description: "Our most sophisticated development to date, featuring three grasping types and a realistic silicone glove.",
-        link: "#P3"
-    },
-    "Cosmetic Hand": {
-        image: "model-resources/poster_P2.webp",
-        description: "Designed for a natural appearance and comfort, with a soft silicone outer layer and a simple gripping mechanism.",
-        link: "#P2"
-    },
-    // Mappings for new Database Schema names
     "Cosmetic V1.0": {
-        image: "model-resources/poster_P2.webp",
+        image: "images/product/CosmeticV1-0.png",
         description: "First generation cosmetic hand designed for natural appearance and basic comfort.",
         link: "#P2"
     },
     "Cosmetic V1.1": {
-        image: "model-resources/poster_P2.webp",
+        image: "",
         description: "Improved cosmetic hand with enhanced durability and a refined silicone outer layer.",
         link: "#P2"
     },
@@ -166,36 +155,71 @@ function createHandCard(handData) {
     }
 
     const card = document.createElement('div');
-    card.className = 'bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col';
+    card.className = 'bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group overflow-hidden';
 
     // Image Section
-    const imageSection = `<img class="w-full h-56 object-cover object-center" src="${registryData.image}" alt="${handData.name}">`;
+    const imageSection = `
+        <div class="overflow-hidden h-64 w-full relative">
+            <img class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500" src="${registryData.image}" alt="${handData.name}">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>`;
 
-    // Stats Section
+    // Stats Section - Process Flow
     const statsSection = `
-        <div class="mt-6 grid grid-cols-3 gap-2 text-center text-sm">
-            <div class="bg-green-100 p-2 rounded flex flex-col justify-center">
-                <span class="block font-bold text-green-800 text-lg">${handData.stats.finished}</span>
-                <span class="text-xs text-green-600 font-medium uppercase tracking-wide">Ready</span>
-            </div>
-            <div class="bg-yellow-100 p-2 rounded flex flex-col justify-center">
-                <span class="block font-bold text-yellow-800 text-lg">${handData.stats.assigned}</span>
-                <span class="text-xs text-yellow-600 font-medium uppercase tracking-wide">Assigned</span>
-            </div>
-            <div class="bg-blue-100 p-2 rounded flex flex-col justify-center">
-                <span class="block font-bold text-blue-800 text-lg">${handData.stats.sent}</span>
-                <span class="text-xs text-blue-600 font-medium uppercase tracking-wide">Sent</span>
+        <div class="mt-6 pt-6 border-t border-gray-100">
+            <div class="flex items-center justify-between px-2">
+                
+                <!-- Step 1: Ready -->
+                <div class="flex flex-col items-center group/stat">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-2 transition-colors group-hover/stat:bg-blue-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900 leading-none">${handData.stats.finished}</span>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-wider font-medium mt-1">Ready</span>
+                </div>
+
+                <!-- Arrow -->
+                <div class="text-gray-300 pb-6">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </div>
+
+                <!-- Step 2: Assigned -->
+                <div class="flex flex-col items-center group/stat">
+                    <div class="w-10 h-10 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center mb-2 transition-colors group-hover/stat:bg-indigo-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900 leading-none">${handData.stats.assigned}</span>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-wider font-medium mt-1">Assigned</span>
+                </div>
+
+                <!-- Arrow -->
+                <div class="text-gray-300 pb-6">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </div>
+
+                <!-- Step 3: Sent -->
+                <div class="flex flex-col items-center group/stat">
+                    <div class="w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center mb-2 transition-colors group-hover/stat:bg-green-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900 leading-none">${handData.stats.sent}</span>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-wider font-medium mt-1">Sent</span>
+                </div>
+
             </div>
         </div>`;
 
     // Button Section
-    const buttonSection = `<a href="${registryData.link}" class="mt-6 block w-full text-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-150 ease-in-out">Request This Hand</a>`;
+    const buttonSection = `
+        <a href="${registryData.link}" class="mt-8 block w-full text-center bg-gray-900 text-white py-3 px-6 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            View Details
+        </a>`;
 
     card.innerHTML = `
         ${imageSection}
-        <div class="p-6 flex-grow flex flex-col">
-            <h3 class="text-lg font-medium text-gray-900 tracking-tight">${handData.name}</h3>
-            <p class="mt-4 text-base text-gray-500 flex-grow">
+        <div class="p-8 flex-grow flex flex-col">
+            <h3 class="text-2xl font-bold text-gray-900 tracking-tight mb-3">${handData.name}</h3>
+            <p class="text-gray-600 leading-relaxed flex-grow">
                 ${registryData.description}
             </p>
             ${statsSection}
@@ -208,19 +232,18 @@ function createHandCard(handData) {
 
 function createPlaceholderCard() {
     const card = document.createElement('div');
-    card.className = 'bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col';
+    card.className = 'bg-gray-50 rounded-2xl border border-dashed border-gray-300 flex flex-col overflow-hidden group hover:bg-gray-100 transition-colors duration-300';
     card.innerHTML = `
-        <div class="w-full h-56 bg-gray-200 flex items-center justify-center">
-            <svg class="h-20 w-20 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+        <div class="w-full h-64 flex items-center justify-center bg-gray-100 group-hover:bg-gray-200 transition-colors duration-300">
+            <svg class="h-16 w-16 text-gray-400 group-hover:text-gray-500 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
         </div>
-        <div class="p-6 flex-grow flex flex-col">
-            <h3 class="text-lg font-medium text-gray-900 tracking-tight">More Coming Soon</h3>
-            <p class="mt-4 text-base text-gray-500 flex-grow">
-                We are constantly developing new and improved prototypes. Check back later for more options.
+        <div class="p-8 flex-grow flex flex-col text-center justify-center">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">More Coming Soon</h3>
+            <p class="text-gray-500 leading-relaxed">
+                We are constantly developing new and improved prototypes.
             </p>
-            <a href="#" class="mt-6 inline-block bg-gray-400 text-white py-2 px-4 rounded-lg cursor-not-allowed w-full text-center">Unavailable</a>
         </div>
     `;
     return card;
@@ -248,6 +271,15 @@ async function updateHandCards() {
 
         // Append static placeholder
         container.appendChild(createPlaceholderCard());
+
+        // Adjust grid columns based on card count
+        if (container.children.length <= 2) {
+            container.classList.remove('lg:grid-cols-3');
+            container.classList.add('lg:grid-cols-2');
+        } else {
+            container.classList.remove('lg:grid-cols-2');
+            container.classList.add('lg:grid-cols-3');
+        }
 
     } catch (error) {
         console.error("Failed to fetch hand statistics:", error);
