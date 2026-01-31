@@ -11,9 +11,9 @@ The cosmetic hand prosthesis consists of two parts: a silicone glove and a foam 
 In the next step, the interior of the silicone hand must be filled with foam. To do this, the silicone hand is fixed in a mounted mold and filled with foam that chemically reacts. This process takes place under very high pressure, which is why tightening the mold requires skill. After the foam has cooled, the finished cosmetic prosthesis can be removed from the mold.
 
 <div style="display: flex; aspect-ratio : 5 / 2; max-width: 100%; flex-direction: row; justify-content: space-evenly; width: 100%; margin: 2rem">
-<img style="height: 100%" src="../blog/2025-02-17-hand-1.jpg">
-<img style="height: 100%" src="../blog/2025-02-17-hand-2.jpg">
-<img style="height: 100%" src="../blog/2025-02-17-hand-3.jpg">
+<img style="height: 100%" src="../images/blog/2025-02-17-hand-1.jpg">
+<img style="height: 100%" src="../images/blog/2025-02-17-hand-2.jpg">
+<img style="height: 100%" src="../images/blog/2025-02-17-hand-3.jpg">
 </div>
 
 ## Learnings

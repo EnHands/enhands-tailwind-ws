@@ -2,56 +2,56 @@
     {
         "name": "2022-10-01-kickoff",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2022-10-01-kickoff.jpg",
+        "picture": "../blog/images/2022-10-01-kickoff.jpg",
         "date": "October 12, 2022",
         "title": "Kickoff meeting - EnHands gets started!"
     },
     {
         "name": "2022-11-07-viquar-zoom-1",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2022-11-07-viquar.png",
+        "picture": "../blog/images/2022-11-07-viquar.png",
         "date": "November 07, 2022",
         "title": "Discussion with Dr. Viquar Qurashi"
     },
     {
         "name": "2022-11-29-student-club-fair",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2022-11-29-student-club-fair.jpg",
+        "picture": "../blog/images/2022-11-29-student-club-fair.jpg",
         "date": "November 29, 2022",
         "title": "EnHands at the student club fair"
     },
     {
         "name": "2023-01-31-3d-printer",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2023-01-31-printer.jpg",
+        "picture": "../blog/images/2023-01-31-printer.jpg",
         "date": "January 31, 2023",
         "title": "Our 3D printer is up and running again!"
     },
     {
         "name": "2023-04-01-second-workshop",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2023-04-01-second-workshop.jpg",
+        "picture": "../blog/images/2023-04-01-second-workshop.jpg",
         "date": "April 1, 2023",
         "title": "Second workshop"
     },
     {
         "name": "2023-06-12-funding-for-innovators",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2023-06-12-funding-for-innovators.png",
+        "picture": "../blog/images/2023-06-12-funding-for-innovators.png",
         "date": "June 12, 2023",
         "title": "EnHands funded with 2000€ by UnternehmerTUM"
     },
     {
         "name": "2023-06-21-viquar-london",
         "author": "Vincent Bürgin",
-        "picture": "../blog/2023-06-21-viquar-london.jpg",
+        "picture": "../blog/images/2023-06-21-viquar-london.jpg",
         "date": "June 21, 2023",
         "title": "Sonja and Amartya visiting Viquar Quarashi"
     },
     {
         "name": "2023-09-11-ceti-funding",
         "author": "Jana Koss",
-        "picture": "../blog/2023-09-11-ceti-funding.png",
+        "picture": "../blog/images/2023-09-11-ceti-funding.png",
         "date": "September 11, 2023",
         "title": "CeTI boosts EnHands with 2,500€ grant"
     },
@@ -60,27 +60,27 @@
         "author": "Jana Koss and Leon Kiesgen",
         "date": "November 18, 2023",
         "title": "HANDSFORUM 2023",
-        "picture": "../blog/2023-11-18-handsforum.jpg"
+        "picture": "../blog/images/2023-11-18-handsforum.jpg"
     },
     {
         "name": "2024-01-31-nepal-field-trip",
         "author": "Jana Koss",
         "date": "January 31, 2024",
         "title": "Nepal Field Trip 2023",
-        "picture": "../blog/2024-01-31-nepal-header.png"
+        "picture": "../blog/images/2024-01-31-nepal-header.png"
     },
     {
         "name": "2024-10-22-enhands-becomes-a-non-profit-organization",
         "author": "Jana Koss",
         "date": "October 22, 2024",
         "title": "EnHands becomes a Non-Profit Organization (e.V.)",
-        "picture": "../blog/2024-10-22-ev-founding-meeting.jpeg"
+        "picture": "../blog/images/2024-10-22-ev-founding-meeting.jpeg"
     },
     {
         "name": "2025-02-17-cosmetic-hand-production-bangladesh",
         "author": "Anna Salacova",
         "date": "February 17, 2025",
         "title": "Production of cosmetic hand prostheses for Bangladesh camp",
-        "picture": "../blog/2025-02-17-group-picture.jpg"
+        "picture": "../blog/images/2025-02-17-group-picture.jpg"
     }
 ]
