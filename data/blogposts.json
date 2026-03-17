@@ -96,5 +96,12 @@
         "date": "March 10, 2026",
         "title": "Functional Hand Deep Dive: Introduction",
         "picture": "../blog/images/2026-03-10-header.jpg"
+    },
+    {
+        "name": "2026-03-17-angelas",
+        "author": "Nikolas Kaarsberg",
+        "date": "March 17, 2026",
+        "title": "Functional Hand Deep Dive, Part 1: Adjustable Thumb",
+        "picture": "../blog/images/2026-03-18-header.jpg"
     }
 ]
