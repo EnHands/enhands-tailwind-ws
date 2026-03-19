@@ -25,15 +25,30 @@ This concept aligns well with our values since by being simple, robust and cheap
 
 Our thumb is passive, which means that there is no active gripping done by it. The other fingers then need to exert more force to compensate, but this allows us to make a design that has a lot of flexibility. Through some clever geometry and the usage of a spring, the user can change the position of the thumb using his/her other hand. This then allows for 3 distinct positions:
 
-<div style="margin: 30px 0;">
-    <h4 style="margin-bottom: 15px;">Pinch grasp</h4>
-    <img src="../blog/images/2026-03-17_adjustable_thumb_2.png" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto 40px auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-
-    <h4 style="margin-bottom: 15px;">Power grasp</h4>
-    <img src="../blog/images/2026-03-17_adjustable_thumb_3.png" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto 40px auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-
-    <h4 style="margin-bottom: 15px;">Cosmetic/resting pose</h4>
-    <img src="../blog/images/2026-03-17_adjustable_thumb_4.png" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto 40px auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<div style="margin: 40px 0; text-align: center;">
+    <h4 style="margin-bottom: 25px; text-align: center;">Three thumb positions: Pinch grasp, Power grasp, and Cosmetic/resting pose</h4>
+    
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <div style="flex: 1; min-width: 200px; max-width: 300px;">
+            <img src="../blog/images/2026-03-17_adjustable_thumb_2.png" 
+                 style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <p style="margin-top: 10px; font-style: italic; color: #666;">Pinch grasp</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px; max-width: 300px;">
+            <img src="../blog/images/2026-03-17_adjustable_thumb_3.png" 
+                 style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <p style="margin-top: 10px; font-style: italic; color: #666;">Power grasp</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px; max-width: 300px;">
+            <img src="../blog/images/2026-03-17_adjustable_thumb_4.png" 
+                 style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <p style="margin-top: 10px; font-style: italic; color: #666;">Cosmetic/resting pose</p>
+        </div>
+        
+    </div>
 </div>
 
 Pinch grasps are useful for tasks that require fine motor control like holding a pencil. Power, on the other hand, being used for more strength-oriented tasks, such as holding gardening tools. This gives users a lot more flexibility for different use cases while keeping the design simple. Yet, although functional, offering only these two positions would be problematic aesthetically, as it would be the equivalent of someone walking around making an “Ok” sign all the time (which although very good vibes, isn’t very nice for people who want to blend in). Knowing this, we’ve also incorporated a “cosmetic” position, where the thumb rests alongside the remaining fingers, emulating a resting hand.
@@ -64,9 +79,9 @@ The great advantage of this design is that it doesn't rely on precise tuning or 
 </div>
 
 Currently, we are very happy with our design, but it is not perfect, not final. Knowing this the current takeaways are:
-•	Thumbs up: Our design is extremely low-cost, while also being very durable, robust, and simple to manufacture and repair.
-•	Thumbs down: The thumb brings no active contribution to the grip force, meaning that the thumb can’t “push” like a human thumb. That means that the other fingers need to take over.
-•	Thumbs sideways? Visually, some may expect a more complex structure than the very basic skeleton our thumb currently has. Most of the cosmetic shape comes from the glove covering it. We could try to shape the thumb more to have something that could be more aesthetic, but this is not deemed necessary currently.
+* Thumbs up: Our design is extremely low-cost, while also being very durable, robust, and simple to manufacture and repair.
+* Thumbs down: The thumb brings no active contribution to the grip force, meaning that the thumb can’t “push” like a human thumb. That means that the other fingers need to take over.
+* Thumbs sideways? Visually, some may expect a more complex structure than the very basic skeleton our thumb currently has. Most of the cosmetic shape comes from the glove covering it. We could try to shape the thumb more to have something that could be more aesthetic, but this is not deemed necessary currently.
 
 Again, we’ve considered whether more advanced versions could include shaping elements or additional joints, but for now, simplicity wins. The current design does need to compensate for the lack of thumb actuation, but we have managed to do that by using our power transfer mechanism (which we will also cover in another blogpost).
 
