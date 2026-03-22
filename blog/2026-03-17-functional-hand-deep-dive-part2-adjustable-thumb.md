@@ -1,14 +1,14 @@
-# Functional Hand Deep Dive, Part 2: Adjustable Thumb
-### *Does our adjustable thumb readjust our expectations?*
+## Does our adjustable thumb readjust our expectations?
+
+
+After our intro post, with this blogpost we're fully starting our series of diving deeper into different parts of our prosthesis design, talking about its many features and trying to go into the details of what we are doing here at EnHands.
+This post touches on our original thumb design, why we think it is great, why it works, and what we want to do with it.
 
 <div style="margin-bottom: 30px;">
     <img src="../blog/images/2026-03-17_adjustable_thumb_1.png" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
 </div>
 
-After our intro post, with this blogpost we're fully starting our series of diving deeper into different parts of our prosthesis design, talking about its many features and trying to go into the details of what we are doing here at EnHands.
-This post touches on our original thumb design, why we think it is great, why it works, and what we want to do with it.
-
-**Our Adjustable Thumb Design: The best of both worlds**
+## Our Adjustable Thumb Design: The best of both worlds
 
 As you may have gotten from our last blogpost, our design works by actuating digits II to V (all but the thumb), which allows us to follow through with a passive thumb that can be adjusted manually, sitting between one of three positions. This is special in our design: other prostheses are usually either hand-actuated as ours, but only open and close, or allow more complex manipulation, at the cost of requiring electrical components.
 This concept aligns well with our values since by being simple, robust and cheap, we are sure to hit our use case of low income countries as it is easy to repair and uses components of your run-of-the-mill hardware store.
@@ -21,7 +21,7 @@ This concept aligns well with our values since by being simple, robust and cheap
     <p style="text-align: center; font-style: italic; margin-top: 10px; color: #666;">The adjustable thumb mechanism in action</p>
 </div>
 
-**How our thumb works**
+## How our thumb works
 
 Our thumb is passive, which means that there is no active gripping done by it. The other fingers then need to exert more force to compensate, but this allows us to make a design that has a lot of flexibility. Through some clever geometry and the usage of a spring, the user can change the position of the thumb using his/her other hand. This then allows for 3 distinct positions:
 
