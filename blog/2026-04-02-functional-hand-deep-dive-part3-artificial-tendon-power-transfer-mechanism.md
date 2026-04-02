@@ -29,19 +29,19 @@ Initially, we had one challenge with the 3D-printed tendon: the layering directi
 
 
 <div style="margin: 40px 0;">
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 200px; max-width: 300px;">
-            <figure>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+        <div style="flex: 1; min-width: 200px; max-width: 300px; display: flex; flex-direction: column;">
+            <figure style="margin: 0; display: flex; flex-direction: column;">
                 <img src="../blog/images/2026-04-02-third.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fragile tendon design due to 3D print layering.</figcaption>
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666; text-align: center;">Fragile tendon design due to 3D print layering.</figcaption>
             </figure>
         </div>
-        <div style="flex: 1; min-width: 200px; max-width: 300px;">
-            <figure>
+        <div style="flex: 1; min-width: 200px; max-width: 300px; display: flex; flex-direction: column;">
+            <figure style="margin: 0; display: flex; flex-direction: column;">
                 <img src="../blog/images/2026-04-02-fourth.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Stable current version of the tendon (before being bent into place).</figcaption>
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666; text-align: center;">Stable current version of the tendon (before being bent into place).</figcaption>
             </figure>
-        </div> 
+        </div>
     </div>
 </div>
 
