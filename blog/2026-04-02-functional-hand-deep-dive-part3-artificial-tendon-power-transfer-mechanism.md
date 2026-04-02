@@ -1,4 +1,4 @@
-# Functional Hand Deep Dive, Part 3: Artificial Tendon and Power Transfer Mechanism
+
 
 The EnHands functional hand prosthesis deep dive continues today with a question that is right at the core of our functional hand design: **how to apply the force that lets the prosthesis user grasp an object?** 
 
@@ -28,18 +28,24 @@ The artificial tendon in its current form is 3D-printed from thermoplastic polyu
 Initially, we had one challenge with the 3D-printed tendon: the layering direction inherent to the 3D printing process caused the tendon's attachment points to break easily - which is not acceptable for the part that needs to transmit all the grasping force! By rotating the attachment points in the 3D model, and bending them into place after printing (which the flexible TPU material allows), we could obtain a much more stable tendon. This is a good example of the many engineering iterations we often need to solve a challenge that seems simple at first, but turns out to be more intricate when you address it.
 
 
-<div style="flex: 1; min-width: 200px; max-width: 300px;">
-    <figure>
-        <img src="../blog/images/2026-04-02-third.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fragile tendon design due to 3D print layering.</figcaption>
-    </figure>
-</div>
+<div style="margin: 40px 0;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
         
-<div style="flex: 1; min-width: 200px; max-width: 300px;">
-    <figure>
-        <img src="../blog/images/2026-04-02-fourth.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Stable current version of the tendon (before being bent into place).</figcaption>
-    </figure>
+        <div style="flex: 1; min-width: 200px; max-width: 300px;">
+            <figure>
+                <img src="../blog/images/2026-04-02-third.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fragile tendon design due to 3D print layering.</figcaption>
+            </figure>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px; max-width: 300px;">
+            <figure>
+                <img src="../blog/images/2026-04-02-fourth.png" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Stable current version of the tendon (before being bent into place).</figcaption>
+            </figure>
+        </div>
+        
+    </div>
 </div>
 
 Are you wondering why the tendon has such an asymmetric shape? The reason simply is that the fingers are not at the same height - the middle finger is offset 12mm to the front, which means that the tendon needs to be asymmetric to evenly actuate the fingers. Designing it, we kept in mind that the two branches of the tendon should be elastic, and the rest relatively inelastic. To achieve this, both branches start thin at the ends, and reach a thicker part of the tendon at the same distance from their attachment points.
