@@ -1,4 +1,4 @@
-
+## Functional Hand Deep Dive, Part 3: Artificial Tendon and Power Transfer Mechanism
 
 The EnHands functional hand prosthesis deep dive continues today with a question that is right at the core of our functional hand design: **how to apply the force that lets the prosthesis user grasp an object?** 
 
