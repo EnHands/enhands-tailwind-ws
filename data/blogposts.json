@@ -103,5 +103,12 @@
         "date": "March 17, 2026",
         "title": "Functional Hand Deep Dive, Part 2: Adjustable Thumb",
         "picture": "../blog/images/2026-03-18-header.jpg"
+    },
+    {
+        "name": "2026-04-02-functional-hand-deep-dive-part3-artificial-tendon-power-transfer-mechanism",
+        "author": "Vincent Bürgin",
+        "date": "April 2, 2026",
+        "title": "Functional Hand Deep Dive, Part 3: Artificial Tendon Power Transfer Mechanism",
+        "picture": "../blog/images/2026-04-02-header.jpg"
     }
 ]
