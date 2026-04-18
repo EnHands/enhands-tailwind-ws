@@ -110,5 +110,12 @@
         "date": "April 2, 2026",
         "title": "Functional Hand Deep Dive, Part 3: Artificial Tendon Power Transfer Mechanism",
         "picture": "../blog/images/2026-04-02-header.jpg"
+    },
+    {
+        "name": "2026-04-18-functional-hand-deep-dive-part4-wrist-mechanism",
+        "author": "Marcia Castillo",
+        "date": "April 18, 2026",
+        "title": "Functional Hand Deep Dive, Part 4: Wrist Mechanism",
+        "picture": "../blog/images/2026-04-18-part4-header.jpg"
     }
 ]
