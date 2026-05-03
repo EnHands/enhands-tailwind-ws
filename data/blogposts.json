@@ -117,5 +117,12 @@
         "date": "April 18, 2026",
         "title": "Functional Hand Deep Dive, Part 4: Wrist Mechanism",
         "picture": "../blog/images/2026-04-18-part4-header.jpg"
+    },
+    {
+        "name": "2026-05-03-functional-hand-deep-dive-part-5-actuation",
+        "author": "Mohamed Eyssa",
+        "date": "May 03, 2026",
+        "title": "Functional Hand Deep Dive, Part 5: Actuating the Prosthesis",
+        "picture": "../blog/images/2026-05-03-part5-header.jpg"
     }
 ]
