@@ -4,8 +4,12 @@ In the development of advanced prosthetic hands, the **wrist mechanism** plays
 The wrist mechanism is the component that enables the prosthetic hand to rotate around a single axis, allowing the user to position the hand in the different orientations needed for everyday activities — like riding a bike (horizontal orientation) or grabbing a glass of water (vertical orientation). This adaptability is essential to make the prosthesis as functional as possible.
 
 ## **Main Components**
-![1DCA8D15-921C-4486-A22A-C67D22E70AFD](https://hackmd.io/_uploads/rk2gHTyaWx.jpg)
 
+<div class="image-row">
+  <figure>
+    <img src="../blog/images/2026-04-18-wrist1.jpg">
+  </figure>
+</div>
 
 The mechanism consists of three main parts:
 - A **solid cylinder** screwed into the arm,
@@ -16,7 +20,13 @@ Currently, the cylinders are 3D printed using PLA, while the pins are made of al
 
 ## **Design and Control**
 The wrist mechanism is designed for simplicity and accessibility. To change the hand’s position, the user presses the pin with their other hand to release and rotate the wrist to the desired angle. This manual control keeps the mechanism independent and easy to maintain.
-![image](https://hackmd.io/_uploads/B1TWv6kpWe.png)
+
+
+<div class="image-row">
+  <figure>
+    <img src="../blog/images/2026-04-18-second.png">
+  </figure>
+</div>
 
 
 ## **Challenges and Solutions**

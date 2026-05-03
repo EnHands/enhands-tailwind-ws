@@ -1,4 +1,3 @@
-
 The EnHands functional hand prosthesis deep dive continues today with a question that is right at the core of our functional hand design: **how to apply the force that lets the prosthesis user grasp an object?** 
 
 Our design features two mechanisms to address this question. First, it uses a block and tackle, the **power transfer mechanism**, that allows the user to pump multiple times to close the prosthesis. The grasp closes tighter on each pull, and only releases at the press of a button. Second, we have a **artificial tendon**: this connecting piece is crucial, as it links the index and middle fingers in a flexible way which allows them to adapt their movement to the grasped object's shape.
