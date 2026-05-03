@@ -66,11 +66,6 @@
         "job": "Studying B.Sc. General Engineering (Technical University of Denmark)"
     },
     {
-        "name":"Gabriel Castellano",
-        "img": "images/people/profile/Gabriel.jpg",
-        "job": "Graduated M.Sc. Neuroengineering"
-    },
-    {
         "name":"Mohamed Khaled Eyssa",
         "img": "images/people/profile/Mohamed.jpg",
         "img_hover": "images/people/fun/Mohamed.jpg",
@@ -159,5 +154,29 @@
         "img": "images/people/profile/Mohammed.jpg",
         "img_hover": "images/people/fun/Mohammed.jpg",
         "job": "Studying B.Sc. Engineering Science"
+    },
+    {
+        "name": "Michelle Poschner",
+        "img": "images/people/profile/Michelle.jpg",
+        "img_hover": "images/people/fun/Michelle.jpg",
+        "job": "Studying M.Sc. Mechatronics, Robotics, and Biomechanical Engineering"
+    },
+    {
+        "name": "Omar Bahaji",
+        "img": "images/people/profile/Omar.jpg",
+        "img_hover": "images/people/fun/Omar.jpg",
+        "job": "Studying M.Sc. Human Factors Engineering"
+    },
+    {
+        "name": "Sören Ulshöfer",
+        "img": "images/people/profile/Sören.jpg",
+        "img_hover": "images/people/fun/Sören.jpg",
+        "job": "Studying B.Sc. Engineering Science"
+    },
+    {
+        "name": "Konstantin Eisebitt",
+        "img": "images/people/profile/Konstantin.jpg",
+        "img_hover": "images/people/fun/Konstantin.jpg",
+        "job": "Studying M.Sc. Robotics, Cognition, Intelligence"
     }
 ]
