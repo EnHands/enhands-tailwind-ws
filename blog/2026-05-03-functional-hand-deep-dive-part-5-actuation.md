@@ -16,7 +16,7 @@ The system uses two straps, one attached to the forearm socket and one around th
 <div class="image-row">
   <figure>
     <img src="../blog/images/2026-05-03-actuation.png">
-    <figcaption>Actuation: Extending the arm forward pulls the actuation cable on the prosthesis and makes it perform a grasping movement.</figcaption>
+    <figcaption>Elbow actuation: Extending the arm forward pulls the actuation cable on the prosthesis and makes it perform a grasping movement.</figcaption>
   </figure>
 </div>
 
